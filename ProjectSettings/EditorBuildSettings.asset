@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/RTS Engine/Demo/Menu/MainMenu.unity
+    guid: 25218778d642f0d4b8f3d42e309723eb
+  - enabled: 1
+    path: Assets/RTS Engine/Modules/SaveSystem/Scenes/SavedGameLoader.unity
+    guid: 5515fc7abada18d45adaa60bc5867b00
+  - enabled: 1
+    path: Assets/RTS Engine/Modules/Singleplayer/Scenes/SingleplayerLobbyMenu.unity
+    guid: 418b61376f0250b40b619295d3466b06
+  - enabled: 1
+    path: Assets/RTS Engine/Modules/AdvancedBuildingPlacement/Demo/Scenes/MainMenu_AdvancedBuildingPlacement.unity
+    guid: 69eec156253bf9d449ae9bf62c8abf83
+  - enabled: 1
+    path: Assets/RTS Engine/Modules/AdvancedBuildingPlacement/Manual/Scenes/advanced-building-placement_manual.unity
+    guid: 73210cd37bda1774db075a0713721275
+  - enabled: 1
+    path: Assets/RTS Engine/Demo/Scenes/demo_map/demo_map.unity
+    guid: 70ccd3f32288ddd48acf5335588ccbad
   m_configObjects: {}
