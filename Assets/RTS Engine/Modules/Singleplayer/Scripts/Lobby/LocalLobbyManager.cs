@@ -84,9 +84,9 @@ namespace RTSEngine.SinglePlayer.Lobby
                 playerMessageUIHandler.Message.Display($"Maximum factions amount {CurrentMap.factionsAmount.max} for this map has been reached.");
                 return;
             }
-
+            
             ILocalLobbyFactionSlot newSlot = Instantiate(lobbyFactionPrefab.gameObject).GetComponent<ILocalLobbyFactionSlot>();
-
+            Debug.Log("test debug" + newSlot.gameObject.name);
             // First faction slot is the player's one.
             if (FactionSlotCount == 0)
                 LocalFactionSlot = newSlot;
@@ -135,7 +135,7 @@ namespace RTSEngine.SinglePlayer.Lobby
         private IEnumerator StartLobbyDelayed(float delayTime)
         {
             yield return new WaitForSeconds(delayTime);
-
+            Debug.Log("Map Name = " + CurrentMap.sceneName);
             sceneLoader.LoadScene(CurrentMap.sceneName, source: this);
         }
 

@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/RTS Engine/Demo/Menu/MainMenu.unity
+    guid: 25218778d642f0d4b8f3d42e309723eb
+  - enabled: 1
+    path: Assets/RTS Engine/Demo/Scenes/demo_map/demo_map.unity
+    guid: 70ccd3f32288ddd48acf5335588ccbad
+  - enabled: 1
+    path: Assets/RTS Engine/Modules/Singleplayer/Scenes/SingleplayerLobbyMenu.unity
+    guid: 418b61376f0250b40b619295d3466b06
+  - enabled: 1
+    path: Assets/RTS Engine/Demo/Scenes/demo_map/demo_map Duplicated.unity
+    guid: f6579220ae6c627408320b3ec4efb581
   m_configObjects: {}
