@@ -135,11 +135,16 @@ namespace RTSEngine.Health
 
         private void Update()
         {
+            //Debug.Log($"Test ................. + {RTSHelper.IsMasterInstance()} + {(Building.WorkerMgr.Amount == 0)} + {!hasBuildersInProgress} + {buildingMgr.ConstructionType != ConstructionType.time} ");
             if (!RTSHelper.IsMasterInstance()
                 || Building.WorkerMgr.Amount == 0
                 || !hasBuildersInProgress
                 || buildingMgr.ConstructionType != ConstructionType.time)
+            {
+                //Debug.Log("TEST");
                 return;
+            }
+                
 
             if (buildTimer.ModifiedDecrease())
                 Add(new HealthUpdateArgs(value: MaxHealth, source: Building.WorkerMgr.Workers[0]));
