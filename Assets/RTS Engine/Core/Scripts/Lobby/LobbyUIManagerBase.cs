@@ -25,7 +25,6 @@ namespace RTSEngine.Lobby
         protected LobbyGameData UIToLobbyGameData => new LobbyGameData
         {
             mapID = mapDropdown.value,
-
             defeatConditionID = lobbyMgr.DefeatConditionSelector.CurrentOptionID,
             timeModifierID = lobbyMgr.TimeModifierSelector.CurrentOptionID,
             initialResourcesID = lobbyMgr.InitialResourcesSelector.CurrentOptionID

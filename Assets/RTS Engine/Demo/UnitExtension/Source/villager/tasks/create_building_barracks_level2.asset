@@ -26,4 +26,6 @@ MonoBehaviour:
     reloadTime: 0
     cursor:
       icon: {fileID: 0}
+      texture: {fileID: 0}
       hotspot: {x: 0, y: 0}
+    controlType: {fileID: 0}

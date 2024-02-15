@@ -267,7 +267,7 @@ namespace RTSEngine.SinglePlayer.Lobby
         #endregion
 
         #region Updating Color
-        private void OnFactionColorUpdated ()
+        public void OnFactionColorUpdated ()
         {
             if(!IsInteractable)
                 return;
