@@ -417,7 +417,7 @@ MonoBehaviour:
   radius: 2
   model: {fileID: 6957652146673048669}
   isIdle: 0
-  resourceType: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+  resourceType: {fileID: 11400000, guid: 119a6a64d4d2f574bb77e87ad11efd72, type: 2}
   canCollect: 1
   canCollectOutsideBorder: 0
   autoCollect: 0

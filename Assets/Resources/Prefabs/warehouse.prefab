@@ -360,6 +360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1337869911810394649}
   - component: {fileID: 513102400661272283}
+  - component: {fileID: 6710503137290037614}
   m_Layer: 0
   m_Name: building_components
   m_TagString: Untagged
@@ -405,6 +406,30 @@ MonoBehaviour:
   showWorkerPositionsGizmos: 1
   showWorkersGizmos: 1
   showWorkersFoldout: 0
+--- !u!114 &6710503137290037614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3401123582047050878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b70a05e14e072574fa5d4773e9ade9f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  code: drop_off_target
+  allowedResourceTypes:
+    type: 1
+    options:
+    - {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+    - {fileID: 11400000, guid: 119a6a64d4d2f574bb77e87ad11efd72, type: 2}
+    - {fileID: 11400000, guid: 7fad61ec7c519fc48bda4c4cab2cb727, type: 2}
+    - {fileID: 11400000, guid: a3e40a20a0b603d4793ed1985b005aed, type: 2}
+    - {fileID: 11400000, guid: a3e40a20a0b603d4793ed1985b005aed, type: 2}
+  requireDropOffPosition: 1
+  dropOffPosition: {fileID: 5117826126572050261}
+  forcedTerrainAreas: []
 --- !u!1 &4354563816868361860
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,6 +513,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &5066563824447462538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5117826126572050261}
+  m_Layer: 0
+  m_Name: drop_off_target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5117826126572050261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5066563824447462538}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 3.21}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4698221654309379065}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7649828427533091230
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +652,7 @@ Transform:
   - {fileID: 7448285970552892889}
   - {fileID: 5507873523754729517}
   - {fileID: 6749009120485122446}
+  - {fileID: 5117826126572050261}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3988662682929767741
@@ -618,7 +675,7 @@ MonoBehaviour:
   category: resource_building
   description: Warehouse
   icon: {fileID: 21300000, guid: d09bd80212b4fe04ca57cad03e1955e3, type: 3}
-  radius: 2.26
+  radius: 2.53
   model: {fileID: 7788535803480962915}
   isIdle: 0
   isMainEntity: 0
