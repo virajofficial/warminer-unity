@@ -202,7 +202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tabID:
     x: 0
-    y: 0
+    y: 1
   _name: Hydrogen Deposit
   code: hydrogen_deposit
   category: resources
@@ -211,7 +211,7 @@ MonoBehaviour:
   radius: 0.84
   model: {fileID: 6940746756836072808}
   isIdle: 0
-  resourceType: {fileID: 0}
+  resourceType: {fileID: 11400000, guid: c879ec68b88807749a9923a6135ed15f, type: 2}
   canCollect: 1
   canCollectOutsideBorder: 0
   autoCollect: 0
