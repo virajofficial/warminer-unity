@@ -1232,7 +1232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5955288277300896151, guid: 2d506f4f4d7735046be00ba93a682ec0, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 7375525136053843564, guid: 2d506f4f4d7735046be00ba93a682ec0, type: 3}
       propertyPath: m_Name
@@ -9244,7 +9244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 808164781288948208, guid: cbc027662513fcc449c8e9b00cd82e97, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2329421371023739309, guid: cbc027662513fcc449c8e9b00cd82e97, type: 3}
       propertyPath: m_Name
@@ -13319,7 +13319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5955288277300896151, guid: 2d506f4f4d7735046be00ba93a682ec0, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 7375525136053843564, guid: 2d506f4f4d7735046be00ba93a682ec0, type: 3}
       propertyPath: m_Name
@@ -29750,7 +29750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6267674161256279828, guid: 03d0ee8c9c75eb2458c2c466ce19112c, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 6279533728924501596, guid: 03d0ee8c9c75eb2458c2c466ce19112c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33507,8 +33507,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7734400028285984862, guid: 9029e82bb793b6644bbb6d68b8e69edd, type: 3}
+      propertyPath: tabID.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7734400028285984862, guid: 9029e82bb793b6644bbb6d68b8e69edd, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8737902238681965157, guid: 9029e82bb793b6644bbb6d68b8e69edd, type: 3}
       propertyPath: m_Name
@@ -40184,8 +40188,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7734400028285984862, guid: 9029e82bb793b6644bbb6d68b8e69edd, type: 3}
+      propertyPath: tabID.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7734400028285984862, guid: 9029e82bb793b6644bbb6d68b8e69edd, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8737902238681965157, guid: 9029e82bb793b6644bbb6d68b8e69edd, type: 3}
       propertyPath: m_Name
@@ -50412,8 +50420,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5007981261471174900, guid: 5906414b79f17094e89b392206092ea0, type: 3}
+      propertyPath: tabID.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007981261471174900, guid: 5906414b79f17094e89b392206092ea0, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52887,7 +52899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5128477408294737633, guid: 3824cad28f163fb45b81ceb03b76ba4a, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 7027520596856375315, guid: 3824cad28f163fb45b81ceb03b76ba4a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54295,12 +54307,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5955288277300896151, guid: 2d506f4f4d7735046be00ba93a682ec0, type: 3}
-      propertyPath: tabID.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5955288277300896151, guid: 2d506f4f4d7735046be00ba93a682ec0, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 6006679109416819074, guid: 2d506f4f4d7735046be00ba93a682ec0, type: 3}
       propertyPath: icon
@@ -59296,7 +59304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6267674161256279828, guid: 03d0ee8c9c75eb2458c2c466ce19112c, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 6279533728924501596, guid: 03d0ee8c9c75eb2458c2c466ce19112c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62896,7 +62904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6267674161256279828, guid: 03d0ee8c9c75eb2458c2c466ce19112c, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 6279533728924501596, guid: 03d0ee8c9c75eb2458c2c466ce19112c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64406,7 +64414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 808164781288948208, guid: cbc027662513fcc449c8e9b00cd82e97, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2329421371023739309, guid: cbc027662513fcc449c8e9b00cd82e97, type: 3}
       propertyPath: m_Name
@@ -98452,8 +98460,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7734400028285984862, guid: 9029e82bb793b6644bbb6d68b8e69edd, type: 3}
+      propertyPath: tabID.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7734400028285984862, guid: 9029e82bb793b6644bbb6d68b8e69edd, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8737902238681965157, guid: 9029e82bb793b6644bbb6d68b8e69edd, type: 3}
       propertyPath: m_Name
@@ -99168,7 +99180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 808164781288948208, guid: cbc027662513fcc449c8e9b00cd82e97, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2329421371023739309, guid: cbc027662513fcc449c8e9b00cd82e97, type: 3}
       propertyPath: m_Name
@@ -115997,7 +116009,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 665774723656037185, guid: 782af85dec6035846b1b68df6585e1f3, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2399074644612709431, guid: 782af85dec6035846b1b68df6585e1f3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -127721,7 +127733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 665774723656037185, guid: 782af85dec6035846b1b68df6585e1f3, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2399074644612709431, guid: 782af85dec6035846b1b68df6585e1f3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -137804,7 +137816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5128477408294737633, guid: 3824cad28f163fb45b81ceb03b76ba4a, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 7027520596856375315, guid: 3824cad28f163fb45b81ceb03b76ba4a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -138091,7 +138103,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 665774723656037185, guid: 782af85dec6035846b1b68df6585e1f3, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2399074644612709431, guid: 782af85dec6035846b1b68df6585e1f3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -159096,7 +159108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 665774723656037185, guid: 782af85dec6035846b1b68df6585e1f3, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2399074644612709431, guid: 782af85dec6035846b1b68df6585e1f3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -163748,7 +163760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5128477408294737633, guid: 3824cad28f163fb45b81ceb03b76ba4a, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 7027520596856375315, guid: 3824cad28f163fb45b81ceb03b76ba4a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -168438,7 +168450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5128477408294737633, guid: 3824cad28f163fb45b81ceb03b76ba4a, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 6403569356962832015, guid: 3824cad28f163fb45b81ceb03b76ba4a, type: 3}
       propertyPath: icon
@@ -170030,7 +170042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5955288277300896151, guid: 2d506f4f4d7735046be00ba93a682ec0, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 7375525136053843564, guid: 2d506f4f4d7735046be00ba93a682ec0, type: 3}
       propertyPath: m_Name
@@ -170040,7 +170052,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8143430908462074082, guid: 2d506f4f4d7735046be00ba93a682ec0, type: 3}
+      propertyPath: typeSpecific.Array.data[0].factionTypes.type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8143430908462074082, guid: 2d506f4f4d7735046be00ba93a682ec0, type: 3}
+      propertyPath: typeSpecific.Array.data[0].factionTypes.options.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4660857246935281990, guid: 2d506f4f4d7735046be00ba93a682ec0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -177283,7 +177304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 808164781288948208, guid: cbc027662513fcc449c8e9b00cd82e97, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2329421371023739309, guid: cbc027662513fcc449c8e9b00cd82e97, type: 3}
       propertyPath: m_Name
@@ -180978,8 +180999,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5007981261471174900, guid: 5906414b79f17094e89b392206092ea0, type: 3}
+      propertyPath: tabID.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007981261471174900, guid: 5906414b79f17094e89b392206092ea0, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -184765,7 +184790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6267674161256279828, guid: 03d0ee8c9c75eb2458c2c466ce19112c, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 6279533728924501596, guid: 03d0ee8c9c75eb2458c2c466ce19112c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -187997,8 +188022,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7734400028285984862, guid: 9029e82bb793b6644bbb6d68b8e69edd, type: 3}
+      propertyPath: tabID.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7734400028285984862, guid: 9029e82bb793b6644bbb6d68b8e69edd, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8737902238681965157, guid: 9029e82bb793b6644bbb6d68b8e69edd, type: 3}
       propertyPath: m_Name
@@ -191293,8 +191322,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5007981261471174900, guid: 5906414b79f17094e89b392206092ea0, type: 3}
+      propertyPath: tabID.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007981261471174900, guid: 5906414b79f17094e89b392206092ea0, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -199942,8 +199975,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5007981261471174900, guid: 5906414b79f17094e89b392206092ea0, type: 3}
+      propertyPath: tabID.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007981261471174900, guid: 5906414b79f17094e89b392206092ea0, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

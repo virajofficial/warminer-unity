@@ -175,6 +175,51 @@ Transform:
   - {fileID: 499301016432281324}
   m_Father: {fileID: 7027520596856375315}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4606156944067203759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 461601435852957704}
+  - component: {fileID: 5845116761646755536}
+  m_Layer: 0
+  m_Name: building_obstacles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &461601435852957704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4606156944067203759}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2764303587292289099}
+  m_Father: {fileID: 7027520596856375315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5845116761646755536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4606156944067203759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 566f74c666e89a74a86199ff96b9d830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4861669884544116532
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,8 +232,6 @@ GameObject:
   - component: {fileID: 6403569356962832015}
   - component: {fileID: 5128477408294737633}
   - component: {fileID: 6382587698635067593}
-  - component: {fileID: 3132498080889922808}
-  - component: {fileID: 3446351278763677329}
   - component: {fileID: 1155750385621959815}
   m_Layer: 0
   m_Name: orbium_miner
@@ -213,6 +256,7 @@ Transform:
   - {fileID: 6719127835728651446}
   - {fileID: 3438725112872013521}
   - {fileID: 4627880652226485416}
+  - {fileID: 461601435852957704}
   - {fileID: 1114887352987891535}
   - {fileID: 8329713496554855787}
   - {fileID: 7177370930910746766}
@@ -239,7 +283,7 @@ MonoBehaviour:
   category: resource_building
   description: Orbium Miner
   icon: {fileID: 21300000, guid: f77641c5efa38eb44ba87d1d6dafa3d3, type: 3}
-  radius: 2
+  radius: 2.19
   model: {fileID: 8706239721885239249}
   isIdle: 0
   isMainEntity: 0
@@ -270,13 +314,13 @@ MonoBehaviour:
   tabID:
     x: 0
     y: 2
-  maxHealth: 100
+  maxHealth: 500
   initialHealth: 1
   canIncrease: 1
   canDecrease: 1
   hoverHealthBarData:
     enabled: 1
-    offset: {x: 0, y: 4, z: 0}
+    offset: {x: 0, y: 2, z: 0}
     size: {x: 1, y: 1, z: 1}
     parent: {fileID: 0}
   hoverHealthBarY: 4
@@ -307,7 +351,7 @@ MonoBehaviour:
   - usePercentage: 0
     healthRange:
       _min: 0
-      _max: 50
+      _max: 200
     showChildObjects:
     - {fileID: 7174439541852811880}
     hideChildObjects: []
@@ -316,8 +360,8 @@ MonoBehaviour:
         m_Calls: []
   - usePercentage: 0
     healthRange:
-      _min: 50
-      _max: 100
+      _min: 200
+      _max: 500
     showChildObjects: []
     hideChildObjects:
     - {fileID: 7174439541852811880}
@@ -328,7 +372,7 @@ MonoBehaviour:
     usePercentage: 0
     healthRange:
       _min: 0
-      _max: 100
+      _max: 500
     showChildObjects: []
     hideChildObjects: []
     triggerEvent:
@@ -340,11 +384,11 @@ MonoBehaviour:
   - usePercentage: 0
     healthRange:
       _min: 0
-      _max: 100
+      _max: 500
     showChildObjects:
     - {fileID: 4156742742424558230}
-    hideChildObjects:
     - {fileID: 8706239721885239249}
+    hideChildObjects: []
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -458,34 +502,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &3132498080889922808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4861669884544116532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 566f74c666e89a74a86199ff96b9d830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!208 &3446351278763677329
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4861669884544116532}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 1, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 1, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!114 &1155750385621959815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -555,7 +571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bbae8f71eab72148a833e0d515fa7a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  placableTerrainAreas: []
+  placableTerrainAreas:
+  - {fileID: 11400000, guid: 37d2dffab9a31a84c81d764228531ba7, type: 2}
   canPlaceOutsideBorder: 0
   canPlaceInEnemyBorder: 0
   ignoreLayerMask:
@@ -694,6 +711,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4627880652226485416}
   - component: {fileID: 1422601489738532278}
+  - component: {fileID: 1732978583980948098}
   m_Layer: 0
   m_Name: building_components
   m_TagString: Untagged
@@ -732,13 +750,40 @@ MonoBehaviour:
     x: 0
     y: 0
   code: building_worker_manager
-  workerPositions: []
+  workerPositions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   forcedTerrainAreas: []
   defineMaxAmount: 0
   maxWorkerAmount: 4
   showWorkerPositionsGizmos: 1
   showWorkersGizmos: 1
   showWorkersFoldout: 0
+--- !u!114 &1732978583980948098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6361676696711757997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a2d482a17f7eb4d8d66d37663a6728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  model: {fileID: 8329713496554855787}
+  constructionModifier:
+    initialHeight: -1
+    targetHeight: -0.1
+    speed:
+      value: 0.5
+  destructionModifier:
+    initialHeight: -0.1
+    targetHeight: -6
+    speed:
+      value: 10
 --- !u!1 &6831928848917316204
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,6 +933,54 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &7854887059140150807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2764303587292289099}
+  - component: {fileID: 2967219978508096094}
+  m_Layer: 0
+  m_Name: navmesh_obstacle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2764303587292289099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7854887059140150807}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 461601435852957704}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &2967219978508096094
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7854887059140150807}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.975, y: 1.63, z: 2.01}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.63, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &9044797339531790477
 GameObject:
   m_ObjectHideFlags: 0

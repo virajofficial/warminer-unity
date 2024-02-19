@@ -104,8 +104,6 @@ GameObject:
   - component: {fileID: 6181349486749487800}
   - component: {fileID: 5007981261471174900}
   - component: {fileID: 1337644263275769446}
-  - component: {fileID: 8521557106864751558}
-  - component: {fileID: 1099730228235275840}
   - component: {fileID: 81240621046059835}
   m_Layer: 0
   m_Name: habitat_pod_incubator
@@ -130,6 +128,7 @@ Transform:
   - {fileID: 3355589106390576609}
   - {fileID: 3250136766174516311}
   - {fileID: 4245307192779141231}
+  - {fileID: 6885645705324214207}
   - {fileID: 2813790821100639116}
   - {fileID: 5121699561377464396}
   - {fileID: 2970225702612004256}
@@ -156,7 +155,7 @@ MonoBehaviour:
   category: resource_building
   description: Incubator
   icon: {fileID: 21300000, guid: c38398060dce1994490e2cdd2c5b07c5, type: 3}
-  radius: 1.5
+  radius: 1.26
   model: {fileID: 3190597456253749558}
   isIdle: 0
   isMainEntity: 0
@@ -186,8 +185,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tabID:
     x: 0
-    y: 0
-  maxHealth: 100
+    y: 2
+  maxHealth: 500
   initialHealth: 1
   canIncrease: 1
   canDecrease: 1
@@ -224,7 +223,7 @@ MonoBehaviour:
   - usePercentage: 0
     healthRange:
       _min: 0
-      _max: 50
+      _max: 200
     showChildObjects:
     - {fileID: 5122968307945499306}
     hideChildObjects: []
@@ -233,8 +232,8 @@ MonoBehaviour:
         m_Calls: []
   - usePercentage: 0
     healthRange:
-      _min: 50
-      _max: 100
+      _min: 200
+      _max: 500
     showChildObjects: []
     hideChildObjects:
     - {fileID: 5122968307945499306}
@@ -257,11 +256,11 @@ MonoBehaviour:
   - usePercentage: 0
     healthRange:
       _min: 0
-      _max: 100
+      _max: 500
     showChildObjects:
     - {fileID: 605640427859715219}
-    hideChildObjects:
     - {fileID: 3190597456253749558}
+    hideChildObjects: []
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -375,34 +374,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &8521557106864751558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1140783423760382998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 566f74c666e89a74a86199ff96b9d830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!208 &1099730228235275840
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1140783423760382998}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 1, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 1, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!114 &81240621046059835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -426,6 +397,51 @@ MonoBehaviour:
     colorPropertyName: _Color
     transparency: 0
     darkness: 0
+--- !u!1 &1209418141274752866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6885645705324214207}
+  - component: {fileID: 7921454591302259390}
+  m_Layer: 0
+  m_Name: building_obstacles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6885645705324214207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209418141274752866}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1382885560990937026}
+  m_Father: {fileID: 859371532247853159}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7921454591302259390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209418141274752866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 566f74c666e89a74a86199ff96b9d830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2367004105390926939
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,6 +804,54 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &6927913132598374345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1382885560990937026}
+  - component: {fileID: 6636243499944848811}
+  m_Layer: 0
+  m_Name: navmesh_obstacle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1382885560990937026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6927913132598374345}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6885645705324214207}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &6636243499944848811
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6927913132598374345}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.015, y: 0.805, z: 1.145}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.82, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &7201819581906560551
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,6 +862,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4245307192779141231}
   - component: {fileID: 5153527749700279270}
+  - component: {fileID: 1759098707941166167}
   m_Layer: 0
   m_Name: building_components
   m_TagString: Untagged
@@ -836,13 +901,40 @@ MonoBehaviour:
     x: 0
     y: 0
   code: building_worker_manager
-  workerPositions: []
+  workerPositions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   forcedTerrainAreas: []
   defineMaxAmount: 0
   maxWorkerAmount: 4
   showWorkerPositionsGizmos: 1
   showWorkersGizmos: 1
   showWorkersFoldout: 0
+--- !u!114 &1759098707941166167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7201819581906560551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a2d482a17f7eb4d8d66d37663a6728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  model: {fileID: 2813790821100639116}
+  constructionModifier:
+    initialHeight: -0.5
+    targetHeight: 0.08
+    speed:
+      value: 0.5
+  destructionModifier:
+    initialHeight: 0.08
+    targetHeight: -6
+    speed:
+      value: 10
 --- !u!1 &7305330404897307143
 GameObject:
   m_ObjectHideFlags: 0

@@ -155,8 +155,6 @@ GameObject:
   - component: {fileID: 5617979325754570204}
   - component: {fileID: 808164781288948208}
   - component: {fileID: 4730047803157914775}
-  - component: {fileID: 4013254993079656224}
-  - component: {fileID: 5357353265373728041}
   - component: {fileID: 3961379971458831800}
   m_Layer: 0
   m_Name: hydrogen_refinery
@@ -181,6 +179,7 @@ Transform:
   - {fileID: 9178812241999130651}
   - {fileID: 3489745475928745155}
   - {fileID: 8680899934076167534}
+  - {fileID: 7949372623213835593}
   - {fileID: 7140190711281024357}
   - {fileID: 4955941442420489061}
   - {fileID: 6466156256162935578}
@@ -238,13 +237,13 @@ MonoBehaviour:
   tabID:
     x: 0
     y: 2
-  maxHealth: 100
+  maxHealth: 500
   initialHealth: 1
   canIncrease: 1
   canDecrease: 1
   hoverHealthBarData:
     enabled: 1
-    offset: {x: 0, y: 4, z: 0}
+    offset: {x: 0, y: 2, z: 0}
     size: {x: 1, y: 1, z: 1}
     parent: {fileID: 0}
   hoverHealthBarY: 4
@@ -275,7 +274,7 @@ MonoBehaviour:
   - usePercentage: 0
     healthRange:
       _min: 0
-      _max: 50
+      _max: 200
     showChildObjects:
     - {fileID: 6464909357556668924}
     hideChildObjects: []
@@ -284,8 +283,8 @@ MonoBehaviour:
         m_Calls: []
   - usePercentage: 0
     healthRange:
-      _min: 50
-      _max: 100
+      _min: 200
+      _max: 500
     showChildObjects: []
     hideChildObjects:
     - {fileID: 6464909357556668924}
@@ -296,9 +295,10 @@ MonoBehaviour:
     usePercentage: 0
     healthRange:
       _min: 0
-      _max: 100
+      _max: 500
     showChildObjects: []
-    hideChildObjects: []
+    hideChildObjects:
+    - {fileID: 4477417067178914822}
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -308,11 +308,11 @@ MonoBehaviour:
   - usePercentage: 0
     healthRange:
       _min: 0
-      _max: 100
+      _max: 500
     showChildObjects:
     - {fileID: 4477417067178914822}
-    hideChildObjects:
     - {fileID: 5732197044461527519}
+    hideChildObjects: []
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -426,34 +426,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &4013254993079656224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2329421371023739309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 566f74c666e89a74a86199ff96b9d830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!208 &5357353265373728041
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2329421371023739309}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.5, y: 1, z: 0.5}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 1, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!114 &3961379971458831800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,6 +459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8680899934076167534}
   - component: {fileID: 4533441322224129260}
+  - component: {fileID: 653665913518375752}
   m_Layer: 0
   m_Name: building_components
   m_TagString: Untagged
@@ -525,13 +498,40 @@ MonoBehaviour:
     x: 0
     y: 0
   code: building_worker_manager
-  workerPositions: []
+  workerPositions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   forcedTerrainAreas: []
   defineMaxAmount: 0
   maxWorkerAmount: 4
   showWorkerPositionsGizmos: 1
   showWorkersGizmos: 1
   showWorkersFoldout: 0
+--- !u!114 &653665913518375752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3626874202573132053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a2d482a17f7eb4d8d66d37663a6728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  model: {fileID: 4955941442420489061}
+  constructionModifier:
+    initialHeight: -1
+    targetHeight: 0.05
+    speed:
+      value: 0.5
+  destructionModifier:
+    initialHeight: 0.05
+    targetHeight: -6
+    speed:
+      value: 10
 --- !u!1 &3997915635575776895
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,6 +713,51 @@ Transform:
   - {fileID: 7833958782731463696}
   m_Father: {fileID: 8746051118929903744}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5169497190488629597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7949372623213835593}
+  - component: {fileID: 7913070221743134605}
+  m_Layer: 0
+  m_Name: building_obstacles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7949372623213835593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5169497190488629597}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4452175509268987008}
+  m_Father: {fileID: 8746051118929903744}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7913070221743134605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5169497190488629597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 566f74c666e89a74a86199ff96b9d830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5662162016354436879
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,6 +933,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bd695ae341358449b7f1750e0dec6c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &7854513143480635017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4452175509268987008}
+  - component: {fileID: 1415016441414568356}
+  m_Layer: 0
+  m_Name: navmesh_obstacle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4452175509268987008
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7854513143480635017}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7949372623213835593}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &1415016441414568356
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7854513143480635017}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2, y: 1.28, z: 2.005}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.25, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &8391340575015482807
 GameObject:
   m_ObjectHideFlags: 0

@@ -1154,13 +1154,13 @@ MonoBehaviour:
     targetBuildings: 1
   canPlaceBuildings: 1
   creationTasks:
-  - taskTitle: 'Place Building: farm'
-    taskUI: {fileID: 11400000, guid: a5bbbeebeeca79a4faa11c2e541a66b6, type: 2}
+  - taskTitle: 'Place Building: green_house'
+    taskUI: {fileID: 11400000, guid: d4a141f937a05cf419652c96d720113d, type: 2}
     allowedFactionTypes:
       type: 0
       options: []
     requiredResources:
-    - type: {fileID: 11400000, guid: a3e40a20a0b603d4793ed1985b005aed, type: 2}
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
       value:
         amount: 50
         capacity: 0
@@ -1172,21 +1172,16 @@ MonoBehaviour:
     onComplete:
       m_PersistentCalls:
         m_Calls: []
-    prefabObject: {fileID: 1450904872675106399, guid: 64f36ec767cab8541a2deea57caf7508, type: 3}
-  - taskTitle: 'Place Building: barracks_level1'
-    taskUI: {fileID: 11400000, guid: 46a396e4af1513042967f6b3bf7ee501, type: 2}
+    prefabObject: {fileID: 7375525136053843564, guid: 2d506f4f4d7735046be00ba93a682ec0, type: 3}
+  - taskTitle: 'Place Building: habitat_pod_incubator'
+    taskUI: {fileID: 11400000, guid: 2ac5f83f77d237145990b1a4aadbf714, type: 2}
     allowedFactionTypes:
       type: 0
       options: []
     requiredResources:
     - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
       value:
-        amount: 145
-        capacity: 0
-      nonConsumable: 0
-    - type: {fileID: 11400000, guid: a3e40a20a0b603d4793ed1985b005aed, type: 2}
-      value:
-        amount: 120
+        amount: 50
         capacity: 0
       nonConsumable: 0
     factionEntityRequirements: []
@@ -1196,7 +1191,7 @@ MonoBehaviour:
     onComplete:
       m_PersistentCalls:
         m_Calls: []
-    prefabObject: {fileID: 1757281130161208, guid: 60bc8234d51b0664ca320a55465554cf, type: 3}
+    prefabObject: {fileID: 1140783423760382998, guid: 5906414b79f17094e89b392206092ea0, type: 3}
   - taskTitle: 'Place Building: town_center'
     taskUI: {fileID: 11400000, guid: a29734e6a85ed1148991ef99f3f39aea, type: 2}
     allowedFactionTypes:
@@ -1221,30 +1216,6 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     prefabObject: {fileID: 1536897726572502, guid: 13f9d44ccafc2424295533f2d2f4db93, type: 3}
-  - taskTitle: 'Place Building: granary'
-    taskUI: {fileID: 11400000, guid: 29a7c7fa16b84984bbc29b98f187f050, type: 2}
-    allowedFactionTypes:
-      type: 0
-      options: []
-    requiredResources:
-    - type: {fileID: 11400000, guid: a3e40a20a0b603d4793ed1985b005aed, type: 2}
-      value:
-        amount: 60
-        capacity: 0
-      nonConsumable: 0
-    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
-      value:
-        amount: 40
-        capacity: 0
-      nonConsumable: 0
-    factionEntityRequirements: []
-    missingRequirementData:
-      icon: {fileID: 0}
-      color: {r: 1, g: 0.29803923, b: 0.29803923, a: 1}
-    onComplete:
-      m_PersistentCalls:
-        m_Calls: []
-    prefabObject: {fileID: 1585572764893566, guid: 926d54fcb19f187488abed77ed850d00, type: 3}
   - taskTitle: 'Place Building: siege_factory'
     taskUI: {fileID: 11400000, guid: f13ebf07987210d45917b4c991c6824d, type: 2}
     allowedFactionTypes:
@@ -1269,15 +1240,15 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     prefabObject: {fileID: 2447908893683629377, guid: c729c4d0415d1654d9ee77b32ed239b6, type: 3}
-  - taskTitle: 'Place Building: temple'
-    taskUI: {fileID: 11400000, guid: 08e97aecfed345c4397d9c5e9054656b, type: 2}
+  - taskTitle: 'Place Building: Hydrogen Refinery'
+    taskUI: {fileID: 11400000, guid: b5c50f9ff698ba748a2fc40ab079ad20, type: 2}
     allowedFactionTypes:
       type: 0
       options: []
     requiredResources:
-    - type: {fileID: 11400000, guid: a3e40a20a0b603d4793ed1985b005aed, type: 2}
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
       value:
-        amount: 110
+        amount: 80
         capacity: 0
       nonConsumable: 0
     factionEntityRequirements: []
@@ -1287,21 +1258,16 @@ MonoBehaviour:
     onComplete:
       m_PersistentCalls:
         m_Calls: []
-    prefabObject: {fileID: 4173216077953317450, guid: 5fbc6690efe8ba64e846c61bed78feb1, type: 3}
-  - taskTitle: 'Place Building: university'
+    prefabObject: {fileID: 2329421371023739309, guid: cbc027662513fcc449c8e9b00cd82e97, type: 3}
+  - taskTitle: 'Place Building: Metalloy Miner'
     taskUI: {fileID: 11400000, guid: 498e582cc4d47b34381eedb5a7502a44, type: 2}
     allowedFactionTypes:
       type: 0
       options: []
     requiredResources:
-    - type: {fileID: 11400000, guid: 7fad61ec7c519fc48bda4c4cab2cb727, type: 2}
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
       value:
-        amount: 60
-        capacity: 0
-      nonConsumable: 0
-    - type: {fileID: 11400000, guid: a3e40a20a0b603d4793ed1985b005aed, type: 2}
-      value:
-        amount: 120
+        amount: 150
         capacity: 0
       nonConsumable: 0
     factionEntityRequirements: []
@@ -1311,7 +1277,7 @@ MonoBehaviour:
     onComplete:
       m_PersistentCalls:
         m_Calls: []
-    prefabObject: {fileID: 2349096675118822525, guid: 245a47f86e9ef224ba67fb7d7eb7ffe3, type: 3}
+    prefabObject: {fileID: 8737902238681965157, guid: 9029e82bb793b6644bbb6d68b8e69edd, type: 3}
   - taskTitle: 'Place Building: tower_level1'
     taskUI: {fileID: 11400000, guid: 7c6840b2004325247aadbc9cc96ac37b, type: 2}
     allowedFactionTypes:
@@ -1336,20 +1302,15 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     prefabObject: {fileID: 1061421805667030, guid: 178b713b32fccd247a42925c0d7dd041, type: 3}
-  - taskTitle: 'Place Building: house'
-    taskUI: {fileID: 11400000, guid: 9ba4ef3277e481c4b85c627203089dc3, type: 2}
+  - taskTitle: 'Place Building: Living Space'
+    taskUI: {fileID: 11400000, guid: 34c9fef1f44e1f641afc4e739933d191, type: 2}
     allowedFactionTypes:
       type: 0
       options: []
     requiredResources:
-    - type: {fileID: 11400000, guid: a3e40a20a0b603d4793ed1985b005aed, type: 2}
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
       value:
-        amount: 60
-        capacity: 0
-      nonConsumable: 0
-    - type: {fileID: 11400000, guid: 7fad61ec7c519fc48bda4c4cab2cb727, type: 2}
-      value:
-        amount: 40
+        amount: 50
         capacity: 0
       nonConsumable: 0
     factionEntityRequirements: []
@@ -1359,7 +1320,7 @@ MonoBehaviour:
     onComplete:
       m_PersistentCalls:
         m_Calls: []
-    prefabObject: {fileID: 7708895771794036253, guid: 763ab939493f03c46b113374e1a166f7, type: 3}
+    prefabObject: {fileID: 9022547986827669574, guid: 03d0ee8c9c75eb2458c2c466ce19112c, type: 3}
   - taskTitle: 'Place Building: command_center'
     taskUI: {fileID: 11400000, guid: 504319dc3c54343449430dfa633abce6, type: 2}
     allowedFactionTypes:
@@ -1384,6 +1345,63 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     prefabObject: {fileID: 4331118452787961487, guid: 4998291b11f43f947838aa277cf89a05, type: 3}
+  - taskTitle: 'Place Building: Orbium Miner'
+    taskUI: {fileID: 11400000, guid: 6a5cdf1d6e414264db9bf272b6dc7b30, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 80
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 1, g: 0.29803923, b: 0.29803923, a: 1}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 4861669884544116532, guid: 3824cad28f163fb45b81ceb03b76ba4a, type: 3}
+  - taskTitle: 'Place Building: Power Plant'
+    taskUI: {fileID: 11400000, guid: f7d8bbb401e44b847a3bf00a8dfb2c87, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 100
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 1, g: 0.29803923, b: 0.29803923, a: 1}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 341889700706378017, guid: 782af85dec6035846b1b68df6585e1f3, type: 3}
+  - taskTitle: 'Place Building: Vehicle Factory'
+    taskUI: {fileID: 11400000, guid: bdf4b31c41855414184ffb407e7e1791, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 200
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 1, g: 0.29803923, b: 0.29803923, a: 1}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 3903463090762688296, guid: 2ca5b9d59358a8443bef47fe8ea06828, type: 3}
   upgradeTargetCreationTasks:
   - taskTitle: 'Task 0: barracks_level2'
     taskUI: {fileID: 11400000, guid: 349d82fd19db2144e94bf3f16759f604, type: 2}
