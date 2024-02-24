@@ -238,7 +238,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 82670770385339485}
-  - {fileID: 4356255850397369118}
   - {fileID: 2441526140499873127}
   m_Father: {fileID: 4698221654309379065}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -256,7 +255,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionColliders:
   - {fileID: 177345634298802261}
-  - {fileID: 7912337452056446377}
   isActive: 1
   selectOwnerOnly: 0
   selectionAudio:
@@ -422,11 +420,7 @@ MonoBehaviour:
   allowedResourceTypes:
     type: 1
     options:
-    - {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
     - {fileID: 11400000, guid: 119a6a64d4d2f574bb77e87ad11efd72, type: 2}
-    - {fileID: 11400000, guid: 7fad61ec7c519fc48bda4c4cab2cb727, type: 2}
-    - {fileID: 11400000, guid: a3e40a20a0b603d4793ed1985b005aed, type: 2}
-    - {fileID: 11400000, guid: a3e40a20a0b603d4793ed1985b005aed, type: 2}
   requireDropOffPosition: 1
   dropOffPosition: {fileID: 5117826126572050261}
   forcedTerrainAreas: []
@@ -538,78 +532,12 @@ Transform:
   m_GameObject: {fileID: 5066563824447462538}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 3.21}
+  m_LocalPosition: {x: 0, y: 2.207, z: 2.148}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4698221654309379065}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7649828427533091230
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4356255850397369118}
-  - component: {fileID: 3934683176074374588}
-  - component: {fileID: 7912337452056446377}
-  m_Layer: 0
-  m_Name: selection_collider (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4356255850397369118
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7649828427533091230}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1071356459817566052}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3934683176074374588
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7649828427533091230}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.6290221, y: 1.6876693, z: 2.5556405}
-  m_Center: {x: -0.1466167, y: 2.8847392, z: 0.093834996}
---- !u!114 &7912337452056446377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7649828427533091230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bd695ae341358449b7f1750e0dec6c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7764814157026617138
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,7 +554,7 @@ GameObject:
   - component: {fileID: 5393992753614573854}
   - component: {fileID: 1394572699439025807}
   m_Layer: 0
-  m_Name: warehouse
+  m_Name: warehouse_orbium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -656,6 +584,7 @@ Transform:
   - {fileID: 5507873523754729517}
   - {fileID: 6749009120485122446}
   - {fileID: 5117826126572050261}
+  - {fileID: 8762646322599679948}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3988662682929767741
@@ -673,13 +602,13 @@ MonoBehaviour:
   tabID:
     x: 0
     y: 0
-  _name: Warehouse
-  code: warehouse
+  _name: Warehouse Orbium
+  code: warehouse_orbium
   category: resource_building
   description: Warehouse
   icon: {fileID: 21300000, guid: d09bd80212b4fe04ca57cad03e1955e3, type: 3}
   radius: 2.53
-  model: {fileID: 7788535803480962915}
+  model: {fileID: 6493345103435389192}
   isIdle: 0
   isMainEntity: 0
   isFactionLocked: 0
@@ -709,7 +638,7 @@ MonoBehaviour:
   tabID:
     x: 0
     y: 2
-  maxHealth: 100
+  maxHealth: 500
   initialHealth: 1
   canIncrease: 1
   canDecrease: 1
@@ -746,7 +675,7 @@ MonoBehaviour:
   - usePercentage: 0
     healthRange:
       _min: 0
-      _max: 50
+      _max: 200
     showChildObjects:
     - {fileID: 5504660830579288779}
     hideChildObjects: []
@@ -755,8 +684,8 @@ MonoBehaviour:
         m_Calls: []
   - usePercentage: 0
     healthRange:
-      _min: 50
-      _max: 100
+      _min: 200
+      _max: 500
     showChildObjects: []
     hideChildObjects:
     - {fileID: 5504660830579288779}
@@ -767,7 +696,7 @@ MonoBehaviour:
     usePercentage: 0
     healthRange:
       _min: 0
-      _max: 100
+      _max: 500
     showChildObjects: []
     hideChildObjects: []
     triggerEvent:
@@ -779,11 +708,11 @@ MonoBehaviour:
   - usePercentage: 0
     healthRange:
       _min: 0
-      _max: 100
+      _max: 500
     showChildObjects:
     - {fileID: 1203605915398441635}
     hideChildObjects:
-    - {fileID: 7788535803480962915}
+    - {fileID: 6493345103435389192}
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -793,7 +722,7 @@ MonoBehaviour:
       _min: 0
       _max: 0
     showChildObjects:
-    - {fileID: 7788535803480962915}
+    - {fileID: 6493345103435389192}
     hideChildObjects:
     - {fileID: 1203605915398441635}
     triggerEvent:
@@ -1064,6 +993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Warehouse-Orbium
       objectReference: {fileID: 0}
+    - target: {fileID: 5151278434925839486, guid: 8434ad2f497419649bff7b71c3cd9a29, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5491810842323377860, guid: 8434ad2f497419649bff7b71c3cd9a29, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -1126,6 +1059,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5491810842323377860, guid: 8434ad2f497419649bff7b71c3cd9a29, type: 3}
   m_PrefabInstance: {fileID: 2117248754391932278}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6493345103435389192 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5151278434925839486, guid: 8434ad2f497419649bff7b71c3cd9a29, type: 3}
+  m_PrefabInstance: {fileID: 2117248754391932278}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3128722448942789405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1137,6 +1075,10 @@ PrefabInstance:
     - target: {fileID: 5151278434925839486, guid: 99e649b648e1ca34892a522bbc65c96e, type: 3}
       propertyPath: m_Name
       value: Warehouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 5151278434925839486, guid: 99e649b648e1ca34892a522bbc65c96e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5491810842323377860, guid: 99e649b648e1ca34892a522bbc65c96e, type: 3}
       propertyPath: m_LocalScale.x
@@ -1198,11 +1140,6 @@ PrefabInstance:
 --- !u!4 &7448285970552892889 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5491810842323377860, guid: 99e649b648e1ca34892a522bbc65c96e, type: 3}
-  m_PrefabInstance: {fileID: 3128722448942789405}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7788535803480962915 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5151278434925839486, guid: 99e649b648e1ca34892a522bbc65c96e, type: 3}
   m_PrefabInstance: {fileID: 3128722448942789405}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5503579069961074365
@@ -1288,6 +1225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Warehouse-Metal
       objectReference: {fileID: 0}
+    - target: {fileID: 5151278434925839486, guid: 99e649b648e1ca34892a522bbc65c96e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5491810842323377860, guid: 99e649b648e1ca34892a522bbc65c96e, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -1362,6 +1303,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Warehouse-Hydrogen
       objectReference: {fileID: 0}
+    - target: {fileID: 5151278434925839486, guid: 61bbca272c5e31649bb8350e853edef0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5491810842323377860, guid: 61bbca272c5e31649bb8350e853edef0, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -1423,4 +1368,78 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5491810842323377860, guid: 61bbca272c5e31649bb8350e853edef0, type: 3}
   m_PrefabInstance: {fileID: 5931178469489531245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8203083686970251532
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4698221654309379065}
+    m_Modifications:
+    - target: {fileID: 597880620420828864, guid: e0abe72fc1cd28145835aff42b95f87a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 597880620420828864, guid: e0abe72fc1cd28145835aff42b95f87a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 597880620420828864, guid: e0abe72fc1cd28145835aff42b95f87a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 597880620420828864, guid: e0abe72fc1cd28145835aff42b95f87a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.468
+      objectReference: {fileID: 0}
+    - target: {fileID: 597880620420828864, guid: e0abe72fc1cd28145835aff42b95f87a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 597880620420828864, guid: e0abe72fc1cd28145835aff42b95f87a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.267
+      objectReference: {fileID: 0}
+    - target: {fileID: 597880620420828864, guid: e0abe72fc1cd28145835aff42b95f87a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 597880620420828864, guid: e0abe72fc1cd28145835aff42b95f87a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 597880620420828864, guid: e0abe72fc1cd28145835aff42b95f87a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 597880620420828864, guid: e0abe72fc1cd28145835aff42b95f87a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 597880620420828864, guid: e0abe72fc1cd28145835aff42b95f87a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 597880620420828864, guid: e0abe72fc1cd28145835aff42b95f87a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 597880620420828864, guid: e0abe72fc1cd28145835aff42b95f87a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4621033422624116875, guid: e0abe72fc1cd28145835aff42b95f87a, type: 3}
+      propertyPath: m_Name
+      value: WarehouseTug-Orbium
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0abe72fc1cd28145835aff42b95f87a, type: 3}
+--- !u!4 &8762646322599679948 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 597880620420828864, guid: e0abe72fc1cd28145835aff42b95f87a, type: 3}
+  m_PrefabInstance: {fileID: 8203083686970251532}
   m_PrefabAsset: {fileID: 0}

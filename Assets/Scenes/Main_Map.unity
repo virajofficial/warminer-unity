@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1033395597}
-  m_IndirectSpecularColor: {r: 0.18383625, g: 0.22854853, b: 0.30061638, a: 1}
+  m_IndirectSpecularColor: {r: 0.18383567, g: 0.22854798, b: 0.30061546, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 27786e7d831b18a45b5d71b574143d20, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: af14a03ee2e8c314790a0ce94d6d317c, type: 2}
 --- !u!1 &863590
 GameObject:
   m_ObjectHideFlags: 0
@@ -12587,7 +12587,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1330256673885430657, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4698221654309379065, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12631,7 +12631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7764814157026617138, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
       propertyPath: m_Name
-      value: warehouse_1
+      value: warehouse_hydrogen_1
       objectReference: {fileID: 0}
     - target: {fileID: 7764814157026617138, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
       propertyPath: m_IsActive
@@ -56747,7 +56747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1330256673885430657, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 3988662682929767741, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
       propertyPath: icon
@@ -56795,7 +56795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7764814157026617138, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
       propertyPath: m_Name
-      value: warehouse_0
+      value: warehouse_hydrogen_0
       objectReference: {fileID: 0}
     - target: {fileID: 7764814157026617138, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
       propertyPath: m_IsActive
@@ -86296,6 +86296,10 @@ PrefabInstance:
     - target: {fileID: 6435274446933060292, guid: b90ba82cdc537dc499cf7d24558805e4, type: 3}
       propertyPath: m_Name
       value: walkable_tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435274446933060292, guid: b90ba82cdc537dc499cf7d24558805e4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6435274446933060293, guid: b90ba82cdc537dc499cf7d24558805e4, type: 3}
       propertyPath: m_RootOrder
@@ -125372,7 +125376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1330256673885430657, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4698221654309379065, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -125416,7 +125420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7764814157026617138, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
       propertyPath: m_Name
-      value: warehouse_3
+      value: warehouse_hydrogen_3
       objectReference: {fileID: 0}
     - target: {fileID: 7764814157026617138, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
       propertyPath: m_IsActive
@@ -185937,7 +185941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1330256673885430657, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
       propertyPath: initialHealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4698221654309379065, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -185981,7 +185985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7764814157026617138, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
       propertyPath: m_Name
-      value: warehouse_2
+      value: warehouse_hydrogen_2
       objectReference: {fileID: 0}
     - target: {fileID: 7764814157026617138, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
       propertyPath: m_IsActive
