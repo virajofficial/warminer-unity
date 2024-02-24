@@ -83,6 +83,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &833445617208314264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 323041603767429378}
+  m_Layer: 0
+  m_Name: vehicle_spawn_position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &323041603767429378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833445617208314264}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 4.76}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7870710429193161495}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1625800824120955103
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,6 +271,7 @@ GameObject:
   - component: {fileID: 1829630821209284028}
   - component: {fileID: 7393397204812492107}
   - component: {fileID: 4924340032333579488}
+  - component: {fileID: 1941453434646600498}
   m_Layer: 0
   m_Name: vehicle_factory
   m_TagString: Untagged
@@ -268,6 +300,7 @@ Transform:
   - {fileID: 4623098672737334729}
   - {fileID: 3178847468074230880}
   - {fileID: 5266573053349492631}
+  - {fileID: 323041603767429378}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6327674239987805319
@@ -290,7 +323,7 @@ MonoBehaviour:
   category: military_building
   description: Vehicle Factory
   icon: {fileID: 21300000, guid: 2841971ff2a90f5438f7f05ee1636c86, type: 3}
-  radius: 1.95
+  radius: 2.83
   model: {fileID: 5432285713719029619}
   isIdle: 0
   isMainEntity: 0
@@ -566,6 +599,19 @@ MonoBehaviour:
     colorPropertyName: _Color
     transparency: 0
     darkness: 0
+--- !u!114 &1941453434646600498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3903463090762688296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6873ac66dad55e8468bdf59e2a9eaeeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxCount: 6
 --- !u!1 &4611211939730211843
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,6 +924,7 @@ GameObject:
   - component: {fileID: 384700262900639889}
   - component: {fileID: 2189560223721644890}
   - component: {fileID: 4551737063723347417}
+  - component: {fileID: 6324134716797369814}
   m_Layer: 0
   m_Name: building_components
   m_TagString: Untagged
@@ -950,6 +997,171 @@ MonoBehaviour:
     targetHeight: -6
     speed:
       value: 10
+--- !u!114 &6324134716797369814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7995153051101595746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 024b174d8e0f7ee4790a0f68429f56ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  code: unit_creator
+  isActive: 1
+  tabID:
+    x: 0
+    y: 0
+  creationTasks:
+  - taskTitle: 'Create Unit: heavy_tank'
+    taskUI: {fileID: 11400000, guid: dad1149fd9102db4692c4d76ad6e9f05, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 50
+        capacity: 0
+      nonConsumable: 0
+    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
+      value:
+        amount: 3
+        capacity: 0
+      nonConsumable: 1
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 1, g: 0.2971698, b: 0.2971698, a: 1}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 8149950746151167398, guid: 03c4ac957fff36847a3f7e2f54607dd7, type: 3}
+    squadData:
+      enabled: 0
+      count: 3
+    limit: 0
+    maxAmount: 10
+  - taskTitle: 'Create Unit: spacecraft'
+    taskUI: {fileID: 11400000, guid: 37f8e2dcbf39a98458b29938fa29d146, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 50
+        capacity: 0
+      nonConsumable: 0
+    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
+      value:
+        amount: 3
+        capacity: 0
+      nonConsumable: 1
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 1, g: 0.2971698, b: 0.2971698, a: 1}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 5637529055079676105, guid: 3bcea68040f146a43905caf90cd043c8, type: 3}
+    squadData:
+      enabled: 0
+      count: 3
+    limit: 0
+    maxAmount: 10
+  - taskTitle: 'Create Unit: light_tank'
+    taskUI: {fileID: 11400000, guid: 4e9f7cbe32f83eb4ebd0480cfca93fb0, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 50
+        capacity: 0
+      nonConsumable: 0
+    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
+      value:
+        amount: 1
+        capacity: 0
+      nonConsumable: 1
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 1, g: 0.2971698, b: 0.2971698, a: 1}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 7591385298086722609, guid: 07f5e605d16e60647b77d857178aa411, type: 3}
+    squadData:
+      enabled: 0
+      count: 3
+    limit: 0
+    maxAmount: 10
+  - taskTitle: 'Create Unit: medium_tank'
+    taskUI: {fileID: 11400000, guid: cbe522cf74fb4f046a2b767a4d530378, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 50
+        capacity: 0
+      nonConsumable: 0
+    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
+      value:
+        amount: 1
+        capacity: 0
+      nonConsumable: 1
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 1, g: 0.2971698, b: 0.2971698, a: 1}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 4487705254894845659, guid: d1310f446ceae4445a46c450ebf9e6f8, type: 3}
+    squadData:
+      enabled: 0
+      count: 3
+    limit: 0
+    maxAmount: 10
+  - taskTitle: 'Create Unit: missile_launcher'
+    taskUI: {fileID: 11400000, guid: ee354160f67115749a9ff117992e210d, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 50
+        capacity: 0
+      nonConsumable: 0
+    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
+      value:
+        amount: 1
+        capacity: 0
+      nonConsumable: 1
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 1, g: 0.2971698, b: 0.2971698, a: 1}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 8874384479273625307, guid: d51da0d0d2cf32f4ab1a909795bea455, type: 3}
+    squadData:
+      enabled: 0
+      count: 3
+    limit: 0
+    maxAmount: 10
+  upgradeTargetCreationTasks: []
+  spawnTransform: {fileID: 323041603767429378}
 --- !u!1 &8480763137037529605
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,6 +1257,7 @@ MonoBehaviour:
   - {fileID: 4460931040188073863}
   isActive: 1
   selectOwnerOnly: 0
+  isSelected: 0
   selectionAudio:
     fetchType: 0
     items: []
@@ -1186,6 +1399,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222446956860786392, guid: 41d32e30c69890d4c9daa2d13483ae6d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331602227074689006, guid: 41d32e30c69890d4c9daa2d13483ae6d, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

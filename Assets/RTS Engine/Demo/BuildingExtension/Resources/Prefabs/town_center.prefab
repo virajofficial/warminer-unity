@@ -3349,6 +3349,7 @@ MonoBehaviour:
   allowedResourceTypes:
     type: 0
     options: []
+  amount: 0
   requireDropOffPosition: 1
   dropOffPosition: {fileID: 4388677435873184}
   forcedTerrainAreas:
