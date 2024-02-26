@@ -743,7 +743,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedUnit: {fileID: 9121764228796314777}
-  rigidbody: {fileID: 8629895251557718625}
+  renderer: {fileID: 4780147585119791204}
+  speedFactor: 100
 --- !u!1 &5746942123491454083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,6 +1227,11 @@ PrefabInstance:
 --- !u!4 &3162101892135702133 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3299484904343789488, guid: 4e92d30fefc79494da9227b7c51742da, type: 3}
+  m_PrefabInstance: {fileID: 443651708505690565}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &4780147585119791204 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4935474634318133665, guid: 4e92d30fefc79494da9227b7c51742da, type: 3}
   m_PrefabInstance: {fileID: 443651708505690565}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &7096400760810493876 stripped

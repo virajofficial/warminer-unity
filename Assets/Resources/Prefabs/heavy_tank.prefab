@@ -1295,6 +1295,7 @@ MonoBehaviour:
   - {fileID: 7849482699474370237}
   isActive: 1
   selectOwnerOnly: 0
+  isSelected: 0
   selectionAudio:
     fetchType: 0
     items:
@@ -1467,6 +1468,7 @@ GameObject:
   - component: {fileID: 8334650650077899298}
   - component: {fileID: -1900169126905540860}
   - component: {fileID: 7388301930703955612}
+  - component: {fileID: 6257621926199846938}
   m_Layer: 0
   m_Name: heavy_tank
   m_TagString: Untagged
@@ -1814,6 +1816,21 @@ MonoBehaviour:
     colorPropertyName: _Color
     transparency: 0
     darkness: 0
+--- !u!114 &6257621926199846938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8149950746151167398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92a7afe92672f904abb8870e64318ed4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedUnit: {fileID: 8107861649261106648}
+  renderer: {fileID: 4199418855356573309}
+  speedFactor: 100
 --- !u!1001 &4337607826211664577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1906,6 +1923,11 @@ Transform:
 --- !u!1 &742452684023338604 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3927138455602324653, guid: 6c21733cb0c0fae418328bf4e01b713d, type: 3}
+  m_PrefabInstance: {fileID: 4337607826211664577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &4199418855356573309 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 465298361652073660, guid: 6c21733cb0c0fae418328bf4e01b713d, type: 3}
   m_PrefabInstance: {fileID: 4337607826211664577}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &4959426211781552752 stripped
