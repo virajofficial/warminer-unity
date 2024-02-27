@@ -21,6 +21,10 @@ namespace RTSEngine.ResourceExtension
 
         [Space(), SerializeField, Tooltip("Pick what types of resources that a collector is allowed to drop off.")]
         private ResourceTypeTargetPicker allowedResourceTypes = new ResourceTypeTargetPicker();
+
+        [SerializeField]
+        private float amount;
+
         public bool CanDropResourceType(ResourceTypeInfo resourceType) => !resourceType.IsValid() || allowedResourceTypes.IsValidTarget(resourceType);
 
         [Space(), SerializeField, Tooltip("Require the drop off point to have a pre-defined fixed position for collectors to drop their resources at?")]
@@ -58,7 +62,7 @@ namespace RTSEngine.ResourceExtension
                     logger.LogError($"[DropOffTarget - {Entity.Code}] The 'Forced Terrain Areas' field must be either empty or populated with valid elements!");
                     return;
                 }
-
+                
                 dropOffPosition.position = addablePosition;
             }
             else if(requireDropOffPosition)

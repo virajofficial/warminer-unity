@@ -30,7 +30,7 @@ namespace RTSEngine.ResourceExtension
         public ResourceCapacityType CapacityType => capacityType;
 
         [SerializeField, Tooltip("Default starting amount/capacity of the resource for each faction in a game.")]
-        private ResourceTypeValue startingAmount = new ResourceTypeValue();
+        public ResourceTypeValue startingAmount = new ResourceTypeValue();
         public ResourceTypeValue StartingAmount => startingAmount;
 
         [SerializeField, Tooltip("UI icon of the resource.")]

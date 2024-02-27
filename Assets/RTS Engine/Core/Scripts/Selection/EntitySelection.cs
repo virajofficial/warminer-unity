@@ -63,6 +63,9 @@ namespace RTSEngine.Selection
         public bool CanSelect => isActive && !Entity.Health.IsDead && (!SelectOwnerOnly || RTSHelper.IsLocalPlayerFaction(Entity)) && extraSelectCondition;
         protected virtual bool extraSelectCondition => true;
 
+        [SerializeField]
+        private bool isSelected = false;
+
         public bool IsSelected { private set; get; }
 
         [SerializeField, Tooltip("Audio clip to play when the entity is selected.")]
@@ -156,6 +159,7 @@ namespace RTSEngine.Selection
             Entity.SelectionMarker?.Enable();
 
             IsSelected = true;
+            isSelected = true;
             RaiseSelected(args);
         }
 
@@ -164,6 +168,7 @@ namespace RTSEngine.Selection
             Entity.SelectionMarker?.Disable();
 
             IsSelected = false;
+            isSelected = false;
 
             RaiseDeselected(args);
         }

@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abf428716af4f8f438cb34c5c761450b, type: 3}
-  m_Name: set_target_movement
+  m_Name: create_unit_light_tank
   m_EditorClassIdentifier: 
   data:
-    code: set_target_movement
+    code: create_unit_light_tank
     enabled: 1
-    displayType: 2
-    icon: {fileID: 21300000, guid: a7442078edd58834ba01f9299cf1ccfd, type: 3}
-    panelCategory: 3
+    displayType: 1
+    icon: {fileID: 21300000, guid: 3f129cabb35ab4d45bd2fa4880196b4b, type: 3}
+    panelCategory: 1
     forceSlot: 1
     slotIndex: 0
     tooltipEnabled: 1
-    description: Set movement destination.
-    hideTooltipOnClick: 1
-    reloadTime: 0
+    description: Create Light Tank
+    hideTooltipOnClick: 0
+    reloadTime: 14
     cursor:
-      icon: {fileID: 21300000, guid: a7442078edd58834ba01f9299cf1ccfd, type: 3}
+      icon: {fileID: 0}
       texture: {fileID: 0}
-      hotspot: {x: 12, y: 9}
-    controlType: {fileID: 11400000, guid: 41ec5e17ef9682b44bfbf7c5526b51f0, type: 2}
+      hotspot: {x: 0, y: 0}
+    controlType: {fileID: 0}
