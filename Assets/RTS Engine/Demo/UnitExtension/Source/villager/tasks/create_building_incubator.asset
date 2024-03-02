@@ -16,7 +16,7 @@ MonoBehaviour:
     code: create_building_incubator
     enabled: 1
     displayType: 2
-    icon: {fileID: 21300000, guid: ed754c7e98976a44aa4d939c3a9e1d9f, type: 3}
+    icon: {fileID: 21300000, guid: 44d3014a000ed844b8a8b8060881cf3d, type: 3}
     panelCategory: 0
     forceSlot: 1
     slotIndex: 1

@@ -459,7 +459,7 @@ MonoBehaviour:
   code: medium_tank
   category: military_vehicle
   description: Medium Tank
-  icon: {fileID: 21300000, guid: 408a7fd2e0d595a4faa7e914419f774b, type: 3}
+  icon: {fileID: 21300000, guid: aa50ac49088bec54fa6038598d031f3a, type: 3}
   radius: 0.7
   model: {fileID: 7579745400578084110}
   isIdle: 0

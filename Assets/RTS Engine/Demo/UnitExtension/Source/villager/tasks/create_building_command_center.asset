@@ -16,7 +16,7 @@ MonoBehaviour:
     code: create_building_command_center
     enabled: 1
     displayType: 2
-    icon: {fileID: 21300000, guid: 42e13815d03e4814fab2ee1beb04d1c1, type: 3}
+    icon: {fileID: 21300000, guid: 6c6f7c4161d38f44985526cc7f067759, type: 3}
     panelCategory: 0
     forceSlot: 1
     slotIndex: 3

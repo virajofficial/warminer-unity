@@ -154,7 +154,7 @@ Transform:
   - {fileID: 2652629109135218184}
   - {fileID: 5190407514510449939}
   - {fileID: 4765655521860647476}
-  - {fileID: 5158104315413287874}
+  - {fileID: 5707474332503734287}
   - {fileID: 1769639086573292408}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -178,8 +178,8 @@ MonoBehaviour:
   category: resources
   description: Metalloy Deposit
   icon: {fileID: 21300000, guid: 695ff0c87bc7d7a4083d34de30ce454f, type: 3}
-  radius: 1.34
-  model: {fileID: 5539027488282118520}
+  radius: 3
+  model: {fileID: 8339814460277981048}
   isIdle: 0
   resourceType: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
   canCollect: 1
@@ -425,6 +425,7 @@ MonoBehaviour:
   - {fileID: 5249384727280624120}
   isActive: 1
   selectOwnerOnly: 0
+  isSelected: 0
   selectionAudio:
     fetchType: 0
     items: []
@@ -642,13 +643,13 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24b11fa136a501b47a950877c0f236ba, type: 3}
---- !u!4 &5158104315413287874 stripped
+--- !u!4 &5707474332503734287 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 8961007076529716581, guid: 24b11fa136a501b47a950877c0f236ba, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8429512911395067560, guid: 24b11fa136a501b47a950877c0f236ba, type: 3}
   m_PrefabInstance: {fileID: 4309558908920196775}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5539027488282118520 stripped
+--- !u!1 &8339814460277981048 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8579415400794613727, guid: 24b11fa136a501b47a950877c0f236ba, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5220333797304046047, guid: 24b11fa136a501b47a950877c0f236ba, type: 3}
   m_PrefabInstance: {fileID: 4309558908920196775}
   m_PrefabAsset: {fileID: 0}

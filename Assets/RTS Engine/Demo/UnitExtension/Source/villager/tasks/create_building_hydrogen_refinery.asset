@@ -16,7 +16,7 @@ MonoBehaviour:
     code: create_building_hydrogen-refinery
     enabled: 1
     displayType: 2
-    icon: {fileID: 21300000, guid: fd395689196893e4f9f6c66205a4ac7b, type: 3}
+    icon: {fileID: 21300000, guid: 22a6e5b9f10028341b4a517012d07afe, type: 3}
     panelCategory: 1
     forceSlot: 1
     slotIndex: 0
