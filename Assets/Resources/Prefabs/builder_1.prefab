@@ -538,7 +538,7 @@ MonoBehaviour:
   isActive: 1
   tabID:
     x: 1
-    y: 0
+    y: 1
   priority: 0
   requireIdleEntity: 1
   targetFinderData:
@@ -644,7 +644,175 @@ MonoBehaviour:
     onComplete:
       m_PersistentCalls:
         m_Calls: []
-    prefabObject: {fileID: 4331118452787961487, guid: 4998291b11f43f947838aa277cf89a05, type: 3}
+    prefabObject: {fileID: 4861669884544116532, guid: 3824cad28f163fb45b81ceb03b76ba4a, type: 3}
+  - taskTitle: 'Place Building: Metalloy Miner'
+    taskUI: {fileID: 11400000, guid: bcc5d0274e0843542abfb5e1078ac7c7, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
+      value:
+        amount: 1
+        capacity: 0
+      nonConsumable: 0
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 30
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 8737902238681965157, guid: 9029e82bb793b6644bbb6d68b8e69edd, type: 3}
+  - taskTitle: 'Place Building: Greenhouse'
+    taskUI: {fileID: 11400000, guid: d4a141f937a05cf419652c96d720113d, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
+      value:
+        amount: 1
+        capacity: 0
+      nonConsumable: 0
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 30
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 7375525136053843564, guid: 2d506f4f4d7735046be00ba93a682ec0, type: 3}
+  - taskTitle: 'Place Building: Living Space'
+    taskUI: {fileID: 11400000, guid: 34c9fef1f44e1f641afc4e739933d191, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
+      value:
+        amount: 1
+        capacity: 0
+      nonConsumable: 0
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 30
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 9022547986827669574, guid: 03d0ee8c9c75eb2458c2c466ce19112c, type: 3}
+  - taskTitle: 'Place Building: Incubator'
+    taskUI: {fileID: 11400000, guid: 2ac5f83f77d237145990b1a4aadbf714, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
+      value:
+        amount: 1
+        capacity: 0
+      nonConsumable: 0
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 30
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 1140783423760382998, guid: 5906414b79f17094e89b392206092ea0, type: 3}
+  - taskTitle: 'Place Building: Hydrogen Refinery'
+    taskUI: {fileID: 11400000, guid: b5c50f9ff698ba748a2fc40ab079ad20, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
+      value:
+        amount: 1
+        capacity: 0
+      nonConsumable: 0
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 30
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 2329421371023739309, guid: cbc027662513fcc449c8e9b00cd82e97, type: 3}
+  - taskTitle: 'Place Building: Power Plant'
+    taskUI: {fileID: 11400000, guid: f7d8bbb401e44b847a3bf00a8dfb2c87, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
+      value:
+        amount: 2
+        capacity: 0
+      nonConsumable: 0
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 50
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 341889700706378017, guid: 782af85dec6035846b1b68df6585e1f3, type: 3}
+  - taskTitle: 'Place Building: Vehicle Factory'
+    taskUI: {fileID: 11400000, guid: bdf4b31c41855414184ffb407e7e1791, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
+      value:
+        amount: 2
+        capacity: 0
+      nonConsumable: 0
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 50
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 3903463090762688296, guid: 2ca5b9d59358a8443bef47fe8ea06828, type: 3}
   upgradeTargetCreationTasks: []
   fetchConstructionAudioOnce: 0
   constructionAudio:

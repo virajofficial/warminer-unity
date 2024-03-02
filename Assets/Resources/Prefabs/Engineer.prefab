@@ -13,14 +13,13 @@ GameObject:
   - component: {fileID: 2600312446237077490}
   - component: {fileID: 6506047876477510351}
   - component: {fileID: 3238152476143829910}
-  - component: {fileID: 5646161086556607625}
   - component: {fileID: 6439651058222056010}
   - component: {fileID: 6740486820979810665}
   - component: {fileID: 234489397655311014}
   - component: {fileID: 7271101922432086516}
   - component: {fileID: 5253105817387126024}
   m_Layer: 0
-  m_Name: builder
+  m_Name: Engineer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,10 +61,10 @@ MonoBehaviour:
   tabID:
     x: 0
     y: 0
-  _name: Builder
-  code: builder
+  _name: Engineer
+  code: engineer
   category: civilian_unit,walking_unit,
-  description: Builder
+  description: Engineer
   icon: {fileID: 21300000, guid: a1979a94f3418ea44ae50388f4e42e95, type: 3}
   radius: 0.7
   model: {fileID: 6928085805898203522}
@@ -267,27 +266,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!95 &5646161086556607625
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938134673395143859}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4f28c54bfb24b3a489502c2758d6e46e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!195 &6439651058222056010
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -299,9 +277,9 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.4
   m_Speed: 10
-  m_Acceleration: 8
+  m_Acceleration: 20
   avoidancePriority: 50
-  m_AngularSpeed: 999
+  m_AngularSpeed: 300
   m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -346,7 +324,7 @@ MonoBehaviour:
   upgradeEffect:
     input: {fileID: 4369651267845739601, guid: c698b535c328a744f9cf0bfe99f05026, type: 3}
   upgrades:
-  - sourceComponentCode: unit_builder_component
+  - sourceComponentCode: tasks_queue
     upgradeTarget: {fileID: 667197928241164540, guid: fbf711e32d9d80d4cb049f2e0bf3c85b, type: 3}
     triggerUpgrades: []
 --- !u!114 &7271101922432086516
@@ -683,7 +661,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9020537651734093131}
-  - component: {fileID: 8032198419038280966}
   - component: {fileID: 4908297438373731592}
   - component: {fileID: 7192428129119390597}
   m_Layer: 0
@@ -708,112 +685,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 694315744938961301}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8032198419038280966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2969612829465518251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c1e885e8e7860a4f8cceb9aac61c68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  code: unit_builder_component
-  isActive: 1
-  tabID:
-    x: 1
-    y: 1
-  priority: 0
-  requireIdleEntity: 1
-  targetFinderData:
-    enabled: 1
-    reloadTime: 5
-    range: 20
-    idleOnly: 1
-    typePicker:
-      type: 0
-      options:
-        codes: []
-        categories: []
-      targetUnits: 1
-      targetBuildings: 1
-      targetResources: 1
-    center: {fileID: 0}
-  setTargetTaskUI: {fileID: 11400000, guid: fecc97456b0827948945bb64ab7b2fc5, type: 2}
-  orderAudio:
-    fetchType: 0
-    items:
-    - {fileID: 8300000, guid: eedde9a22b741494fb17e97dc5fd6c26, type: 3}
-    cooldown:
-      enabled: 1
-      defaultValueRange:
-        _min: 1
-        _max: 2
-  showTargetGizmo: 1
-  progressEnabledAudio:
-    fetchType: 0
-    items: []
-    cooldown:
-      enabled: 1
-      defaultValueRange:
-        _min: 1
-        _max: 2
-  progressOverrideController:
-    fetchType: 0
-    items:
-    - {fileID: 22100000, guid: 0d65d52f89506f2478245fffbeab4379, type: 2}
-  progressDuration: 1
-  progressMaxDistance: 0.5
-  inProgressObject: {fileID: 0}
-  sourceEffect:
-    input: {fileID: 0}
-  targetEffect:
-    input: {fileID: 0}
-  showProgressGizmo: 1
-  healthPerProgress: 15
-  timeMultiplier: 0.2
-  canConstruct: 1
-  constructionTargetPicker:
-    type: 0
-    options:
-      codes: []
-      categories: []
-    targetUnits: 1
-    targetBuildings: 1
-  canPlaceBuildings: 1
-  creationTasks:
-  - taskTitle: 'Place Building: command_center'
-    taskUI: {fileID: 11400000, guid: 504319dc3c54343449430dfa633abce6, type: 2}
-    allowedFactionTypes:
-      type: 0
-      options: []
-    requiredResources:
-    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
-      value:
-        amount: 50
-        capacity: 0
-      nonConsumable: 0
-    factionEntityRequirements: []
-    missingRequirementData:
-      icon: {fileID: 0}
-      color: {r: 0, g: 0, b: 0, a: 0}
-    onComplete:
-      m_PersistentCalls:
-        m_Calls: []
-    prefabObject: {fileID: 4331118452787961487, guid: 4998291b11f43f947838aa277cf89a05, type: 3}
-  upgradeTargetCreationTasks: []
-  fetchConstructionAudioOnce: 0
-  constructionAudio:
-    fetchType: 0
-    items:
-    - {fileID: 8300000, guid: 84d35472a5d8bad47a41c305d88ebfa0, type: 3}
-    cooldown:
-      enabled: 1
-      defaultValueRange:
-        _min: 1
-        _max: 2
 --- !u!114 &4908297438373731592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -891,7 +762,7 @@ MonoBehaviour:
     animatorOverrideController:
       fetchType: 0
       items:
-      - {fileID: 22100000, guid: 0d65d52f89506f2478245fffbeab4379, type: 2}
+      - {fileID: 22100000, guid: 072165d23dd31dc4bb80ddef505043d5, type: 2}
     enableObject: {fileID: 4014609082328428692}
     enableAudio:
       fetchType: 0
@@ -1117,8 +988,8 @@ MonoBehaviour:
   code: builder_movement
   isActive: 1
   tabID:
-    x: 0
-    y: 0
+    x: 1
+    y: 1
   priority: -1
   requireIdleEntity: 1
   targetFinderData:
@@ -1160,17 +1031,17 @@ MonoBehaviour:
   isMovementPending: 0
   startPosition: {x: 0, y: 0, z: 0}
   speed:
-    value: 10
+    value: 5
   acceleration:
-    value: 999
+    value: 5
   mvtAngularSpeed:
-    value: 999
+    value: 200
   canMoveRotate: 1
   minMoveAngle: 40
   canIdleRotate: 1
   smoothIdleRotation: 1
   idleAngularSpeed:
-    value: 999
+    value: 200
   mvtAudio:
     fetchType: 0
     items: []
@@ -1363,8 +1234,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6928085805898203522}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4f28c54bfb24b3a489502c2758d6e46e, type: 2}
+  m_Avatar: {fileID: 9000000, guid: a5c3dcfd22f5b844a8a26ddcf593514f, type: 3}
+  m_Controller: {fileID: 9100000, guid: d62e070f34169f84b99f109cad30fe75, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
