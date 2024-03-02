@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/RTS Engine/Demo/Scenes/demo_map/demo_map.unity
     guid: 70ccd3f32288ddd48acf5335588ccbad
+  - enabled: 1
+    path: Assets/RTS Engine/Modules/SaveSystem/Scenes/SavedGameLoader.unity
+    guid: 5515fc7abada18d45adaa60bc5867b00
   m_configObjects: {}

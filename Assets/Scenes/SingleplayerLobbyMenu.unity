@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3726,9 +3726,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameCode: 2023.0.4
   maps:
-  - sceneName: demo_map
-    name: Demo
-    description: demo
+  - sceneName: Main_Map
+    name: Chapter 1- Mars Inversion
+    description: War Minner Demo
     factionsAmount:
       _min: 2
       _max: 4
@@ -7628,11 +7628,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6544435117422553137, guid: 558259ade526d7c41b0205bb02f72527, type: 3}
       propertyPath: maps.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6544435117422553137, guid: 558259ade526d7c41b0205bb02f72527, type: 3}
       propertyPath: maps.Array.data[0].name
-      value: Demo Duplicate
+      value: Chapter 1- Mars Inversion
       objectReference: {fileID: 0}
     - target: {fileID: 6544435117422553137, guid: 558259ade526d7c41b0205bb02f72527, type: 3}
       propertyPath: maps.Array.data[1].name
@@ -7640,11 +7640,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6544435117422553137, guid: 558259ade526d7c41b0205bb02f72527, type: 3}
       propertyPath: maps.Array.data[0].sceneName
-      value: demo_map Duplicated
+      value: Main_Map
       objectReference: {fileID: 0}
     - target: {fileID: 6544435117422553137, guid: 558259ade526d7c41b0205bb02f72527, type: 3}
       propertyPath: maps.Array.data[1].sceneName
       value: demo_map
+      objectReference: {fileID: 0}
+    - target: {fileID: 6544435117422553137, guid: 558259ade526d7c41b0205bb02f72527, type: 3}
+      propertyPath: maps.Array.data[0].description
+      value: War Minner
       objectReference: {fileID: 0}
     - target: {fileID: 6544435117422553137, guid: 558259ade526d7c41b0205bb02f72527, type: 3}
       propertyPath: maps.Array.data[1].description
