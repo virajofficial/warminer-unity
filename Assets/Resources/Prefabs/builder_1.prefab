@@ -196,250 +196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8083c6726f780bf44ae59c7cee549d69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1617778448059059096
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6467886452604032450}
-  - component: {fileID: 722404651013834648}
-  m_Layer: 0
-  m_Name: unit_attack
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6467886452604032450
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1617778448059059096}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5485977154687377301}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &722404651013834648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1617778448059059096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d50f81b2617c564f8e5ed1cdaa4cb4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  code: light_tank_basic_attack
-  isActive: 1
-  tabID:
-    x: 0
-    y: 0
-  priority: 0
-  requireIdleEntity: 1
-  targetFinderData:
-    enabled: 1
-    reloadTime: 1
-    range: 15
-    idleOnly: 1
-    typePicker:
-      type: 0
-      options:
-        codes: []
-        categories: []
-      targetUnits: 1
-      targetBuildings: 1
-      targetResources: 1
-    center: {fileID: 0}
-  setTargetTaskUI: {fileID: 11400000, guid: 1acf9aaa95010f543a53822d6a4be155, type: 2}
-  orderAudio:
-    fetchType: 0
-    items: []
-    cooldown:
-      enabled: 1
-      defaultValueRange:
-        _min: 1
-        _max: 2
-  showTargetGizmo: 1
-  progressEnabledAudio:
-    fetchType: 0
-    items: []
-    cooldown:
-      enabled: 1
-      defaultValueRange:
-        _min: 1
-        _max: 2
-  progressOverrideController:
-    fetchType: 0
-    items:
-    - {fileID: 22100000, guid: cd92369e97bf29f4fb9fbcd04ab1a07a, type: 2}
-  progressDuration: 0
-  progressMaxDistance: 1
-  inProgressObject: {fileID: 0}
-  sourceEffect:
-    input: {fileID: 0}
-  targetEffect:
-    input: {fileID: 0}
-  showProgressGizmo: 1
-  isLocked: 0
-  revert: 1
-  engageOptions:
-    engageOnAssign: 1
-    engageWhenAttacked: 1
-    engageOnce: 0
-    engageFriendly: 0
-    autoIgnoreAngleLOS: 1
-    autoIgnoreObstacleLOS: 0
-  isAttackReady: 1
-  targetPicker:
-    type: 0
-    options:
-      codes: []
-      categories: []
-    targetUnits: 1
-    targetBuildings: 1
-  requireTarget: 0
-  allowMultipleTerrainAttacks: 0
-  terrainAttackActive: 0
-  reloadDuration: 1.5
-  delayTriggerEnabled: 0
-  attackIterationTriggered: 0
-  cooldown:
-    enabled: 0
-    defaultValueRange:
-      _min: 1
-      _max: 2
-  launcher:
-    useAttackObjects: 1
-    launchType: 1
-    sources:
-    - attackObject:
-        input: {fileID: 6702381321658208214, guid: 1336181cc978d0c4b87323ed7e931280, type: 3}
-      launchPosition: {fileID: 5033022959494509746}
-      launchRotationAngles: {x: 0, y: 0, z: 0}
-      preDelayTime: 0
-      postDelayTime: 0.5
-      launchDelayTime: 0.2
-      damageInDelay: 0
-      delayParentObject: {fileID: 5033022959494509746}
-      index: 0
-    attackIterationLaunchEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  damage:
-    enabled: 1
-    data:
-      unit: 14
-      building: 22
-      custom: []
-    areaAttackEnabled: 1
-    areaAttackData:
-    - range: 3
-      data:
-        unit: 14
-        building: 22
-        custom: []
-    - range: 6
-      data:
-        unit: 7
-        building: 11
-        custom: []
-    dotEnabled: 0
-    dotData:
-      infinite: 0
-      cycleDuration: 0
-      cycles: 0
-    hitEffects: []
-    resetDamageDealt: 0
-    damageDealtEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  weapon:
-    toggableObjects: []
-    toggleType: 0
-    updateRotation: 1
-    rotateInRangeOnly: 0
-    freezeRotationX: 0
-    freezeRotationY: 1
-    freezeRotationZ: 0
-    smoothRotation: 0
-    rotationDamping: 2
-    forceIdleRotation: 1
-    idleAngles: {x: 0, y: 0, z: 0}
-  lineOfSight:
-    enabled: 1
-    useWeaponObject: 0
-    angle: 40
-    obstacleLayerMask:
-      serializedVersion: 2
-      m_Bits: 512
-    ignoreRotationX: 0
-    ignoreRotationY: 1
-    ignoreRotationZ: 0
-  nextLaunchLogEnabled: 0
-  setTargetCooldownUIData:
-    icon: {fileID: 0}
-    color: {r: 1, g: 0, b: 0, a: 1}
-  switchTaskUI: {fileID: 0}
-  switchAttackCooldownUIData:
-    icon: {fileID: 0}
-    color: {r: 1, g: 0, b: 0, a: 1}
-  cancelTaskUI: {fileID: 0}
-  attackCompleteAudio:
-    fetchType: 0
-    items: []
-    cooldown:
-      enabled: 1
-      defaultValueRange:
-        _min: 1
-        _max: 2
-  attackRangeEnterEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  targetLockedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  completeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  showAttackIterationGizmos: 1
-  formation:
-    unitStoppingDistance:
-      _min: 3
-      _max: 10
-    unitEnableDistance: 9
-    buildingStoppingDistance:
-      _min: 3
-      _max: 10
-    noTargetStoppingDistance:
-      _min: 3
-      _max: 10
-    enforceMinStoppingDistance: 1
-    minStoppingDistance: 1
-    stopMovementOnTargetInRange: 1
-    updateMvtDistance: 2
-    movementFormation:
-      lastType: {fileID: 11400000, guid: 5abc4719d7c003f4ab588b6e8649f63e, type: 2}
-      type: {fileID: 11400000, guid: 5abc4719d7c003f4ab588b6e8649f63e, type: 2}
-      properties:
-        floatProperties:
-        - name: spacing
-          value: 0.2
-        intProperties: []
-  moveOnAttack: 0
-  followDistance: 15
-  attackMoveEnabled: 1
-  attackMoveTaskUI: {fileID: 0}
 --- !u!1 &2924104937729329278
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,6 +569,78 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     prefabObject: {fileID: 3903463090762688296, guid: 2ca5b9d59358a8443bef47fe8ea06828, type: 3}
+  - taskTitle: 'Place Building: Warehouse Hydrogen'
+    taskUI: {fileID: 11400000, guid: 912ac774b1d51e04ba93d6c203ab6b7d, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
+      value:
+        amount: 2
+        capacity: 0
+      nonConsumable: 0
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 50
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 7764814157026617138, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
+  - taskTitle: 'Place Building: Warehouse Orbium'
+    taskUI: {fileID: 11400000, guid: c76fada3475d2154da2320ab87def3c9, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
+      value:
+        amount: 2
+        capacity: 0
+      nonConsumable: 0
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 50
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 7764814157026617138, guid: a62e3c1faf0319045a31b435c5ca2d4e, type: 3}
+  - taskTitle: 'Place Building: Warehouse Metal'
+    taskUI: {fileID: 11400000, guid: f074ece2b09aca9438c9813299c7c655, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
+      value:
+        amount: 2
+        capacity: 0
+      nonConsumable: 0
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 50
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 7764814157026617138, guid: 30ceb5a2447557a4c9f6aac47dcf6a5d, type: 3}
   upgradeTargetCreationTasks: []
   fetchConstructionAudioOnce: 0
   constructionAudio:
@@ -967,7 +795,6 @@ Transform:
   - {fileID: 6507459033875327840}
   - {fileID: 4997514125577192483}
   - {fileID: 5192718024691756100}
-  - {fileID: 6467886452604032450}
   - {fileID: 2775000364567668687}
   - {fileID: 3799280282592855040}
   - {fileID: 6889713998931156699}
@@ -993,7 +820,7 @@ MonoBehaviour:
   code: builder_1
   category: resource_vehicle, vehicle_unit
   description: Builder Machine 1
-  icon: {fileID: 21300000, guid: 730974ba169e7ff4cac3b2661067f71d, type: 3}
+  icon: {fileID: 21300000, guid: 97d78f8f80a7a464fba2f32788a07639, type: 3}
   radius: 1
   model: {fileID: 2910677814243718363}
   isIdle: 0

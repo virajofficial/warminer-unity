@@ -669,6 +669,7 @@ MonoBehaviour:
   - {fileID: 3662798178743252549}
   isActive: 1
   selectOwnerOnly: 0
+  isSelected: 0
   selectionAudio:
     fetchType: 0
     items:
