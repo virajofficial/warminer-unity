@@ -52,6 +52,7 @@ MonoBehaviour:
   - {fileID: 1149683025073805509}
   isActive: 1
   selectOwnerOnly: 0
+  isSelected: 0
   selectionAudio:
     fetchType: 0
     items: []
@@ -207,7 +208,7 @@ MonoBehaviour:
   code: hydrogen_refinery
   category: resource_building
   description: hydrogen Refinery
-  icon: {fileID: 21300000, guid: 03bcb1aa9f96416498708650a0e54a87, type: 3}
+  icon: {fileID: 21300000, guid: 22a6e5b9f10028341b4a517012d07afe, type: 3}
   radius: 2.08
   model: {fileID: 5732197044461527519}
   isIdle: 0

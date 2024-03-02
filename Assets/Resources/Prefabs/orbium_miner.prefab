@@ -52,6 +52,7 @@ MonoBehaviour:
   - {fileID: 5381373998340148857}
   isActive: 1
   selectOwnerOnly: 0
+  isSelected: 0
   selectionAudio:
     fetchType: 0
     items: []
@@ -260,7 +261,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7027520596856375315}
+  - component: {fileID: 1675951402319179779}
   - component: {fileID: 6403569356962832015}
+  - component: {fileID: 1110385179241264981}
   - component: {fileID: 5128477408294737633}
   - component: {fileID: 6382587698635067593}
   - component: {fileID: 1155750385621959815}
@@ -295,6 +298,49 @@ Transform:
   - {fileID: 9052976245117393626}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1675951402319179779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4861669884544116532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5b607a7bf071c4c92eeab709cc4571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabID:
+    x: 0
+    y: 0
+  _name: Orbium Miner
+  code: orbium_miner
+  category: resource_building
+  description: entity_description
+  icon: {fileID: 21300000, guid: 45f21cff86dd5d54ba0c9458bd3b7ac8, type: 3}
+  radius: 2.2
+  model: {fileID: 8706239721885239249}
+  isIdle: 0
+  isMainEntity: 0
+  isFactionLocked: 0
+  initResources:
+  - type: {fileID: 11400000, guid: 119a6a64d4d2f574bb77e87ad11efd72, type: 2}
+    value:
+      amount: 20
+      capacity: 0
+    nonConsumable: 0
+  disableResources: []
+  coloredRenderers: []
+  resourceType: {fileID: 11400000, guid: 119a6a64d4d2f574bb77e87ad11efd72, type: 2}
+  autoCollect: 0
+  collectionAudio:
+    fetchType: 0
+    items: []
+    cooldown:
+      enabled: 1
+      defaultValueRange:
+        _min: 1
+        _max: 2
 --- !u!114 &6403569356962832015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,6 +377,75 @@ MonoBehaviour:
     materialID: 0
     transparency: 0
     darkness: 0
+--- !u!114 &1110385179241264981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4861669884544116532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb56912e7ea8b9c438fb681ee810adaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabID:
+    x: 0
+    y: 0
+  maxHealth: 500
+  initialHealth: 1
+  canIncrease: 1
+  canDecrease: 1
+  hoverHealthBarData:
+    enabled: 1
+    offset: {x: 0, y: 4, z: 0}
+    size: {x: 1, y: 1, z: 1}
+    parent: {fileID: 0}
+  hoverHealthBarY: 4
+  hitEffect:
+    input: {fileID: 0}
+  hitAudio:
+    fetchType: 0
+    items: []
+    cooldown:
+      enabled: 1
+      defaultValueRange:
+        _min: 1
+        _max: 2
+  destroyObject: 1
+  destroyObjectDelay: 0
+  destroyAward: []
+  destructionAudio:
+    fetchType: 0
+    items: []
+    cooldown:
+      enabled: 1
+      defaultValueRange:
+        _min: 1
+        _max: 2
+  destructionEffect:
+    input: {fileID: 0}
+  states: []
+  destroyState:
+    usePercentage: 0
+    healthRange:
+      _min: 0
+      _max: 100
+    showChildObjects: []
+    hideChildObjects: []
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  collectedState:
+    usePercentage: 0
+    healthRange:
+      _min: 0
+      _max: 100
+    showChildObjects: []
+    hideChildObjects: []
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!114 &5128477408294737633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,6 +859,7 @@ GameObject:
   - component: {fileID: 4627880652226485416}
   - component: {fileID: 1422601489738532278}
   - component: {fileID: 1732978583980948098}
+  - component: {fileID: 8060672941880264457}
   m_Layer: 0
   m_Name: building_components
   m_TagString: Untagged
@@ -816,6 +932,30 @@ MonoBehaviour:
     targetHeight: -6
     speed:
       value: 10
+--- !u!114 &8060672941880264457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6361676696711757997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2ba244131eb1cc47917ba3e9545913d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabID:
+    x: 0
+    y: 0
+  code: resource_worker_manager
+  workerPositions:
+  - {fileID: 0}
+  forcedTerrainAreas: []
+  defineMaxAmount: 0
+  maxWorkerAmount: 4
+  showWorkerPositionsGizmos: 1
+  showWorkersGizmos: 1
+  showWorkersFoldout: 0
 --- !u!1 &6831928848917316204
 GameObject:
   m_ObjectHideFlags: 0

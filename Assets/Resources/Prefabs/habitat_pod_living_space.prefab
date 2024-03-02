@@ -516,6 +516,7 @@ MonoBehaviour:
   - {fileID: 8789302896001229063}
   isActive: 1
   selectOwnerOnly: 0
+  isSelected: 0
   selectionAudio:
     fetchType: 0
     items: []
@@ -773,7 +774,7 @@ MonoBehaviour:
   code: habitat_pod_living_space
   category: resource_building
   description: Enclosed Living Space
-  icon: {fileID: 21300000, guid: c7ff081948d30864ca832367a369afd9, type: 3}
+  icon: {fileID: 21300000, guid: 586727cc07742ff4986805ececde8287, type: 3}
   radius: 1.2
   model: {fileID: 879982519449866650}
   isIdle: 0

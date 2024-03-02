@@ -538,6 +538,7 @@ MonoBehaviour:
   - {fileID: 7300903997832347552}
   isActive: 1
   selectOwnerOnly: 0
+  isSelected: 0
   selectionAudio:
     fetchType: 0
     items: []
@@ -647,7 +648,7 @@ MonoBehaviour:
   code: command_center
   category: civilian_building
   description: new_building_description
-  icon: {fileID: 21300000, guid: 42e13815d03e4814fab2ee1beb04d1c1, type: 3}
+  icon: {fileID: 21300000, guid: 6c6f7c4161d38f44985526cc7f067759, type: 3}
   radius: 5
   model: {fileID: 3488895002550489720}
   isIdle: 1
@@ -688,7 +689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tabID:
     x: 0
-    y: 2
+    y: 0
   maxHealth: 2500
   initialHealth: 1
   canIncrease: 1

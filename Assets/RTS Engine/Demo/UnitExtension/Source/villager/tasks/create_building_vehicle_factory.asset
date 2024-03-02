@@ -16,7 +16,7 @@ MonoBehaviour:
     code: create_building_vehicle_factory
     enabled: 1
     displayType: 2
-    icon: {fileID: 21300000, guid: de10f2225b75b06408ca8156d286eda2, type: 3}
+    icon: {fileID: 21300000, guid: 07d20d41cd8341d43947f7d4dc9f6848, type: 3}
     panelCategory: 2
     forceSlot: 0
     slotIndex: 0

@@ -109,7 +109,7 @@ MonoBehaviour:
   code: power_plant
   category: resource_building
   description: Power Plant
-  icon: {fileID: 21300000, guid: 81ae75148c2c5004694459c5923d57d6, type: 3}
+  icon: {fileID: 21300000, guid: fafaa29055758124797db7d7b344f6b4, type: 3}
   radius: 2.23
   model: {fileID: 5233912196600832632}
   isIdle: 0
@@ -763,6 +763,7 @@ MonoBehaviour:
   - {fileID: 3788978031852210743}
   isActive: 1
   selectOwnerOnly: 0
+  isSelected: 0
   selectionAudio:
     fetchType: 0
     items: []

@@ -259,6 +259,7 @@ MonoBehaviour:
   - {fileID: 7912337452056446377}
   isActive: 1
   selectOwnerOnly: 0
+  isSelected: 0
   selectionAudio:
     fetchType: 0
     items: []
@@ -427,6 +428,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 7fad61ec7c519fc48bda4c4cab2cb727, type: 2}
     - {fileID: 11400000, guid: a3e40a20a0b603d4793ed1985b005aed, type: 2}
     - {fileID: 11400000, guid: a3e40a20a0b603d4793ed1985b005aed, type: 2}
+  amount: 0
   requireDropOffPosition: 1
   dropOffPosition: {fileID: 5117826126572050261}
   forcedTerrainAreas: []
@@ -677,7 +679,7 @@ MonoBehaviour:
   code: warehouse
   category: resource_building
   description: Warehouse
-  icon: {fileID: 21300000, guid: d09bd80212b4fe04ca57cad03e1955e3, type: 3}
+  icon: {fileID: 21300000, guid: 68ffef65bf0f09143bda8fbf841dd3f9, type: 3}
   radius: 2.53
   model: {fileID: 7788535803480962915}
   isIdle: 0

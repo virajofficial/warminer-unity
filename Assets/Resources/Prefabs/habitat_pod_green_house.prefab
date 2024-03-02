@@ -210,6 +210,7 @@ MonoBehaviour:
   - {fileID: 2642834945229405078}
   isActive: 1
   selectOwnerOnly: 0
+  isSelected: 0
   selectionAudio:
     fetchType: 0
     items: []
@@ -776,7 +777,7 @@ MonoBehaviour:
   code: habitat_pod_green_house
   category: resource_building
   description: Green House
-  icon: {fileID: 21300000, guid: 3bdab9633cf502044bfe0f31278f5105, type: 3}
+  icon: {fileID: 21300000, guid: 3bf3cb559b9035049b679d8d081c7ffd, type: 3}
   radius: 1.2
   model: {fileID: 6537121100054089862}
   isIdle: 0

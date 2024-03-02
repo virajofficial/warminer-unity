@@ -459,7 +459,7 @@ MonoBehaviour:
   code: mech_factory
   category: military_building
   description: Mech Factory
-  icon: {fileID: 21300000, guid: 522124099f6dc8d4a86d26928f59990f, type: 3}
+  icon: {fileID: 21300000, guid: 0368d83c4d51e7c4c96862c216d17a28, type: 3}
   radius: 1.5
   model: {fileID: 3848096335916367479}
   isIdle: 0
@@ -886,6 +886,7 @@ MonoBehaviour:
   - {fileID: 7382555916732248829}
   isActive: 1
   selectOwnerOnly: 0
+  isSelected: 0
   selectionAudio:
     fetchType: 0
     items: []

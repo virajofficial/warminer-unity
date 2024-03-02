@@ -411,7 +411,7 @@ MonoBehaviour:
   code: hydrogen_refinery_unit
   category: resource_building
   description: new_unit_description
-  icon: {fileID: 21300000, guid: 2818fbc1c0bbf4540837553043781821, type: 3}
+  icon: {fileID: 21300000, guid: 22a6e5b9f10028341b4a517012d07afe, type: 3}
   radius: 0.7
   model: {fileID: 6770762282542262591}
   isIdle: 0
@@ -712,6 +712,7 @@ MonoBehaviour:
   - {fileID: 1472879100657224798}
   isActive: 1
   selectOwnerOnly: 0
+  isSelected: 0
   selectionAudio:
     fetchType: 0
     items: []

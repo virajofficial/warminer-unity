@@ -16,7 +16,7 @@ MonoBehaviour:
     code: create_building_living_space
     enabled: 1
     displayType: 2
-    icon: {fileID: 21300000, guid: dc39b5d4bccae7a4784e9c305a6f7cb5, type: 3}
+    icon: {fileID: 21300000, guid: 586727cc07742ff4986805ececde8287, type: 3}
     panelCategory: 0
     forceSlot: 1
     slotIndex: 2

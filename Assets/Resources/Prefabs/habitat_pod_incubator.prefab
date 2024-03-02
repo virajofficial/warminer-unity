@@ -52,6 +52,7 @@ MonoBehaviour:
   - {fileID: 6724775313420012162}
   isActive: 1
   selectOwnerOnly: 0
+  isSelected: 0
   selectionAudio:
     fetchType: 0
     items: []
@@ -154,7 +155,7 @@ MonoBehaviour:
   code: habitat_pod_incubator
   category: resource_building
   description: Incubator
-  icon: {fileID: 21300000, guid: c38398060dce1994490e2cdd2c5b07c5, type: 3}
+  icon: {fileID: 21300000, guid: 44d3014a000ed844b8a8b8060881cf3d, type: 3}
   radius: 1.26
   model: {fileID: 3190597456253749558}
   isIdle: 0
