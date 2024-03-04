@@ -495,7 +495,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1337869911810394649}
   - component: {fileID: 513102400661272283}
-  - component: {fileID: 6710503137290037614}
   m_Layer: 0
   m_Name: building_components
   m_TagString: Untagged
@@ -545,27 +544,6 @@ MonoBehaviour:
   showWorkerPositionsGizmos: 1
   showWorkersGizmos: 1
   showWorkersFoldout: 0
---- !u!114 &6710503137290037614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3401123582047050878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b70a05e14e072574fa5d4773e9ade9f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  code: drop_off_target
-  allowedResourceTypes:
-    type: 1
-    options:
-    - {fileID: 11400000, guid: 119a6a64d4d2f574bb77e87ad11efd72, type: 2}
-  amount: 0
-  requireDropOffPosition: 1
-  dropOffPosition: {fileID: 5117826126572050261}
-  forcedTerrainAreas: []
 --- !u!1 &3834857540293167557
 GameObject:
   m_ObjectHideFlags: 0

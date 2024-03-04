@@ -40,6 +40,7 @@ namespace RTSEngine.EntityComponent
 
         [SerializeField, Tooltip("The lower the Movement Priority value is, the more units of this type will be prioritized when generating the path destinations.")]
         private int movementPriority = 0;
+
         /// <summary>
         /// The lower the Movement Priority value is, the more units of this type will be prioritized when generating the path destinations.
         /// This can be used to have units pick path destinations in front of other units with higher Movement Priority values in the case of row-based formation movement.
@@ -55,6 +56,8 @@ namespace RTSEngine.EntityComponent
         public Vector3 StartPosition => HasTarget ? startPosition : Unit.transform.position;
         public override bool HasTarget => isMovementPending || isMoving;
         public override bool IsIdle => !isMoving;
+
+        
 
         /// <summary>
         /// An instance that extends the IMovementController interface which is responsible for computing the navigation path and moving the unit.

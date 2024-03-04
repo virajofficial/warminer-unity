@@ -11,6 +11,7 @@ using RTSEngine.Logging;
 using RTSEngine.UnitExtension;
 using RTSEngine.Model;
 using RTSEngine.Faction;
+using RTSEngine.Health;
 
 namespace RTSEngine.EntityComponent
 {
@@ -33,6 +34,8 @@ namespace RTSEngine.EntityComponent
 
         [SerializeField, Tooltip("Define the faction entities that can be used as drop off points.")]
         private FactionEntityTargetPicker targetPicker = new FactionEntityTargetPicker();
+
+        public IFactionEntity TargetPicker { set; get; }
 
         [SerializeField, Tooltip("Only allow the unit to drop off resources at points within a certain distance from the resource?")]
         private bool maxDropOffDistanceEnabled = false;
@@ -112,6 +115,7 @@ namespace RTSEngine.EntityComponent
             // DropOffSource does not search for targets but simply tracks DropOffTarget instances being added and removed to get a target
             if(targetFinder.IsValid())
                 targetFinder.IsActive = false;
+
 
             Unit.FactionUpdateStart += HandleFactionUpdateStart;
             Unit.FactionUpdateComplete += HandleFactionUpdateComplete;
@@ -221,6 +225,7 @@ namespace RTSEngine.EntityComponent
         public override ErrorMessage IsTargetValid(SetTargetInputData data)
         {
             TargetData<IFactionEntity> potentialTarget = data.target;
+            //TargetPicker = potentialTarget.instance;
 
             if (!potentialTarget.instance.IsValid() || !potentialTarget.instance.CanLaunchTask)
                 return ErrorMessage.invalid;
@@ -434,6 +439,18 @@ namespace RTSEngine.EntityComponent
                     }
 
                     globalEvent.RaiseUnitResourceDropOffCompleteGlobal(Unit, new ResourceAmountEventArgs(nextInput));
+
+                    /*if (Code == "builder_DropOffSource_me")
+                    {
+                        if(resourceType.DisplayName == "Orbium")
+                        {
+                            Debug.Log("Resource Unloaded....");
+                            Debug.Break();
+                        }
+                
+                    }*/
+                    Target.instance.DropOffTarget.transform.parent.GetComponent<ResourceHealth>().resourceUnloaded(nextInput.value.amount, nextInput.type.DisplayName);
+
                 }
 
             Unit.AnimatorController?.ResetOverrideController();
@@ -453,6 +470,9 @@ namespace RTSEngine.EntityComponent
             {
                 Unit.CollectorComponent.SetTarget(Unit.CollectorComponent.LastTarget, false);
             }
+
+            
+            
         }
 
         public void Cancel()

@@ -104,11 +104,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5753921ccbe21134dad27bb458d7cfb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  code: movement
+  code: movement_builder
   isActive: 1
   tabID:
-    x: 1
-    y: 2
+    x: 0
+    y: 0
   priority: -1
   requireIdleEntity: 1
   targetFinderData:
@@ -196,6 +196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8083c6726f780bf44ae59c7cee549d69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBuilder: 0
+  isAgentIdle: 0
 --- !u!1 &2924104937729329278
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,78 +571,6 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     prefabObject: {fileID: 3903463090762688296, guid: 2ca5b9d59358a8443bef47fe8ea06828, type: 3}
-  - taskTitle: 'Place Building: Warehouse Hydrogen'
-    taskUI: {fileID: 11400000, guid: 912ac774b1d51e04ba93d6c203ab6b7d, type: 2}
-    allowedFactionTypes:
-      type: 0
-      options: []
-    requiredResources:
-    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
-      value:
-        amount: 2
-        capacity: 0
-      nonConsumable: 0
-    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
-      value:
-        amount: 50
-        capacity: 0
-      nonConsumable: 0
-    factionEntityRequirements: []
-    missingRequirementData:
-      icon: {fileID: 0}
-      color: {r: 0, g: 0, b: 0, a: 0}
-    onComplete:
-      m_PersistentCalls:
-        m_Calls: []
-    prefabObject: {fileID: 7764814157026617138, guid: d211bd683a48f3640bedc6e030007fc5, type: 3}
-  - taskTitle: 'Place Building: Warehouse Orbium'
-    taskUI: {fileID: 11400000, guid: c76fada3475d2154da2320ab87def3c9, type: 2}
-    allowedFactionTypes:
-      type: 0
-      options: []
-    requiredResources:
-    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
-      value:
-        amount: 2
-        capacity: 0
-      nonConsumable: 0
-    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
-      value:
-        amount: 50
-        capacity: 0
-      nonConsumable: 0
-    factionEntityRequirements: []
-    missingRequirementData:
-      icon: {fileID: 0}
-      color: {r: 0, g: 0, b: 0, a: 0}
-    onComplete:
-      m_PersistentCalls:
-        m_Calls: []
-    prefabObject: {fileID: 7764814157026617138, guid: a62e3c1faf0319045a31b435c5ca2d4e, type: 3}
-  - taskTitle: 'Place Building: Warehouse Metal'
-    taskUI: {fileID: 11400000, guid: f074ece2b09aca9438c9813299c7c655, type: 2}
-    allowedFactionTypes:
-      type: 0
-      options: []
-    requiredResources:
-    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
-      value:
-        amount: 2
-        capacity: 0
-      nonConsumable: 0
-    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
-      value:
-        amount: 50
-        capacity: 0
-      nonConsumable: 0
-    factionEntityRequirements: []
-    missingRequirementData:
-      icon: {fileID: 0}
-      color: {r: 0, g: 0, b: 0, a: 0}
-    onComplete:
-      m_PersistentCalls:
-        m_Calls: []
-    prefabObject: {fileID: 7764814157026617138, guid: 30ceb5a2447557a4c9f6aac47dcf6a5d, type: 3}
   upgradeTargetCreationTasks: []
   fetchConstructionAudioOnce: 0
   constructionAudio:

@@ -25,6 +25,10 @@ namespace RTSEngine.Entities
         private bool isMainEntity = false;
         public bool IsMainEntity => isMainEntity;
 
+        //[SerializeField, Tooltip("Faction ID")]
+        //private int factionIndexID = -1;
+        //public int FactionIndexID => factionIndexID;
+
         [SerializeField, Tooltip("Can the faction be changed during the game?")]
         private bool isFactionLocked = false;
         public bool IsFactionLocked => isFactionLocked;

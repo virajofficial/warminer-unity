@@ -5,7 +5,8 @@ using UnityEngine;
 public class AITugController : MonoBehaviour
 {
     public Transform targetTransform;
-    public Camera testCam;
+    public Transform dockTransform;
+    public GameObject crate;
     Animator anim;
 
     [Header("Tug Parameters")]
@@ -25,6 +26,7 @@ public class AITugController : MonoBehaviour
     bool ismove;
     bool isstop;
     bool isTugRotated;
+    bool isTugReturned;
 
     private void Start()
     {
@@ -50,7 +52,9 @@ public class AITugController : MonoBehaviour
         ismove = false;
         isstop = false;
         isTugRotated = false;
+        isTugReturned = false;
         lerpPercent = 0f;
+        crate.SetActive(false);
         initialPos = transform.position;
     }
 
@@ -107,9 +111,22 @@ public class AITugController : MonoBehaviour
         {
             isFlying = false;
             tugStatus = TugStatus.TAKEOFF;
-            anim.ResetTrigger("stop"); 
-            TugInitialValues();
+            anim.ResetTrigger("stop");
+            if(isTugReturned)
+                TugInitialValues();
+            else
+                StartCoroutine(TugReturn());
         }
+    }
+
+    private IEnumerator TugReturn()
+    {
+        TugInitialValues();
+        targetTransform = dockTransform;
+        yield return new WaitForSeconds(1);
+        crate.SetActive(true);
+        isFlying = true;
+        isTugReturned = true;
     }
 
     private void TugRotate()

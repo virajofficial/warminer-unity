@@ -786,6 +786,82 @@ MonoBehaviour:
           _min: 0
           _max: 0
     loopProgressAudio: 0
+  - type: {fileID: 11400000, guid: 119a6a64d4d2f574bb77e87ad11efd72, type: 2}
+    orderAudio:
+      fetchType: 0
+      items:
+      - {fileID: 8300000, guid: 0a453aafc51d2fe4a8ce3404944ad086, type: 3}
+      cooldown:
+        enabled: 0
+        defaultValueRange:
+          _min: 1
+          _max: 2
+    amount: 1
+    animatorOverrideController:
+      fetchType: 0
+      items:
+      - {fileID: 22100000, guid: 072165d23dd31dc4bb80ddef505043d5, type: 2}
+    enableObject: {fileID: 4014609082328428692}
+    enableAudio:
+      fetchType: 0
+      items: []
+      cooldown:
+        enabled: 0
+        defaultValueRange:
+          _min: 0
+          _max: 0
+    sourceEffect:
+      input: {fileID: 1772328715493589406, guid: c03ef73df651f6e47bdb5f430efeeb1e, type: 3}
+    targetEffect:
+      input: {fileID: 0}
+    progressAudio:
+      fetchType: 0
+      items:
+      - {fileID: 8300000, guid: 0a453aafc51d2fe4a8ce3404944ad086, type: 3}
+      cooldown:
+        enabled: 0
+        defaultValueRange:
+          _min: 0
+          _max: 0
+    loopProgressAudio: 0
+  - type: {fileID: 11400000, guid: c879ec68b88807749a9923a6135ed15f, type: 2}
+    orderAudio:
+      fetchType: 0
+      items:
+      - {fileID: 8300000, guid: 0a453aafc51d2fe4a8ce3404944ad086, type: 3}
+      cooldown:
+        enabled: 0
+        defaultValueRange:
+          _min: 1
+          _max: 2
+    amount: 1
+    animatorOverrideController:
+      fetchType: 0
+      items:
+      - {fileID: 22100000, guid: 072165d23dd31dc4bb80ddef505043d5, type: 2}
+    enableObject: {fileID: 4014609082328428692}
+    enableAudio:
+      fetchType: 0
+      items: []
+      cooldown:
+        enabled: 0
+        defaultValueRange:
+          _min: 0
+          _max: 0
+    sourceEffect:
+      input: {fileID: 1772328715493589406, guid: c03ef73df651f6e47bdb5f430efeeb1e, type: 3}
+    targetEffect:
+      input: {fileID: 0}
+    progressAudio:
+      fetchType: 0
+      items:
+      - {fileID: 8300000, guid: 0a453aafc51d2fe4a8ce3404944ad086, type: 3}
+      cooldown:
+        enabled: 0
+        defaultValueRange:
+          _min: 0
+          _max: 0
+    loopProgressAudio: 0
   onTargetResourceFullSearch: 1
   onTargetResourceDepletedSearch: 1
 --- !u!114 &7192428129119390597
@@ -851,6 +927,78 @@ MonoBehaviour:
           _min: 0
           _max: 0
     amount: 10
+    animatorOverrideController:
+      fetchType: 0
+      items:
+      - {fileID: 22100000, guid: c6eb86904b4d5cc4aa05a40c0907040f, type: 2}
+    enableObject: {fileID: 0}
+    enableAudio:
+      fetchType: 0
+      items: []
+      cooldown:
+        enabled: 0
+        defaultValueRange:
+          _min: 0
+          _max: 0
+    sourceEffect:
+      input: {fileID: 0}
+    targetEffect:
+      input: {fileID: 0}
+    progressAudio:
+      fetchType: 0
+      items: []
+      cooldown:
+        enabled: 0
+        defaultValueRange:
+          _min: 0
+          _max: 0
+    loopProgressAudio: 0
+  - type: {fileID: 11400000, guid: 119a6a64d4d2f574bb77e87ad11efd72, type: 2}
+    orderAudio:
+      fetchType: 0
+      items: []
+      cooldown:
+        enabled: 0
+        defaultValueRange:
+          _min: 0
+          _max: 0
+    amount: 20
+    animatorOverrideController:
+      fetchType: 0
+      items:
+      - {fileID: 22100000, guid: c6eb86904b4d5cc4aa05a40c0907040f, type: 2}
+    enableObject: {fileID: 0}
+    enableAudio:
+      fetchType: 0
+      items: []
+      cooldown:
+        enabled: 0
+        defaultValueRange:
+          _min: 0
+          _max: 0
+    sourceEffect:
+      input: {fileID: 0}
+    targetEffect:
+      input: {fileID: 0}
+    progressAudio:
+      fetchType: 0
+      items: []
+      cooldown:
+        enabled: 0
+        defaultValueRange:
+          _min: 0
+          _max: 0
+    loopProgressAudio: 0
+  - type: {fileID: 11400000, guid: c879ec68b88807749a9923a6135ed15f, type: 2}
+    orderAudio:
+      fetchType: 0
+      items: []
+      cooldown:
+        enabled: 0
+        defaultValueRange:
+          _min: 0
+          _max: 0
+    amount: 20
     animatorOverrideController:
       fetchType: 0
       items:
@@ -1072,6 +1220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8083c6726f780bf44ae59c7cee549d69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBuilder: 0
+  isAgentIdle: 0
 --- !u!1001 &394429637664183800
 PrefabInstance:
   m_ObjectHideFlags: 0

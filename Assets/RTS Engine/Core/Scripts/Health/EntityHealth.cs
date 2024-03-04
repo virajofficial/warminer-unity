@@ -47,7 +47,9 @@ namespace RTSEngine.Health
         private int maxHealth = 100;
         public int MaxHealth => maxHealth;
 
-        public int CurrHealth { private set; get; } = 0;
+        
+
+        public int CurrHealth { protected set; get; } = 0;
         [SerializeField, Tooltip("Initial health points that the entity starts with."), Min(1)]
         private int initialHealth = 1;
 
