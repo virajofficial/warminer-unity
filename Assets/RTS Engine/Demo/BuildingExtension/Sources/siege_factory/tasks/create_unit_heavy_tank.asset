@@ -16,12 +16,12 @@ MonoBehaviour:
     code: create_unit_heavy_tank
     enabled: 1
     displayType: 1
-    icon: {fileID: 21300000, guid: 2e0c6035e4870b84d804a645cb3fe48f, type: 3}
+    icon: {fileID: 21300000, guid: 05fcc55b22bd45a498b61dfcd1bd89d7, type: 3}
     panelCategory: 0
     forceSlot: 1
     slotIndex: 1
     tooltipEnabled: 1
-    description: Create Catapult.
+    description: Create Heavy Tank
     hideTooltipOnClick: 0
     reloadTime: 14
     cursor:
