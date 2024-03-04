@@ -261,6 +261,7 @@ namespace RTSEngine.Game
                     if(!factionSlots[i].Enabled)
                     {
                         factionSlots[i].InitDestroy();
+                        //factionSlots[i].FactionEntityID = i;
                         factionSlots.RemoveAt(i);
                         continue;
                     }

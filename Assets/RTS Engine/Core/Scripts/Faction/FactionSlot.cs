@@ -21,7 +21,9 @@ namespace RTSEngine.Faction
         public FactionSlotState State { private set; get; } = FactionSlotState.inactive;
 
         // Unique ID for each faction slot.
-        public int ID { private set; get; }
+        public int ID { protected set; get; }
+
+        //public int FactionEntityID { set; get; }
 
         // The faction manager is a component that stores the faction entities data. Each faction is required to have one.
         public IFactionManager FactionMgr { private set; get; }

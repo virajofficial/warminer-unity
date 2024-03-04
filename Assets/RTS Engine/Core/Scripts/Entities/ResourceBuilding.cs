@@ -39,6 +39,11 @@ namespace RTSEngine.Entities
             throw new System.NotImplementedException();
         }
 
+        /*private void Start()
+        {
+            Debug.Log("ID : " + this.FactionID + $"({gameObject.name})");
+        }*/
+
         protected override void OnConstructionComplete()
         {
             if (!logger.RequireValid(resourceType,

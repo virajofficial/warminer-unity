@@ -326,6 +326,8 @@ GameObject:
   - component: {fileID: 3953219588540087502}
   - component: {fileID: 3501125900863813818}
   - component: {fileID: 6901892617936676239}
+  - component: {fileID: 5152746087194640180}
+  - component: {fileID: 6324876052184250302}
   m_Layer: 0
   m_Name: building_components
   m_TagString: Untagged
@@ -398,6 +400,82 @@ MonoBehaviour:
     targetHeight: -6
     speed:
       value: 10
+--- !u!114 &5152746087194640180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5338610901973376320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b70a05e14e072574fa5d4773e9ade9f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  code: metal_drop_off_target
+  allowedResourceTypes:
+    type: 1
+    options:
+    - {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+  amount: 20
+  requireDropOffPosition: 1
+  dropOffPosition: {fileID: 3377898738425567301}
+  forcedTerrainAreas: []
+--- !u!114 &6324876052184250302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5338610901973376320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2ba244131eb1cc47917ba3e9545913d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabID:
+    x: 0
+    y: 0
+  code: metal_worker_manager
+  workerPositions:
+  - {fileID: 0}
+  forcedTerrainAreas: []
+  defineMaxAmount: 0
+  maxWorkerAmount: 4
+  showWorkerPositionsGizmos: 1
+  showWorkersGizmos: 1
+  showWorkersFoldout: 0
+--- !u!1 &5657532405209639323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3377898738425567301}
+  m_Layer: 0
+  m_Name: drop_off_position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3377898738425567301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5657532405209639323}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6925726244366517818}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5883150419967908500
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,8 +813,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6925726244366517818}
-  - component: {fileID: 6678643639800395643}
+  - component: {fileID: 1745896596621146158}
   - component: {fileID: 7734400028285984862}
+  - component: {fileID: 5917272902532022978}
   - component: {fileID: 8840684269553240322}
   - component: {fileID: 7067447465784123419}
   m_Layer: 0
@@ -769,9 +848,10 @@ Transform:
   - {fileID: 9011210250583336201}
   - {fileID: 5275327628355024157}
   - {fileID: 7872123135088128560}
+  - {fileID: 3377898738425567301}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6678643639800395643
+--- !u!114 &1745896596621146158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -780,7 +860,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8737902238681965157}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb2547be28dc0f542932522ee9053f81, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b5b607a7bf071c4c92eeab709cc4571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tabID:
@@ -791,22 +871,29 @@ MonoBehaviour:
   category: resource_building
   description: Metalloy Miner
   icon: {fileID: 21300000, guid: b1baf5b37018d6340bb73500e64ddf1b, type: 3}
-  radius: 2.33
+  radius: 2.77
   model: {fileID: 7830155792204934571}
   isIdle: 0
   isMainEntity: 0
   isFactionLocked: 0
-  initResources: []
+  initResources:
+  - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+    value:
+      amount: 20
+      capacity: 0
+    nonConsumable: 0
   disableResources: []
-  coloredRenderers:
-  - renderer: {fileID: 3476742781082156160}
-    materialID: 0
-    transparency: 0
-    darkness: 0
-  - renderer: {fileID: 7771062328073148179}
-    materialID: 0
-    transparency: 0
-    darkness: 0
+  coloredRenderers: []
+  resourceType: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+  autoCollect: 0
+  collectionAudio:
+    fetchType: 0
+    items: []
+    cooldown:
+      enabled: 1
+      defaultValueRange:
+        _min: 1
+        _max: 2
 --- !u!114 &7734400028285984862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -821,7 +908,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tabID:
     x: 0
-    y: 2
+    y: 0
   maxHealth: 500
   initialHealth: 1
   canIncrease: 1
@@ -917,6 +1004,75 @@ MonoBehaviour:
         m_Calls: []
   repairCosts: []
   buildTime: 50
+--- !u!114 &5917272902532022978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8737902238681965157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb56912e7ea8b9c438fb681ee810adaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabID:
+    x: 0
+    y: 3
+  maxHealth: 500
+  initialHealth: 1
+  canIncrease: 1
+  canDecrease: 1
+  hoverHealthBarData:
+    enabled: 1
+    offset: {x: 0, y: 4, z: 0}
+    size: {x: 1, y: 1, z: 1}
+    parent: {fileID: 0}
+  hoverHealthBarY: 4
+  hitEffect:
+    input: {fileID: 0}
+  hitAudio:
+    fetchType: 0
+    items: []
+    cooldown:
+      enabled: 1
+      defaultValueRange:
+        _min: 1
+        _max: 2
+  destroyObject: 0
+  destroyObjectDelay: 0
+  destroyAward: []
+  destructionAudio:
+    fetchType: 0
+    items: []
+    cooldown:
+      enabled: 1
+      defaultValueRange:
+        _min: 1
+        _max: 2
+  destructionEffect:
+    input: {fileID: 0}
+  states: []
+  destroyState:
+    usePercentage: 0
+    healthRange:
+      _min: 0
+      _max: 500
+    showChildObjects: []
+    hideChildObjects: []
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  collectedState:
+    usePercentage: 0
+    healthRange:
+      _min: 0
+      _max: 100
+    showChildObjects: []
+    hideChildObjects: []
+    triggerEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!82 &8840684269553240322
 AudioSource:
   m_ObjectHideFlags: 0

@@ -5,7 +5,9 @@ using UnityEngine;
 public class AITugController : MonoBehaviour
 {
     public Transform targetTransform;
-    public Camera testCam;
+    public Transform dockTransform;
+    public GameObject crate;
+    public GameObject cables;
     Animator anim;
 
     [Header("Tug Parameters")]
@@ -25,6 +27,7 @@ public class AITugController : MonoBehaviour
     bool ismove;
     bool isstop;
     bool isTugRotated;
+    bool isTugReturned;
 
     private void Start()
     {
@@ -50,7 +53,10 @@ public class AITugController : MonoBehaviour
         ismove = false;
         isstop = false;
         isTugRotated = false;
+        isTugReturned = false;
         lerpPercent = 0f;
+        crate.SetActive(false);
+        cables.SetActive(false);
         initialPos = transform.position;
     }
 
@@ -107,9 +113,23 @@ public class AITugController : MonoBehaviour
         {
             isFlying = false;
             tugStatus = TugStatus.TAKEOFF;
-            anim.ResetTrigger("stop"); 
-            TugInitialValues();
+            anim.ResetTrigger("stop");
+            if(isTugReturned)
+                TugInitialValues();
+            else
+                StartCoroutine(TugReturn());
         }
+    }
+
+    private IEnumerator TugReturn()
+    {
+        TugInitialValues();
+        targetTransform = dockTransform;
+        yield return new WaitForSeconds(1);
+        crate.SetActive(true);
+        cables.SetActive(true);
+        isFlying = true;
+        isTugReturned = true;
     }
 
     private void TugRotate()
@@ -117,14 +137,14 @@ public class AITugController : MonoBehaviour
         lerpPercent = Mathf.MoveTowards(lerpPercent, 1f, Time.deltaTime * lerpSpeed);
 
         Vector3 targetDirection = (targetTransform.position - transform.position);
-        Debug.Log("Target Direction = " + targetDirection);
+        //Debug.Log("Target Direction = " + targetDirection);
         Quaternion targetRotation = Quaternion.LookRotation(new Vector3(targetDirection.x, transform.rotation.y, targetDirection.z));
         //Quaternion targetRotation = Quaternion.LookRotation(targetDirection);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, lerpPercent);
 
         if (lerpPercent >= 1f)
         {
-            Debug.Log("lerp finished");
+            //Debug.Log("lerp finished");
             isTugRotated = true;
         }
     }

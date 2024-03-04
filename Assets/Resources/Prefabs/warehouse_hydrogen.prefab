@@ -204,6 +204,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4577973591845877417}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2178122283617251791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4559921398125202847}
+  m_Layer: 0
+  m_Name: Dock_position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4559921398125202847
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2178122283617251791}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.50099945, y: 1.933, z: 0.26800013}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4698221654309379065}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2401683829113443859
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,7 +496,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1337869911810394649}
   - component: {fileID: 513102400661272283}
-  - component: {fileID: 6710503137290037614}
   m_Layer: 0
   m_Name: building_components
   m_TagString: Untagged
@@ -515,29 +545,6 @@ MonoBehaviour:
   showWorkerPositionsGizmos: 1
   showWorkersGizmos: 1
   showWorkersFoldout: 0
---- !u!114 &6710503137290037614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3401123582047050878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b70a05e14e072574fa5d4773e9ade9f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  code: drop_off_target
-  allowedResourceTypes:
-    type: 1
-    options:
-    - {fileID: 11400000, guid: c879ec68b88807749a9923a6135ed15f, type: 2}
-    - {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
-    - {fileID: 11400000, guid: 7fad61ec7c519fc48bda4c4cab2cb727, type: 2}
-  amount: 0
-  requireDropOffPosition: 1
-  dropOffPosition: {fileID: 5117826126572050261}
-  forcedTerrainAreas: []
 --- !u!1 &3962337092083544606
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,6 +819,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2295755865194271589}
+  - {fileID: 4559921398125202847}
   - {fileID: 1071356459817566052}
   - {fileID: 8784934833669771818}
   - {fileID: 1337869911810394649}
@@ -821,7 +830,6 @@ Transform:
   - {fileID: 5507873523754729517}
   - {fileID: 6749009120485122446}
   - {fileID: 5117826126572050261}
-  - {fileID: 2295755865194271589}
   - {fileID: 4577973591845877417}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1404,6 +1412,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2438746193878016813, guid: 020e848334078fe448d86fe4acab5715, type: 3}
+      propertyPath: altitude
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2438746193878016813, guid: 020e848334078fe448d86fe4acab5715, type: 3}
+      propertyPath: dockTransform
+      value: 
+      objectReference: {fileID: 4559921398125202847}
     - target: {fileID: 4621033422624116875, guid: 020e848334078fe448d86fe4acab5715, type: 3}
       propertyPath: m_Name
       value: WarehouseTug-Hydrogen

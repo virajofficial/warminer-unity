@@ -294,6 +294,7 @@ MonoBehaviour:
   - {fileID: 3044375942444566997}
   isActive: 1
   selectOwnerOnly: 0
+  isSelected: 0
   selectionAudio:
     fetchType: 0
     items: []
@@ -390,7 +391,7 @@ Transform:
   - {fileID: 6156186014028311468}
   - {fileID: 231417514910605124}
   - {fileID: 7785974808604844317}
-  - {fileID: 7765713665769998055}
+  - {fileID: 2429765590677248301}
   - {fileID: 8377891394545585532}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -408,14 +409,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tabID:
     x: 0
-    y: 1
+    y: 0
   _name: Orbium Deposit
   code: orbium_deposit
   category: resources
   description: Orbium Deposit
   icon: {fileID: 21300000, guid: f6415798cdf8c714a9108a6a692197f2, type: 3}
-  radius: 2
-  model: {fileID: 6957652146673048669}
+  radius: 3.17
+  model: {fileID: 4215058797223158013}
   isIdle: 0
   resourceType: {fileID: 11400000, guid: 119a6a64d4d2f574bb77e87ad11efd72, type: 2}
   canCollect: 1
@@ -642,13 +643,13 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e035e5be29944e449e2fd80381f4b57, type: 3}
---- !u!1 &6957652146673048669 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5219080725615080353, guid: 4e035e5be29944e449e2fd80381f4b57, type: 3}
+--- !u!4 &2429765590677248301 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 674184698963523281, guid: 4e035e5be29944e449e2fd80381f4b57, type: 3}
   m_PrefabInstance: {fileID: 2946319007842676732}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &7765713665769998055 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4838615220705274139, guid: 4e035e5be29944e449e2fd80381f4b57, type: 3}
+--- !u!1 &4215058797223158013 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1341377951331946241, guid: 4e035e5be29944e449e2fd80381f4b57, type: 3}
   m_PrefabInstance: {fileID: 2946319007842676732}
   m_PrefabAsset: {fileID: 0}

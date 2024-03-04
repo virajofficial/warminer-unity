@@ -20,6 +20,11 @@ namespace RTSEngine.Movement
             get => navAgent.enabled;
         }
 
+        [SerializeField]
+        private bool isBuilder;
+        [SerializeField]
+        private bool isAgentIdle;
+
         public bool IsActive
         {
             set
@@ -78,6 +83,27 @@ namespace RTSEngine.Movement
                     }
                 }
             }
+        }
+        private void Start()
+        {
+            if(transform.GetComponent<UnitMovement>().Code == "movement_builder")
+            {
+                isBuilder = true;
+                
+            }
+            else
+            {
+                isBuilder = false;
+            }
+        }
+
+        private void Update()
+        {
+            /*if (transform.GetComponent<UnitMovement>().Code == "movement_builder")
+            {
+                isAgentIdle = transform.GetComponent<UnitMovement>().IsIdle;
+                SetTargetInputData data = new SetTargetInputData();
+            }*/
         }
 
         public LayerMask NavigationAreaMask => navAgent.areaMask;

@@ -2,6 +2,7 @@
 
 using RTSEngine.Entities;
 using RTSEngine.Event;
+using RTSEngine.EntityComponent;
 
 namespace RTSEngine.Health
 {
@@ -14,6 +15,7 @@ namespace RTSEngine.Health
         [SerializeField, Tooltip("Transitional state activated when the first is collected for the first time.")]
         private EntityHealthState collectedState = new EntityHealthState();
         private bool collected = false;
+        private int warehouseLoad = 30;
         #endregion
 
         #region Initializing/Terminating
@@ -69,5 +71,27 @@ namespace RTSEngine.Health
             globalEvent.RaiseResourceDeadGlobal(Resource, new DeadEventArgs(upgrade, source, DestroyObjectDelay));
         }
         #endregion
+
+        public void resourceUnloaded(int amount, string resourceName)
+        {
+            //Debug.Log("resource unloaded = " + amount + $"({transform.gameObject.name})");
+            CurrHealth += amount;
+            if(CurrHealth >= warehouseLoad)
+            {
+                //Debug.Log("Resource name = " + resourceName);
+                foreach(Transform child in UnityEngine.Object.FindObjectsOfType<Transform>())
+                {
+                    if (child.name.Split('_')[0] == "warehouse" && child.name.Split('_')[1] == resourceName.ToLower() 
+                        && child.GetComponent<Building>().FactionID == transform.GetComponent<ResourceBuilding>().FactionID)
+                    {
+                        //Debug.Log("Targe Names: " + child.name);
+                        child.GetChild(0).GetComponent<AITugController>().targetTransform = transform.GetChild(0);
+                        child.GetChild(0).GetComponent<AITugController>().isFlying = true;
+                    }
+                }
+                CurrHealth -= warehouseLoad;
+            }
+
+        }
     }
 }

@@ -178,7 +178,7 @@ MonoBehaviour:
   category: resources
   description: Metalloy Deposit
   icon: {fileID: 21300000, guid: 695ff0c87bc7d7a4083d34de30ce454f, type: 3}
-  radius: 3
+  radius: 3.37
   model: {fileID: 8339814460277981048}
   isIdle: 0
   resourceType: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
