@@ -7,6 +7,7 @@ public class AITugController : MonoBehaviour
     public Transform targetTransform;
     public Transform dockTransform;
     public GameObject crate;
+    public GameObject cables;
     Animator anim;
 
     [Header("Tug Parameters")]
@@ -55,6 +56,7 @@ public class AITugController : MonoBehaviour
         isTugReturned = false;
         lerpPercent = 0f;
         crate.SetActive(false);
+        cables.SetActive(false);
         initialPos = transform.position;
     }
 
@@ -125,6 +127,7 @@ public class AITugController : MonoBehaviour
         targetTransform = dockTransform;
         yield return new WaitForSeconds(1);
         crate.SetActive(true);
+        cables.SetActive(true);
         isFlying = true;
         isTugReturned = true;
     }

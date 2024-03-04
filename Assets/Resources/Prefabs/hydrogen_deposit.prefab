@@ -208,7 +208,7 @@ MonoBehaviour:
   category: resources
   description: hydrogen Deposit
   icon: {fileID: 21300000, guid: f195f5f25b4219748ae102563490ecdc, type: 3}
-  radius: 1.5
+  radius: 1.81
   model: {fileID: 6940746756836072808}
   isIdle: 0
   resourceType: {fileID: 11400000, guid: c879ec68b88807749a9923a6135ed15f, type: 2}
@@ -565,6 +565,7 @@ MonoBehaviour:
   - {fileID: 8751346701284441106}
   isActive: 1
   selectOwnerOnly: 0
+  isSelected: 0
   selectionAudio:
     fetchType: 0
     items: []

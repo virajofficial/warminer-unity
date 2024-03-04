@@ -579,8 +579,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTransform: {fileID: 0}
-  testCam: {fileID: 0}
-  altitude: 10
+  dockTransform: {fileID: 0}
+  crate: {fileID: 1862465451414204203}
+  cables: {fileID: 2477748648636222583}
+  altitude: 7
   movingSpeed: 6
   takeoffLandingSpeed: 2
   slerpSpeed: 0.5
