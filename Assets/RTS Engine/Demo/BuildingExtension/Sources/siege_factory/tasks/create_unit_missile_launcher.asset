@@ -16,7 +16,7 @@ MonoBehaviour:
     code: create_unit_missile_launcher
     enabled: 1
     displayType: 1
-    icon: {fileID: 21300000, guid: 13066f01cab93144aa8179d7b5d672e5, type: 3}
+    icon: {fileID: 21300000, guid: 784a6e7a53ec8cc47bae1b4fc1b240c5, type: 3}
     panelCategory: 1
     forceSlot: 1
     slotIndex: 2
