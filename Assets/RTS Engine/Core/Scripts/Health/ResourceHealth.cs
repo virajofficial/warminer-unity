@@ -74,23 +74,22 @@ namespace RTSEngine.Health
 
         public void resourceUnloaded(int amount, string resourceName)
         {
-            Debug.Log("resource unloaded = " + amount + $"({transform.gameObject.name})");
+            //Debug.Log("resource unloaded = " + amount + $"({transform.gameObject.name})");
             CurrHealth += amount;
             if(CurrHealth >= warehouseLoad)
             {
-                Debug.Log("Resource name = " + resourceName);
+                //Debug.Log("Resource name = " + resourceName);
                 foreach(Transform child in UnityEngine.Object.FindObjectsOfType<Transform>())
                 {
                     if (child.name.Split('_')[0] == "warehouse" && child.name.Split('_')[1] == resourceName.ToLower() 
                         && child.GetComponent<Building>().FactionID == transform.GetComponent<ResourceBuilding>().FactionID)
                     {
-                        Debug.Log("Targe Names: " + child.name);
+                        //Debug.Log("Targe Names: " + child.name);
                         child.GetChild(0).GetComponent<AITugController>().targetTransform = transform.GetChild(0);
                         child.GetChild(0).GetComponent<AITugController>().isFlying = true;
                     }
                 }
                 CurrHealth -= warehouseLoad;
-                //gameMgr.FactionSlots[GetComponent<ResourceBuilding>().FactionID].initi
             }
 
         }

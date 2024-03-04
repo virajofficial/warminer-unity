@@ -279,19 +279,14 @@ MonoBehaviour:
   isActive: 1
   tabID:
     x: 0
-    y: 0
+    y: 1
   creationTasks:
-  - taskTitle: 'Create Unit: builder'
-    taskUI: {fileID: 11400000, guid: 525078f2fbc9fe14a97c11bb0dc99c4e, type: 2}
+  - taskTitle: 'Create Unit: Engineer'
+    taskUI: {fileID: 11400000, guid: d9b25ef76f9281146bccef9c3167513b, type: 2}
     allowedFactionTypes:
       type: 0
       options: []
     requiredResources:
-    - type: {fileID: 11400000, guid: 7fad61ec7c519fc48bda4c4cab2cb727, type: 2}
-      value:
-        amount: 15
-        capacity: 0
-      nonConsumable: 0
     - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
       value:
         amount: 1
@@ -803,7 +798,7 @@ MonoBehaviour:
   _name: Command Center
   code: command_center
   category: civilian_building
-  description: new_building_description
+  description: Comman center
   icon: {fileID: 21300000, guid: 6c6f7c4161d38f44985526cc7f067759, type: 3}
   radius: 5
   model: {fileID: 3488895002550489720}

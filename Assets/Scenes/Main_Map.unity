@@ -39420,6 +39420,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 547465225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &409011795 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7468401218609007006, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+  m_PrefabInstance: {fileID: 2020156428}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &409797732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64513,7 +64524,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 234489397655311014, guid: b91a76132a8acb34a80616963ae15836, type: 3}
       propertyPath: upgrades.Array.data[0].sourceComponentCode
-      value: unit_builder_component
+      value: tasks_queue
       objectReference: {fileID: 0}
     - target: {fileID: 694315744938961301, guid: b91a76132a8acb34a80616963ae15836, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64557,7 +64568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 938134673395143859, guid: b91a76132a8acb34a80616963ae15836, type: 3}
       propertyPath: m_Name
-      value: builder (3)
+      value: Engineer (3)
       objectReference: {fileID: 0}
     - target: {fileID: 6439651058222056010, guid: b91a76132a8acb34a80616963ae15836, type: 3}
       propertyPath: m_Enabled
@@ -91517,7 +91528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 694315744938961301, guid: b91a76132a8acb34a80616963ae15836, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 107.95
+      value: 111.97
       objectReference: {fileID: 0}
     - target: {fileID: 694315744938961301, guid: b91a76132a8acb34a80616963ae15836, type: 3}
       propertyPath: m_LocalPosition.y
@@ -91525,7 +91536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 694315744938961301, guid: b91a76132a8acb34a80616963ae15836, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 94.94
+      value: 93.54
       objectReference: {fileID: 0}
     - target: {fileID: 694315744938961301, guid: b91a76132a8acb34a80616963ae15836, type: 3}
       propertyPath: m_LocalRotation.w
@@ -91557,7 +91568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 938134673395143859, guid: b91a76132a8acb34a80616963ae15836, type: 3}
       propertyPath: m_Name
-      value: builder (1)
+      value: Engineer (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6439651058222056010, guid: b91a76132a8acb34a80616963ae15836, type: 3}
       propertyPath: m_Enabled
@@ -153084,7 +153095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 938134673395143859, guid: b91a76132a8acb34a80616963ae15836, type: 3}
       propertyPath: m_Name
-      value: builder (2)
+      value: Engineer (2)
       objectReference: {fileID: 0}
     - target: {fileID: 6439651058222056010, guid: b91a76132a8acb34a80616963ae15836, type: 3}
       propertyPath: m_Enabled
@@ -160715,7 +160726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 938134673395143859, guid: b91a76132a8acb34a80616963ae15836, type: 3}
       propertyPath: m_Name
-      value: builder
+      value: Engineer
       objectReference: {fileID: 0}
     - target: {fileID: 938134673395143859, guid: b91a76132a8acb34a80616963ae15836, type: 3}
       propertyPath: m_IsActive
@@ -195511,6 +195522,10 @@ PrefabInstance:
       propertyPath: data.Array.data[4].displayCollectorCount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6215564818256938269, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: panel
+      value: 
+      objectReference: {fileID: 409011795}
     - target: {fileID: 6215564818256938270, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
       propertyPath: message.panel
       value: 

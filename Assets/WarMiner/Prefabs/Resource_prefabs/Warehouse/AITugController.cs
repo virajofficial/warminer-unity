@@ -137,14 +137,14 @@ public class AITugController : MonoBehaviour
         lerpPercent = Mathf.MoveTowards(lerpPercent, 1f, Time.deltaTime * lerpSpeed);
 
         Vector3 targetDirection = (targetTransform.position - transform.position);
-        Debug.Log("Target Direction = " + targetDirection);
+        //Debug.Log("Target Direction = " + targetDirection);
         Quaternion targetRotation = Quaternion.LookRotation(new Vector3(targetDirection.x, transform.rotation.y, targetDirection.z));
         //Quaternion targetRotation = Quaternion.LookRotation(targetDirection);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, lerpPercent);
 
         if (lerpPercent >= 1f)
         {
-            Debug.Log("lerp finished");
+            //Debug.Log("lerp finished");
             isTugRotated = true;
         }
     }

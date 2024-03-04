@@ -240,6 +240,7 @@ GameObject:
   - component: {fileID: 5192718024691756100}
   - component: {fileID: 880672069060025870}
   - component: {fileID: 9058980282159142989}
+  - component: {fileID: 6997033892249106875}
   m_Layer: 0
   m_Name: unit_components
   m_TagString: Untagged
@@ -581,6 +582,30 @@ MonoBehaviour:
       defaultValueRange:
         _min: 1
         _max: 2
+--- !u!114 &6997033892249106875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3434139838892045365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df1218d7b85e9f439218b8ada52ce02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabID:
+    x: 0
+    y: 0
+  code: unique_code
+  workerPositions:
+  - {fileID: 0}
+  forcedTerrainAreas: []
+  defineMaxAmount: 0
+  maxWorkerAmount: 4
+  showWorkerPositionsGizmos: 1
+  showWorkersGizmos: 1
+  showWorkersFoldout: 0
 --- !u!1 &6768521507055047617
 GameObject:
   m_ObjectHideFlags: 0

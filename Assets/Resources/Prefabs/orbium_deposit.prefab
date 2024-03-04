@@ -416,7 +416,7 @@ MonoBehaviour:
   description: Orbium Deposit
   icon: {fileID: 21300000, guid: f6415798cdf8c714a9108a6a692197f2, type: 3}
   radius: 3.17
-  model: {fileID: 0}
+  model: {fileID: 4215058797223158013}
   isIdle: 0
   resourceType: {fileID: 11400000, guid: 119a6a64d4d2f574bb77e87ad11efd72, type: 2}
   canCollect: 1
@@ -646,5 +646,10 @@ PrefabInstance:
 --- !u!4 &2429765590677248301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 674184698963523281, guid: 4e035e5be29944e449e2fd80381f4b57, type: 3}
+  m_PrefabInstance: {fileID: 2946319007842676732}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4215058797223158013 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1341377951331946241, guid: 4e035e5be29944e449e2fd80381f4b57, type: 3}
   m_PrefabInstance: {fileID: 2946319007842676732}
   m_PrefabAsset: {fileID: 0}

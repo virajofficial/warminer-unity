@@ -871,7 +871,7 @@ MonoBehaviour:
   category: resource_building
   description: Metalloy Miner
   icon: {fileID: 21300000, guid: b1baf5b37018d6340bb73500e64ddf1b, type: 3}
-  radius: 2.59
+  radius: 2.77
   model: {fileID: 7830155792204934571}
   isIdle: 0
   isMainEntity: 0
