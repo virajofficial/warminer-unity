@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2900,11 +2900,11 @@ MonoBehaviour:
   minPlayers: 1
   roomPlayerPrefab: {fileID: 7634908901127649888, guid: fa704afeb89297d449bb28b39dc2ee36, type: 3}
   RoomScene: Assets/RTS Engine/Modules/Multiplayer/Mirror/Scenes/MultiplayerLobbyMenu_Mirror.unity
-  GameplayScene: Assets/RTS Engine/Demo/Scenes/demo_map/demo_map.unity
+  GameplayScene: Assets/Scenes/Main_Map.unity
   _allPlayersReady: 0
   roomSlots: []
   clientIndex: 0
-  prevScene: 
+  prevScene: Assets/Scenes/MainMenu.unity
   startDelayTime: 2
   serverGameMgrPrefab: {fileID: 4220585362012017558, guid: 20293dccd616aaa4a890774876fa1194, type: 3}
   sceneLoader:
