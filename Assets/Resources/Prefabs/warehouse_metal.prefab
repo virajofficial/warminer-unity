@@ -2035,6 +2035,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5457357383181202700, guid: 99e649b648e1ca34892a522bbc65c96e, type: 3}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5491810842323377860, guid: 99e649b648e1ca34892a522bbc65c96e, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5

@@ -6,6 +6,7 @@ public class AITugController : MonoBehaviour
 {
     public Transform targetTransform;
     public Transform dockTransform;
+    public AudioSource sfx;
     public GameObject crate;
     public GameObject cables;
     Animator anim;
@@ -67,6 +68,7 @@ public class AITugController : MonoBehaviour
         if (!istakeoff) {
             anim.SetTrigger("takeoff");
             istakeoff = true;
+            sfx.Play();
         } 
         if (Vector3.Distance(transform.position, altitudeVect) < 0.1f)
         {
@@ -114,6 +116,7 @@ public class AITugController : MonoBehaviour
             isFlying = false;
             tugStatus = TugStatus.TAKEOFF;
             anim.ResetTrigger("stop");
+            sfx.Stop();
             if(isTugReturned)
                 TugInitialValues();
             else
