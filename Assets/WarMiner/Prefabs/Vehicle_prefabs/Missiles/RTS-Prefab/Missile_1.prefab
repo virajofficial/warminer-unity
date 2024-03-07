@@ -4899,7 +4899,7 @@ MonoBehaviour:
   code: missile_1
   tabID:
     x: 0
-    y: 0
+    y: 1
   enableLifeTime: 1
   defaultLifeTime: 5
   disableTime: 1
@@ -4974,15 +4974,15 @@ MonoBehaviour:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: 2
-        outSlope: 2
+        inSlope: 0.07941437
+        outSlope: 0.07941437
         tangentMode: 34
         weightedMode: 0
         inWeight: 0
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: 1
+        value: 0.039707184
         inSlope: -0.0051039387
         outSlope: -0.0051039387
         tangentMode: 0
@@ -4990,8 +4990,8 @@ MonoBehaviour:
         inWeight: 0.19035411
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1
-        value: 0
+        time: 2.043335
+        value: -2.678154
         inSlope: -3.231482
         outSlope: -3.231482
         tangentMode: 0
@@ -4999,10 +4999,10 @@ MonoBehaviour:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 5.062529
-        value: -49.91843
-        inSlope: -12.287525
-        outSlope: -12.287525
+        time: 5.0132127
+        value: -16.374607
+        inSlope: -4.61179
+        outSlope: -4.61179
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334

@@ -27,13 +27,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736614444305504}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 107.807014, y: 1.402, z: 40.996002}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4871566189724006}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114592189441036048
 MonoBehaviour:
@@ -49,21 +50,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   code: archer_level1_arrow
   tabID:
-    x: 1
+    x: 0
     y: 1
   enableLifeTime: 1
   defaultLifeTime: 3
   disableTime: 1
   spawnPositionOffset: {x: 0, y: 0, z: 0}
+  offsetLocalPosition: 0
+  initEvent:
+    m_PersistentCalls:
+      m_Calls: []
   enableEvent:
     m_PersistentCalls:
       m_Calls: []
   disableEvent:
     m_PersistentCalls:
       m_Calls: []
+  deactivateEvent:
+    m_PersistentCalls:
+      m_Calls: []
   mainMvtCurve:
-    minDistance: 5
-    maxHeightDifference: 2
+    minDistance: 0
+    maxHeightDifference: 0
     curve:
       serializedVersion: 2
       m_Curve:
@@ -106,7 +114,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    heightMultiplier: 1
+    heightMultiplier: 0
   altMvtCurve:
     minDistance: 0
     maxHeightDifference: 0
@@ -156,11 +164,6 @@ MonoBehaviour:
     m_Bits: 768
   triggerEffect:
     input: {fileID: 0}
-    parent:
-      status: 0
-      obj: {fileID: 0}
-      indexKey: -1
-      entity: {fileID: 0}
   triggerEffectFaceTarget: 1
   triggerAudio:
     fetchType: 0
@@ -168,7 +171,9 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 51342d39e8be79144a81856bb418bef4, type: 3}
     cooldown:
       enabled: 0
-      defaultValue: 0
+      defaultValueRange:
+        _min: 1
+        _max: 2
   triggerEffectsPostDelay: 1
   hitEffects:
   - picker:
@@ -177,20 +182,38 @@ MonoBehaviour:
         codes: []
         categories:
         - walking_unit
+      targetUnits: 1
+      targetBuildings: 1
     effect:
       input: {fileID: 95265350099109528, guid: 684350d9a94d0a04fb8981d62efa5ab9, type: 3}
-      parent:
-        status: 0
-        obj: {fileID: 0}
-        indexKey: 0
-        entity: {fileID: 0}
     faceSource: 0
     audio:
       fetchType: 0
       items: []
       cooldown:
         enabled: 0
-        defaultValue: 0
+        defaultValueRange:
+          _min: 1
+          _max: 2
+  obstacleHitEffect:
+    picker:
+      type: 0
+      options:
+        codes: []
+        categories: []
+      targetUnits: 1
+      targetBuildings: 1
+    effect:
+      input: {fileID: 0}
+    faceSource: 0
+    audio:
+      fetchType: 0
+      items: []
+      cooldown:
+        enabled: 1
+        defaultValueRange:
+          _min: 1
+          _max: 2
 --- !u!135 &135886096175892746
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -199,9 +222,17 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736614444305504}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Radius: 0.4
   m_Center: {x: 0, y: 0, z: -2.91}
 --- !u!54 &54423085990588588
@@ -211,10 +242,21 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736614444305504}
-  serializedVersion: 2
+  serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 1
@@ -341,12 +383,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768550159267650}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.108, y: -0.159, z: 1.48}
   m_LocalScale: {x: 0.48513514, y: 0.42530605, z: 0.30000043}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4452627234291680}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &33037232038282268
 MeshFilter:
@@ -367,10 +410,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -396,3 +441,4 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}

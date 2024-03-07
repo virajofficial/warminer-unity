@@ -406,6 +406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitAudioSource: {fileID: 0}
   unitAgent: {fileID: 0}
+  audioClips: []
 --- !u!1 &1002499913435050258
 GameObject:
   m_ObjectHideFlags: 0
