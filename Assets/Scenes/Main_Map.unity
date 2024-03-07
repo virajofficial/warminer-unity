@@ -161263,6 +161263,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1591319204140345091, guid: b91a76132a8acb34a80616963ae15836, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591319204140345091, guid: b91a76132a8acb34a80616963ae15836, type: 3}
+      propertyPath: audioClips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1591319204140345091, guid: b91a76132a8acb34a80616963ae15836, type: 3}
+      propertyPath: audioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d483f261d97973e43a575a5555b1f94a, type: 3}
+    - target: {fileID: 3238152476143829910, guid: b91a76132a8acb34a80616963ae15836, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238152476143829910, guid: b91a76132a8acb34a80616963ae15836, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6439651058222056010, guid: b91a76132a8acb34a80616963ae15836, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -161273,6 +161293,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7192428129119390597, guid: b91a76132a8acb34a80616963ae15836, type: 3}
       propertyPath: tabID.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7957196973242844538, guid: b91a76132a8acb34a80616963ae15836, type: 3}
+      propertyPath: mvtAudio.fetchType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8032198419038280966, guid: b91a76132a8acb34a80616963ae15836, type: 3}

@@ -458,9 +458,13 @@ namespace RTSEngine.EntityComponent
 
             if (!canMoveRotate) //can not move before facing the next corner in the path by a certain angle?
                 EnableMovementRotation();
-
+            Debug.Log("player moving...");
+            Unit.AudioSourceComponent.pitch = 3;
+            audioMgr.PlaySFX(Unit.AudioSourceComponent, mvtAudio.Fetch(), true);
             if (Controller.LastSource.playerCommand && RTSHelper.IsLocalPlayerFaction(Unit))
             {
+                
+                Unit.AudioSourceComponent.pitch = 4;
                 audioMgr.PlaySFX(Unit.AudioSourceComponent, mvtAudio.Fetch(), true);
             }
         }
@@ -472,6 +476,7 @@ namespace RTSEngine.EntityComponent
         /// <param name="prepareNextMovement">When true, not all movement settings will be reset since a new movement command will be followed.</param>
         protected override void OnStop()
         {
+            Unit.AudioSourceComponent.pitch = 1;
             audioMgr.StopSFX(Unit.AudioSourceComponent); //stop the movement audio from playing
 
             isMoving = false; //marked as not moving

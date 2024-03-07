@@ -840,7 +840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tabID:
     x: 0
-    y: 2
+    y: 0
   maxHealth: 2500
   initialHealth: 1
   canIncrease: 1
