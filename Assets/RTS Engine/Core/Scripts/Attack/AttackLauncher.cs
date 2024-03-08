@@ -36,6 +36,8 @@ namespace RTSEngine.Attack
 
         #region Events
         public event CustomEventHandler<AttackLauncher, AttackLaunchEventArgs> AttackLaunched;
+
+        ParticleSystem shotParticle;
         private void RaiseAttackLaunched(AttackLaunchEventArgs args)
         {
             attackIterationLaunchEvent.Invoke();
@@ -79,8 +81,11 @@ namespace RTSEngine.Attack
                 return;
             }
 
+            if (shotParticle != null)
+                shotParticle.Play();
+
             // Non direct attack? start coroutine to handle attack objects.
-            switch(launchType)
+            switch (launchType)
             {
                 case AttackObjectLaunchType.random:
 
@@ -120,7 +125,9 @@ namespace RTSEngine.Attack
                         return;
 
                     nextLaunch.attackObject = sources[nextLaunch.sourceIndex].Launch(attackMgr, SourceAttackComp);
-
+                    shotParticle = nextLaunch.attackObject.Data.delayParent.GetComponentInChildren<ParticleSystem>();
+                    if (shotParticle != null)
+                        shotParticle.Stop();
                     RaiseAttackLaunched(new AttackLaunchEventArgs(nextLaunch));
                 }
                 else

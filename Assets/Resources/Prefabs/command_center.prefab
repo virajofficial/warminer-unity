@@ -305,6 +305,30 @@ MonoBehaviour:
       count: 0
     limit: 0
     maxAmount: 10
+  - taskTitle: 'Create Unit: Marine (Alien)'
+    taskUI: {fileID: 11400000, guid: 727fe98e4e25bda40bff1a59170ff0b6, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
+      value:
+        amount: 1
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 1241045417843294, guid: ffae21e5d48f8284b96e2b341bcc78df, type: 3}
+    squadData:
+      enabled: 0
+      count: 0
+    limit: 0
+    maxAmount: 10
   upgradeTargetCreationTasks: []
   spawnTransform: {fileID: 8125852317970283425}
 --- !u!114 &3105518539332045684
