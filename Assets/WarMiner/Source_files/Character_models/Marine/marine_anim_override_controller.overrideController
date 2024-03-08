@@ -6,12 +6,12 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HeavyTankAnimOverride
+  m_Name: marine_anim_override_controller
   m_Controller: {fileID: 9100000, guid: 4f28c54bfb24b3a489502c2758d6e46e, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 7400000, guid: bc459f3943a6900448e16eacce69679f, type: 2}
-    m_OverrideClip: {fileID: 2462775523518284105, guid: b983b46d0aa44f446be9754c6ee1fff1, type: 3}
-  - m_OriginalClip: {fileID: 7400000, guid: 61fa50bfb9208714dbea61db57431553, type: 2}
-    m_OverrideClip: {fileID: -576100570616724213, guid: b983b46d0aa44f446be9754c6ee1fff1, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: b4d93e7839ee89647937cb9b3b7c90a1, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 55b2840a3c513db48b88350b9279297a, type: 2}
-    m_OverrideClip: {fileID: -2767582944617236802, guid: b983b46d0aa44f446be9754c6ee1fff1, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 3c65785a434009242b6a0d74fddc2dd5, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 61fa50bfb9208714dbea61db57431553, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 44e1ba75de9bd32409d5f5657730b4bc, type: 2}

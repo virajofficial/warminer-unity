@@ -826,11 +826,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tabID:
     x: 0
-    y: 0
+    y: 1
   maxHealth: 200
   initialHealth: 200
   canIncrease: 1
-  canDecrease: 0
+  canDecrease: 1
   hoverHealthBarData:
     enabled: 1
     offset: {x: 0, y: 2.25, z: 0}
@@ -847,7 +847,7 @@ MonoBehaviour:
       defaultValueRange:
         _min: 1
         _max: 2
-  destroyObject: 0
+  destroyObject: 1
   destroyObjectDelay: 0.5
   destroyAward: []
   destructionAudio:
@@ -871,7 +871,7 @@ MonoBehaviour:
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []
-  canBeAttacked: 0
+  canBeAttacked: 1
   attackTargetPosition: {fileID: 0}
   stopMovingOnDamage: 0
 --- !u!114 &2250715604920567342
@@ -1063,7 +1063,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedUnit: {fileID: 2296368662948018745}
   renderer: {fileID: 5221663823888843616}
+  vehicleAnimator: {fileID: 0}
+  vehicle_sfx: {fileID: 0}
   speedFactor: 100
+  idlePitchSFX: 1
+  drivePitchSFX: -1
+  vehicleVolumnSFX: 1
 --- !u!1 &7771507350538075472
 GameObject:
   m_ObjectHideFlags: 0

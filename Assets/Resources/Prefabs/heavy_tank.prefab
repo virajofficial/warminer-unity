@@ -275,7 +275,7 @@ MonoBehaviour:
   progressOverrideController:
     fetchType: 0
     items:
-    - {fileID: 22100000, guid: cd92369e97bf29f4fb9fbcd04ab1a07a, type: 2}
+    - {fileID: 22100000, guid: 12389f4d37a78b54da1414a3113d12ee, type: 2}
   progressDuration: 0
   progressMaxDistance: 1
   inProgressObject: {fileID: 0}
@@ -304,7 +304,7 @@ MonoBehaviour:
   requireTarget: 0
   allowMultipleTerrainAttacks: 0
   terrainAttackActive: 0
-  reloadDuration: 1.5
+  reloadDuration: 1
   delayTriggerEnabled: 0
   attackIterationTriggered: 0
   cooldown:
@@ -321,8 +321,8 @@ MonoBehaviour:
       launchPosition: {fileID: 4298667608750044927}
       launchRotationAngles: {x: 0, y: 0, z: 0}
       preDelayTime: 0
-      postDelayTime: 0.5
-      launchDelayTime: 0.2
+      postDelayTime: 0
+      launchDelayTime: 0
       damageInDelay: 0
       delayParentObject: {fileID: 4298667608750044927}
       index: 0
@@ -332,8 +332,8 @@ MonoBehaviour:
   damage:
     enabled: 1
     data:
-      unit: 14
-      building: 22
+      unit: 50
+      building: 50
       custom: []
     areaAttackEnabled: 1
     areaAttackData:
@@ -352,7 +352,25 @@ MonoBehaviour:
       infinite: 0
       cycleDuration: 0
       cycles: 0
-    hitEffects: []
+    hitEffects:
+    - picker:
+        type: 0
+        options:
+          codes: []
+          categories: []
+        targetUnits: 0
+        targetBuildings: 0
+      effect:
+        input: {fileID: 7146410324957126668, guid: 84a0f3432553b824f9c5f0e5a9ffd4bc, type: 3}
+      faceSource: 0
+      audio:
+        fetchType: 0
+        items: []
+        cooldown:
+          enabled: 0
+          defaultValueRange:
+            _min: 0
+            _max: 0
     resetDamageDealt: 0
     damageDealtEvent:
       m_PersistentCalls:
@@ -410,15 +428,15 @@ MonoBehaviour:
     unitStoppingDistance:
       _min: 3
       _max: 10
-    unitEnableDistance: 9
+    unitEnableDistance: 20
     buildingStoppingDistance:
-      _min: 3
-      _max: 10
+      _min: 10
+      _max: 15
     noTargetStoppingDistance:
       _min: 3
       _max: 10
     enforceMinStoppingDistance: 1
-    minStoppingDistance: 1
+    minStoppingDistance: 10
     stopMovementOnTargetInRange: 1
     updateMvtDistance: 2
     movementFormation:
@@ -1641,9 +1659,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tabID:
     x: 0
-    y: 0
-  maxHealth: 200
-  initialHealth: 200
+    y: 2
+  maxHealth: 800
+  initialHealth: 800
   canIncrease: 1
   canDecrease: 1
   hoverHealthBarData:
@@ -1680,7 +1698,7 @@ MonoBehaviour:
     usePercentage: 0
     healthRange:
       _min: 0
-      _max: 200
+      _max: 800
     showChildObjects: []
     hideChildObjects: []
     triggerEvent:
@@ -1899,8 +1917,11 @@ MonoBehaviour:
   selectedUnit: {fileID: 8107861649261106648}
   renderer: {fileID: 4199418855356573309}
   vehicleAnimator: {fileID: 4486120129787787274}
-  speedFactor: 100
   vehicle_sfx: {fileID: 7932521821330519907}
+  speedFactor: 100
+  idlePitchSFX: 1
+  drivePitchSFX: -1
+  vehicleVolumnSFX: 1
 --- !u!1001 &4337607826211664577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1909,6 +1930,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8147897949795723064}
     m_Modifications:
+    - target: {fileID: 176662017727662795, guid: 6c21733cb0c0fae418328bf4e01b713d, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 12389f4d37a78b54da1414a3113d12ee, type: 2}
     - target: {fileID: 721238863031132607, guid: 6c21733cb0c0fae418328bf4e01b713d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0.000071263414

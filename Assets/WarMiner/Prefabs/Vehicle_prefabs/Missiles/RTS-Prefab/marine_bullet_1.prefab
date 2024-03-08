@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 54423085990588588}
   - component: {fileID: 6436169311860374367}
   m_Layer: 0
-  m_Name: archer_level1_arrow
+  m_Name: marine_bullet_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,6 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4871566189724006}
+  - {fileID: 8659521698349665455}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114592189441036048
@@ -48,9 +49,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 903827dccafd4fd4898d5beb841b13be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  code: archer_level1_arrow
+  code: marine_bullet_1
   tabID:
-    x: 0
+    x: 1
     y: 1
   enableLifeTime: 1
   defaultLifeTime: 3
@@ -78,34 +79,34 @@ MonoBehaviour:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: 1.9937304
-        outSlope: 1.9937304
+        inSlope: -0.2740483
+        outSlope: -0.2740483
         tangentMode: 34
         weightedMode: 0
         inWeight: 0
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.50197077
-        value: 1.0007944
-        inSlope: 0.023014668
-        outSlope: 0.023014668
+        time: 1.2493258
+        value: -0.3423756
+        inSlope: -0.45635596
+        outSlope: -0.45635596
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.13597499
+        outWeight: 0.52144355
       - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: -3.4408834
-        outSlope: -3.4408834
+        time: 3.3433793
+        value: -1.7859958
+        inSlope: -0.8448065
+        outSlope: -0.8448065
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.33333334
+        outWeight: 0.39399657
       - serializedVersion: 3
-        time: 5.9913197
-        value: -50.038464
-        inSlope: -10.025097
+        time: 6.0160694
+        value: -4.647106
+        inSlope: -1.0704982
         outSlope: -6.050475
         tangentMode: 69
         weightedMode: 0
@@ -141,12 +142,12 @@ MonoBehaviour:
         outWeight: 0.05567187
       - serializedVersion: 3
         time: 5
-        value: -5
-        inSlope: -1.25
-        outSlope: -1.25
-        tangentMode: 34
+        value: -1.0132141
+        inSlope: -0.4064843
+        outSlope: -0.4064843
+        tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
+        inWeight: 0.203125
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -168,7 +169,7 @@ MonoBehaviour:
   triggerAudio:
     fetchType: 0
     items:
-    - {fileID: 8300000, guid: 51342d39e8be79144a81856bb418bef4, type: 3}
+    - {fileID: 8300000, guid: d6cb075284a439b4b95414c24c0a41a3, type: 3}
     cooldown:
       enabled: 0
       defaultValueRange:
@@ -375,7 +376,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4871566189724006
 Transform:
   m_ObjectHideFlags: 0
@@ -442,3 +443,108 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &8573960282847397685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8659521698349665455}
+  - component: {fileID: 5916736821205911891}
+  - component: {fileID: 8622596110763899156}
+  - component: {fileID: 6833304242914768345}
+  m_Layer: 0
+  m_Name: Bullet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8659521698349665455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8573960282847397685}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4452627234291680}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5916736821205911891
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8573960282847397685}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &8622596110763899156
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8573960282847397685}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &6833304242914768345
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8573960282847397685}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: -0.0000076293945, y: 0, z: 0}

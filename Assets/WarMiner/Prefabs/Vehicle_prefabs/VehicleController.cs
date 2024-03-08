@@ -69,7 +69,6 @@ public class VehicleController : MonoBehaviour
             leftValue = 1;
             vehicleAnimator.SetFloat("TankX", 0);
             vehicleAnimator.SetFloat("TankZ", Mathf.Clamp(speed * speedFactor, -3, 3));
-            Debug.Log("forward");
             //Forward
         }
         rightWheels.SetFloat("_TracksSpeed", Mathf.Clamp(speed * speedFactor * rightValue, -3, 3));

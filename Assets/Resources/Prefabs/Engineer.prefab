@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 234489397655311014}
   - component: {fileID: 7271101922432086516}
   - component: {fileID: 5253105817387126024}
+  - component: {fileID: 1591319204140345091}
   m_Layer: 0
   m_Name: Engineer
   m_TagString: Untagged
@@ -184,16 +185,16 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.3
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 8
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -201,23 +202,41 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.125
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -8.0032
+      outSlope: -8.0032
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.24562073
+      value: 0.4741974
+      inSlope: -3.0087976
+      outSlope: -3.0087976
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.38596487
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.46929932
+      value: 0.1048584
+      inSlope: -0.6557423
+      outSlope: -0.6557423
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.44763643
+      outWeight: 0.19008096
     - serializedVersion: 3
       time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      value: 0.008880615
+      inSlope: -0.12505
+      outSlope: -0.12505
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -373,6 +392,21 @@ MonoBehaviour:
   isActive: 1
   keepActiveTask: 1
   excludeResourceCollectionInKeepActiveTask: 1
+--- !u!114 &1591319204140345091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938134673395143859}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2623de717733ca14890ac0cf7057c549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitAudioSource: {fileID: 0}
+  unitAgent: {fileID: 0}
+  audioClips: []
 --- !u!1 &1002499913435050258
 GameObject:
   m_ObjectHideFlags: 0
@@ -1193,8 +1227,9 @@ MonoBehaviour:
   idleAngularSpeed:
     value: 200
   mvtAudio:
-    fetchType: 0
-    items: []
+    fetchType: 2
+    items:
+    - {fileID: 8300000, guid: d483f261d97973e43a575a5555b1f94a, type: 3}
     cooldown:
       enabled: 1
       defaultValueRange:
