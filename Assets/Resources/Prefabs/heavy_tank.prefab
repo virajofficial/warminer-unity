@@ -1917,7 +1917,7 @@ MonoBehaviour:
   selectedUnit: {fileID: 8107861649261106648}
   renderer: {fileID: 4199418855356573309}
   vehicleAnimator: {fileID: 4486120129787787274}
-  vehicle_sfx: {fileID: 7932521821330519907}
+  vehicle_sfx: {fileID: 8086558110536342410}
   speedFactor: 100
   idlePitchSFX: 1
   drivePitchSFX: -1
@@ -2269,11 +2269,6 @@ Animator:
 --- !u!4 &4959426211781552752 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8710292130147129521, guid: 6c21733cb0c0fae418328bf4e01b713d, type: 3}
-  m_PrefabInstance: {fileID: 4337607826211664577}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &7932521821330519907 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5919908899430614434, guid: 6c21733cb0c0fae418328bf4e01b713d, type: 3}
   m_PrefabInstance: {fileID: 4337607826211664577}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4372021334480239008
