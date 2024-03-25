@@ -195821,6 +195821,30 @@ PrefabInstance:
       propertyPath: m_AspectRatio
       value: NaN
       objectReference: {fileID: 0}
+    - target: {fileID: 3388601002387431907, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388601002387431907, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3595851708320622004}
+    - target: {fileID: 3388601002387431907, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeCamPosition
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388601002387431907, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RTSEngine.Cameras.MainCameraPanningHandlerBase, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388601002387431907, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388601002387431907, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3708312659044481199, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -195892,6 +195916,54 @@ PrefabInstance:
     - target: {fileID: 4966788555100797978, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -62
+      objectReference: {fileID: 0}
+    - target: {fileID: 5719067782687541972, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5719067782687541972, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3595851708320622004}
+    - target: {fileID: 5719067782687541972, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeCamPosition
+      objectReference: {fileID: 0}
+    - target: {fileID: 5719067782687541972, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RTSEngine.Cameras.MainCameraPanningHandlerBase, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5719067782687541972, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5719067782687541972, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810826844923709806, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810826844923709806, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3595851708320622004}
+    - target: {fileID: 5810826844923709806, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeCamPosition
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810826844923709806, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RTSEngine.Cameras.MainCameraPanningHandlerBase, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810826844923709806, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810826844923709806, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6215564817068044921, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
       propertyPath: m_LocalRotation.w
@@ -196256,6 +196328,30 @@ PrefabInstance:
     - target: {fileID: 6579130518409123944, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865982838029282389, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865982838029282389, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3595851708320622004}
+    - target: {fileID: 6865982838029282389, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeCamPosition
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865982838029282389, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RTSEngine.Cameras.MainCameraPanningHandlerBase, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865982838029282389, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865982838029282389, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7145818694483255636, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
       propertyPath: m_Type
@@ -196845,6 +196941,26 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a062b95cf2a1e1743aa2ab2b8aba9449, type: 3}
+    - target: {fileID: 7589070887162722509, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7589070887162722509, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3595851708320622004}
+    - target: {fileID: 7589070887162722509, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeCamPosition
+      objectReference: {fileID: 0}
+    - target: {fileID: 7589070887162722509, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RTSEngine.Cameras.MainCameraPanningHandlerBase, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7589070887162722509, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7992349384327688168, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -215175,7 +215291,7 @@ MonoBehaviour:
       - {fileID: 1713662478}
       - {fileID: 1876544395}
       typeSpecific: []
-  randomFactionSlots: 1
+  randomFactionSlots: 0
 --- !u!224 &3595851709370629336 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7468401218792386759, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}

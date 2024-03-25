@@ -131,6 +131,8 @@ namespace RTSEngine.Cameras
             SetPosition(cameraController.MainCamera.transform.position
                 + Quaternion.Euler(new Vector3(0f, cameraController.MainCamera.transform.eulerAngles.y, 0f)) * LastPanDirection * CurrPanningSpeed * Time.deltaTime);
         }
+
+
         #endregion
     }
 }
