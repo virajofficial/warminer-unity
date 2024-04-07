@@ -17,9 +17,9 @@ MonoBehaviour:
     enabled: 1
     displayType: 2
     icon: {fileID: 21300000, guid: 07d20d41cd8341d43947f7d4dc9f6848, type: 3}
-    panelCategory: 2
-    forceSlot: 0
-    slotIndex: 0
+    panelCategory: 0
+    forceSlot: 1
+    slotIndex: 8
     tooltipEnabled: 1
     description: Create Vehicle Factory
     hideTooltipOnClick: 1

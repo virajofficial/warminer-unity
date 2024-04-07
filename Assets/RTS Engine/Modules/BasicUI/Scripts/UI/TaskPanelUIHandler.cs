@@ -32,6 +32,9 @@ namespace RTSEngine.UI
         [SerializeField, Tooltip("Task panel can be broken down into different categories where each category is defined by its index in this array. At least one category must be defined!")]
         private Category[] categories = new Category[0];
 
+        [SerializeField]
+        public Transform taskPanel;
+
         [SerializeField, Tooltip("Enable this option to re-direct category IDs defined in the task UI data to category IDs in the 'Directed Categories' array.")]
         private bool enableRedirectCategories = false;
         [SerializeField, Tooltip("When redirecting categories is enabled, each element of this integer array with index 'i' will redirect the category of ID 'i' to the value of the element 'j'.")]
