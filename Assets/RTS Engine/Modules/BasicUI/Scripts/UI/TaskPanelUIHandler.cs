@@ -46,6 +46,7 @@ namespace RTSEngine.UI
 
         //if true, the task panel can not be updated.
         private bool isLocked = false;
+
         private List<string> lastUnusedTaskCodes;
 
         //Holds the active tasks of the IEntityComponent components organized by their unique codes.
@@ -241,8 +242,25 @@ namespace RTSEngine.UI
                     {
                         task.Disable();
                     }
-
+            /*if(componentTasks.Count == 0)
+            {
+                taskPanel.GetComponent<Animator>().ResetTrigger("taskIn");
+                taskPanel.GetComponent<Animator>().SetTrigger("taskOut");
+            }*/
+            
             componentTasks.Clear();
+        }
+
+        public void TaskPanelShow()
+        {
+            taskPanel.GetComponent<Animator>().SetTrigger("taskIn");
+            taskPanel.GetComponent<Animator>().ResetTrigger("taskOut");
+        }
+
+        public void TaskPanelHide()
+        {
+            taskPanel.GetComponent<Animator>().ResetTrigger("taskIn");
+            taskPanel.GetComponent<Animator>().SetTrigger("taskOut");
         }
 
         private void Show ()
@@ -266,7 +284,12 @@ namespace RTSEngine.UI
             foreach (string uncalledTaskCode in lastUnusedTaskCodes)
                 DisableEntityComponentTask(uncalledTaskCode, onEmptyOnly: true);
 
+            
             this.lastUnusedTaskCodes.Clear();
+
+            Debug.Log("task count " + componentTasks.Count);
+
+            
         }
 
         #region IEntityComponent Task Handling

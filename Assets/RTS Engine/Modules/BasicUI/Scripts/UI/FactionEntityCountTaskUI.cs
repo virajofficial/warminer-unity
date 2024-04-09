@@ -41,11 +41,11 @@ namespace RTSEngine.UI
         protected override void OnDisabled()
         {
             label.enabled = false;
-            if(panel != null)
+            /*if(panel != null)
             {
                 panel.GetComponent<Animator>().SetTrigger("taskOut");
                 panel.GetComponent<Animator>().ResetTrigger("taskIn");
-            }
+            }*/
             
         }
         #endregion
@@ -64,8 +64,8 @@ namespace RTSEngine.UI
             selectionMgr.RemoveAll();
             var nextEntities = gameMgr.LocalFactionSlot.FactionMgr.GetFactionEntitiesListByCode(Attributes.code);
             selectionMgr.Add(nextEntities);
-            panel.GetComponent<Animator>().ResetTrigger("taskOut");
-            panel.GetComponent<Animator>().SetTrigger("taskIn");
+            /*panel.GetComponent<Animator>().ResetTrigger("taskOut");
+            panel.GetComponent<Animator>().SetTrigger("taskIn");*/
         }
         #endregion
     }
