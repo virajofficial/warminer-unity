@@ -184,6 +184,7 @@ Transform:
   - {fileID: 7580969152974504119}
   - {fileID: 4924698650779687107}
   - {fileID: 6409707521985505601}
+  - {fileID: 3128681543507494099}
   - {fileID: 7717389421394839506}
   - {fileID: 4053899588368676879}
   m_Father: {fileID: 0}
@@ -209,7 +210,7 @@ MonoBehaviour:
   description: hydrogen Deposit
   icon: {fileID: 21300000, guid: f195f5f25b4219748ae102563490ecdc, type: 3}
   radius: 1.81
-  model: {fileID: 6940746756836072808}
+  model: {fileID: 7885595465429471457}
   isIdle: 0
   resourceType: {fileID: 11400000, guid: c879ec68b88807749a9923a6135ed15f, type: 2}
   canCollect: 1
@@ -574,6 +575,85 @@ MonoBehaviour:
       defaultValueRange:
         _min: 1
         _max: 2
+--- !u!1001 &1296057774827272544
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1556270788904629861}
+    m_Modifications:
+    - target: {fileID: 4222066258379783603, guid: dbf8fe8e060888a459a1f5ac41cfcdb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222066258379783603, guid: dbf8fe8e060888a459a1f5ac41cfcdb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222066258379783603, guid: dbf8fe8e060888a459a1f5ac41cfcdb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222066258379783603, guid: dbf8fe8e060888a459a1f5ac41cfcdb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222066258379783603, guid: dbf8fe8e060888a459a1f5ac41cfcdb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.017
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222066258379783603, guid: dbf8fe8e060888a459a1f5ac41cfcdb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222066258379783603, guid: dbf8fe8e060888a459a1f5ac41cfcdb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222066258379783603, guid: dbf8fe8e060888a459a1f5ac41cfcdb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222066258379783603, guid: dbf8fe8e060888a459a1f5ac41cfcdb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222066258379783603, guid: dbf8fe8e060888a459a1f5ac41cfcdb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222066258379783603, guid: dbf8fe8e060888a459a1f5ac41cfcdb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222066258379783603, guid: dbf8fe8e060888a459a1f5ac41cfcdb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222066258379783603, guid: dbf8fe8e060888a459a1f5ac41cfcdb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8976737174022826369, guid: dbf8fe8e060888a459a1f5ac41cfcdb5, type: 3}
+      propertyPath: m_Name
+      value: Deposit-Hydrogen
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dbf8fe8e060888a459a1f5ac41cfcdb5, type: 3}
+--- !u!4 &3128681543507494099 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4222066258379783603, guid: dbf8fe8e060888a459a1f5ac41cfcdb5, type: 3}
+  m_PrefabInstance: {fileID: 1296057774827272544}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7885595465429471457 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8976737174022826369, guid: dbf8fe8e060888a459a1f5ac41cfcdb5, type: 3}
+  m_PrefabInstance: {fileID: 1296057774827272544}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1856184521714972348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -643,11 +723,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9d7cf576a140646810df744db0e75e, type: 3}
---- !u!1 &6940746756836072808 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8759503037167217620, guid: 5e9d7cf576a140646810df744db0e75e, type: 3}
-  m_PrefabInstance: {fileID: 1856184521714972348}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7717389421394839506 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8276438772799697262, guid: 5e9d7cf576a140646810df744db0e75e, type: 3}

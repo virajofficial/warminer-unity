@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4090303597857178812
 Transform:
   m_ObjectHideFlags: 0
@@ -198,7 +198,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 0.995, y: 0.755, z: 1.12}
   m_MoveThreshold: 0.1
-  m_Carve: 0
+  m_Carve: 1
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.71, z: 0}
   m_TimeToStationary: 0.5
@@ -368,6 +368,157 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &4469443298948807879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5911653898340147862}
+  - component: {fileID: 1238491982020348871}
+  - component: {fileID: 3916701516234509431}
+  - component: {fileID: 6340694338892654058}
+  m_Layer: 0
+  m_Name: building_extension (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5911653898340147862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4469443298948807879}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6279533728924501596}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1238491982020348871
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4469443298948807879}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!54 &3916701516234509431
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4469443298948807879}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
+--- !u!114 &6340694338892654058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4469443298948807879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c48e18716b3ed64bb9756bb6fc5711e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placableTerrainAreas:
+  - {fileID: 11400000, guid: 37d2dffab9a31a84c81d764228531ba7, type: 2}
+  canPlaceOutsideBorder: 1
+  canPlaceInEnemyBorder: 0
+  ignoreLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  placeAudio:
+    fetchType: 0
+    items: []
+    cooldown:
+      enabled: 1
+      defaultValueRange:
+        _min: 1
+        _max: 2
+  debug: 0
+  tabID:
+    x: 0
+    y: 1
+  segmentData:
+    enabled: 0
+    segmentLength: 1.32
+    minAmount: 2
+  minSegmentCountForReplacement: 3
+  firstSegmentReplacement:
+    prefabObject: {fileID: 0}
+    requiredResources: []
+    factionEntityRequirements: []
+  lastSegmentReplacement:
+    prefabObject: {fileID: 0}
+    requiredResources: []
+    factionEntityRequirements: []
+  segmentPeriodReplacement:
+    enabled: 1
+    period: 3
+    targetSegment:
+      prefabObject: {fileID: 0}
+      requiredResources: []
+      factionEntityRequirements: []
+    disableNextToEdges: 1
+  defaultSegmentReplacement:
+    prefabObject: {fileID: 0}
+    requiredResources: []
+    factionEntityRequirements: []
+  segmentSnapping:
+    enabled: 0
+    range: 0.2
+    targetOptions:
+      codes: []
+      categories: []
+  gridOptions:
+    area:
+      x: 4
+      y: 4
+    pivotPoint: 2
+  displayGridArea: 1
+  gridAreaColor: {r: 0, g: 0, b: 1, a: 1}
 --- !u!1 &5806958001195942575
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,6 +906,7 @@ Transform:
   - {fileID: 5490706447947209265}
   - {fileID: 8109044304735203346}
   - {fileID: 4090303597857178812}
+  - {fileID: 5911653898340147862}
   - {fileID: 1011873221351117400}
   - {fileID: 540649036003919763}
   - {fileID: 3286371701980295953}

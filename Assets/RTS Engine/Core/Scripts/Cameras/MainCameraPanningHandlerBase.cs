@@ -199,12 +199,13 @@ namespace RTSEngine.Cameras
         {
             Vector2 minPos;
             Vector2 maxPos;
-
             switch (factionId)
             {
                 case 0:
                     minPos = new Vector2(-20, -20);
                     maxPos = new Vector2(120, 120);
+                    //GameObject.Instantiate(new GameObject("Fog Wall"), new Vector3(0, 0, 0), Quaternion.identity);
+                   
                     break;
                 case 1:
                     minPos = new Vector2(-20, -20);

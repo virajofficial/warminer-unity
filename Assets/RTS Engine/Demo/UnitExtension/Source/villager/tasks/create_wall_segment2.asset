@@ -10,20 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abf428716af4f8f438cb34c5c761450b, type: 3}
-  m_Name: create_wall_segment
+  m_Name: create_wall_segment2
   m_EditorClassIdentifier: 
   data:
     code: create_wall_segment
     enabled: 1
     displayType: 2
     icon: {fileID: 21300000, guid: 328b6de2b92f45d49809594e89af8d23, type: 3}
-    panelCategory: 1
+    panelCategory: 0
     forceSlot: 1
-    slotIndex: 3
+    slotIndex: 12
     tooltipEnabled: 1
-    description: Create Wall.
+    description: Create Wall
     hideTooltipOnClick: 1
-    reloadTime: 0
+    reloadTime: 0.1
     cursor:
       icon: {fileID: 0}
+      texture: {fileID: 0}
       hotspot: {x: 0, y: 0}
+    controlType: {fileID: 0}

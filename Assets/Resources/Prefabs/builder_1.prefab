@@ -241,7 +241,6 @@ GameObject:
   - component: {fileID: 880672069060025870}
   - component: {fileID: 9058980282159142989}
   - component: {fileID: 6997033892249106875}
-  - component: {fileID: 7018522267117981320}
   m_Layer: 0
   m_Name: unit_components
   m_TagString: Untagged
@@ -645,6 +644,25 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     prefabObject: {fileID: 7764814157026617138, guid: a62e3c1faf0319045a31b435c5ca2d4e, type: 3}
+  - taskTitle: 'Place Building: Wall Segment'
+    taskUI: {fileID: 11400000, guid: 9245a11ad009b004abdb7f8e97d35fa1, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 50
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 123817841670975504, guid: cd6e0d4430e4e4a498f502e13eb34040, type: 3}
   upgradeTargetCreationTasks: []
   fetchConstructionAudioOnce: 0
   constructionAudio:
@@ -679,43 +697,6 @@ MonoBehaviour:
   showWorkerPositionsGizmos: 1
   showWorkersGizmos: 1
   showWorkersFoldout: 0
---- !u!114 &7018522267117981320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3434139838892045365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b130f358dcb26548b2ff0923d496dc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  team: 0
-  brightness: 1
-  offset: {x: 0, y: 0, z: 0}
-  shapeType: 0
-  snapToPixelCenter: 0
-  rotateToForward: 0
-  absoluteCenterPoint: 0
-  centerPoint: {x: 0, y: 0}
-  boxSize: {x: 5, y: 5}
-  circleRadius: 5
-  innerRadius: 1
-  angle: 180
-  texture: {fileID: 0}
-  mesh: {fileID: 0}
-  lineOfSightMask:
-    serializedVersion: 2
-    m_Bits: 0
-  lineOfSightRaycastCount: 100
-  lineOfSightPenetration: 0
-  lineOfSightRaycastAngle: 360
-  lineOfSightRaycastAngleOffset: 0
-  lineOfSightSeeOutsideRange: 0
-  multithreading: 0
-  cellBased: 0
-  cellTestPoint: 1
 --- !u!1 &6768521507055047617
 GameObject:
   m_ObjectHideFlags: 0
