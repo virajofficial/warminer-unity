@@ -6,9 +6,9 @@ TerrainLayer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RedSand
-  m_DiffuseTexture: {fileID: 2800000, guid: 76c9f3041a5401242ae14bf332db6ca0, type: 3}
-  m_NormalMapTexture: {fileID: 0}
+  m_Name: NewLayer
+  m_DiffuseTexture: {fileID: 2800000, guid: c27220858ae0f6446aad43a6e7176710, type: 3}
+  m_NormalMapTexture: {fileID: 2800000, guid: c39c27cb220c80f40b13ba94a921d2fa, type: 3}
   m_MaskMapTexture: {fileID: 0}
   m_TileSize: {x: 4, y: 4}
   m_TileOffset: {x: 0, y: 0}
