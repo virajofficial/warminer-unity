@@ -17,9 +17,9 @@ MonoBehaviour:
     enabled: 1
     displayType: 2
     icon: {fileID: 21300000, guid: 45f21cff86dd5d54ba0c9458bd3b7ac8, type: 3}
-    panelCategory: 1
+    panelCategory: 0
     forceSlot: 1
-    slotIndex: 2
+    slotIndex: 6
     tooltipEnabled: 1
     description: Create Orbium Miner
     hideTooltipOnClick: 1

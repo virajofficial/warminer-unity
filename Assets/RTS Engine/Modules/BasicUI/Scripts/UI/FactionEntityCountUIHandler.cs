@@ -94,12 +94,19 @@ namespace RTSEngine.UI
                 if (!task.enabled)
                 {
                     nextTask = task;
+                    
                     break;
                 }
 
             // None found? create one!
-            if(!nextTask.IsValid())
+            if (!nextTask.IsValid())
+            {
                 nextTask = Create(tasks, panel.transform);
+                nextTask.GetComponent<FactionEntityCountTaskUI>().panel = GetComponent<TaskPanelUIHandler>().taskPanel;
+            }
+                
+
+
 
             codeToTask.Add(factionEntityCode, nextTask);
             return nextTask;

@@ -1038,7 +1038,7 @@ MonoBehaviour:
     animatorOverrideController:
       fetchType: 0
       items:
-      - {fileID: 22100000, guid: c6eb86904b4d5cc4aa05a40c0907040f, type: 2}
+      - {fileID: 22100000, guid: 072165d23dd31dc4bb80ddef505043d5, type: 2}
     enableObject: {fileID: 0}
     enableAudio:
       fetchType: 0

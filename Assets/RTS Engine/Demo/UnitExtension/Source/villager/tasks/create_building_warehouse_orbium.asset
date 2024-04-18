@@ -17,9 +17,9 @@ MonoBehaviour:
     enabled: 1
     displayType: 2
     icon: {fileID: 21300000, guid: 68ffef65bf0f09143bda8fbf841dd3f9, type: 3}
-    panelCategory: 2
-    forceSlot: 0
-    slotIndex: 2
+    panelCategory: 0
+    forceSlot: 1
+    slotIndex: 11
     tooltipEnabled: 1
     description: Create Warehouse Orbium
     hideTooltipOnClick: 1

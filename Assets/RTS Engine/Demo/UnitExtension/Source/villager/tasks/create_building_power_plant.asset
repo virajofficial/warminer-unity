@@ -17,9 +17,9 @@ MonoBehaviour:
     enabled: 1
     displayType: 2
     icon: {fileID: 21300000, guid: fafaa29055758124797db7d7b344f6b4, type: 3}
-    panelCategory: 1
+    panelCategory: 0
     forceSlot: 1
-    slotIndex: 3
+    slotIndex: 7
     tooltipEnabled: 1
     description: Create Power Plant
     hideTooltipOnClick: 1
