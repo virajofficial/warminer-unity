@@ -26,6 +26,12 @@
 # Visual Studio cache directory
 .vs/
 
+# Ignored maps
+Assets/Scenes/Main_Map_new.unity
+Assets/Scenes/Main_Map_new.unity.meta
+Assets/Scenes/MapPerfab.meta
+Assets/Scenes/MapPerfab/
+
 # Gradle cache directory
 .gradle/
 
