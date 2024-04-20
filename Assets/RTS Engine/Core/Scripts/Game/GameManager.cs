@@ -244,6 +244,8 @@ namespace RTSEngine.Game
             RaiseGamePostBuilt();
 
             OnInit();
+
+            
         }
 
         private bool Build ()
@@ -274,6 +276,8 @@ namespace RTSEngine.Game
                 return true;
             }
 
+            
+
             RandomizeFactionSlots(CurrBuilder.Data.factionSlotIndexSeed?.ToList());
 
             defeatCondition = CurrBuilder.Data.defeatCondition;
@@ -296,6 +300,8 @@ namespace RTSEngine.Game
                 factionSlots[factionSlots.Count - 1].InitDestroy();
                 factionSlots.RemoveAt(factionSlots.Count - 1);
             }
+
+            Debug.Log("Actve slots = " + ActiveFactionSlots[0].FactionMgr.FactionID + " ***** = " + ActiveFactionSlots[1].FactionMgr.FactionID);
 
             return true;
         }
@@ -328,7 +334,8 @@ namespace RTSEngine.Game
                 LocalFactionSlot = FactionSlots.FirstOrDefault(slot => slot.Data.isLocalPlayer);
                 return false;
             }
-
+            Debug.Log("Local Slot = " + LocalFactionSlot.FactionMgr.FactionID);
+            MapSelectorScript.Instance.FactionUIInit(LocalFactionSlot.FactionMgr.FactionID, ActiveFactionSlots.Count);
             return true;
         }
         #endregion

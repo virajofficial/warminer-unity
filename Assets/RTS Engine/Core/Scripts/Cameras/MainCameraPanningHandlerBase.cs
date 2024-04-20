@@ -227,8 +227,9 @@ namespace RTSEngine.Cameras
                     maxPos = new Vector2(120, 120);
                     break;
             }
-            LookAt(MapSelectorScript.Instance.CamPostionSet(factionId), smooth: false);
             panLimit = new PanningLimit { enabled = true, minPosition = minPos, maxPosition = maxPos };
+            LookAt(MapSelectorScript.Instance.CamPostionSet(factionId), smooth: false);
+            
         }
         #endregion
     }
