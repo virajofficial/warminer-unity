@@ -52,6 +52,7 @@ public class MapSelectorScript : MonoBehaviour
                 }
             }
         }
+        Debug.Log("object = " + GameObject.Find("command_center_" + facId.ToString()).transform.position);
         return GameObject.Find("command_center_" + facId.ToString()).transform.localPosition;
     }
 
