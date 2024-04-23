@@ -207781,6 +207781,7 @@ MonoBehaviour:
   factionUIParent: {fileID: 1740882791}
   miniMapUI: {fileID: 2075819678}
   SelectedFaction: 0
+  isInEnemyMap: 0
 --- !u!114 &3595851708328668673
 MonoBehaviour:
   m_ObjectHideFlags: 0

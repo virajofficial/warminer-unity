@@ -1009,11 +1009,11 @@ MonoBehaviour:
   debug: 0
   tabID:
     x: 0
-    y: 2
+    y: 1
   segmentData:
     enabled: 1
     segmentLength: 1
-    minAmount: 2
+    minAmount: 3
   minSegmentCountForReplacement: 3
   firstSegmentReplacement:
     prefabObject: {fileID: 8745509856219470210, guid: 41fad6694d881084687c129510cadce4, type: 3}
@@ -1047,7 +1047,7 @@ MonoBehaviour:
       factionEntityRequirements: []
     disableNextToEdges: 1
   defaultSegmentReplacement:
-    prefabObject: {fileID: 0}
+    prefabObject: {fileID: 123817841670975504}
     requiredResources: []
     factionEntityRequirements: []
   segmentSnapping:
