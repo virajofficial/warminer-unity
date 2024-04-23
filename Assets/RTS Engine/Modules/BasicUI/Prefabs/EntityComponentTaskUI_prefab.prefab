@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a939d601083bbf4184336b882bca6a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deactivateObjectOnDisable: 0
+  deactivateObjectOnDisable: 1
   image: {fileID: 3780731008656555542}
   tooltipDisplayType: 0
   controlLabel: {fileID: 2888585831081640532}

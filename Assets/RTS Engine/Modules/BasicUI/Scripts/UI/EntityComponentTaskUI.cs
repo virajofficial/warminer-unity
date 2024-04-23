@@ -19,7 +19,8 @@ namespace RTSEngine.UI
             : Attributes.data.icon; 
 
         protected override Color IconColor => Attributes.locked 
-            ? Attributes.lockedData.color 
+            //? Attributes.lockedData.color 
+            ? new Color32(255,100,100,150)  /// ***************** test for Entity Component UI Prefab Not disable;
             : Color.white;
 
         protected override bool IsTooltipEnabled => Attributes.data.tooltipEnabled;

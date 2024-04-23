@@ -973,9 +973,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tabID:
     x: 0
-    y: 2
+    y: 0
   maxHealth: 150
-  initialHealth: 1
+  initialHealth: 150
   canIncrease: 1
   canDecrease: 1
   hoverHealthBarData:
@@ -1045,7 +1045,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   repairCosts: []
-  buildTime: 50
+  buildTime: 5
 --- !u!82 &7511119341938498292
 AudioSource:
   m_ObjectHideFlags: 0
