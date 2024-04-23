@@ -199,52 +199,24 @@ namespace RTSEngine.Cameras
         {
             Vector2 minPos;
             Vector2 maxPos;
-            /*switch (factionId)
-            {
-                case 0:
-                    minPos = new Vector2(-50, -110);
-                    maxPos = new Vector2(153, 100);
-                    //GameObject.Instantiate(new GameObject("Fog Wall"), new Vector3(0, 0, 0), Quaternion.identity);
-                    break;
-                case 1:
-                    minPos = new Vector2(-350, -110);
-                    maxPos = new Vector2(-220, 100);
-                    break;
-                case 2:
-                    minPos = new Vector2(-350, 300);
-                    maxPos = new Vector2(-200, 460);
-                    break;
-                case 3:
-                    minPos = new Vector2(-50, 300);
-                    maxPos = new Vector2(153, 460);
-                    break;
-                case 4:
-                    minPos = new Vector2(80, -20);
-                    maxPos = new Vector2(120, 20);
-                    break;
-                default:
-                    minPos = new Vector2(-20, -20);
-                    maxPos = new Vector2(120, 120);
-                    break;
-            }*/
             switch (factionId)
             {
                 case 0:
-                    minPos = new Vector2(-20, -20);
-                    maxPos = new Vector2(120, 120);
-
+                    minPos = new Vector2(-50, 90);
+                    maxPos = new Vector2(100, 200);
+                    //GameObject.Instantiate(new GameObject("Fog Wall"), new Vector3(0, 0, 0), Quaternion.identity);
                     break;
                 case 1:
-                    minPos = new Vector2(-20, -20);
-                    maxPos = new Vector2(20, 20);
+                    minPos = new Vector2(340, 370);
+                    maxPos = new Vector2(500, 500);
                     break;
                 case 2:
-                    minPos = new Vector2(80, 80);
-                    maxPos = new Vector2(120, 120);
+                    minPos = new Vector2(-50, 360);
+                    maxPos = new Vector2(100, 500);
                     break;
                 case 3:
-                    minPos = new Vector2(-20, 80);
-                    maxPos = new Vector2(20, 120);
+                    minPos = new Vector2(340, 90);
+                    maxPos = new Vector2(500, 200);
                     break;
                 case 4:
                     minPos = new Vector2(80, -20);
@@ -255,6 +227,34 @@ namespace RTSEngine.Cameras
                     maxPos = new Vector2(120, 120);
                     break;
             }
+            //switch (factionId)
+            //{
+            //    case 0:
+            //        minPos = new Vector2(-20, -20);
+            //        maxPos = new Vector2(120, 120);
+
+            //        break;
+            //    case 1:
+            //        minPos = new Vector2(-20, -20);
+            //        maxPos = new Vector2(20, 20);
+            //        break;
+            //    case 2:
+            //        minPos = new Vector2(80, 80);
+            //        maxPos = new Vector2(120, 120);
+            //        break;
+            //    case 3:
+            //        minPos = new Vector2(-20, 80);
+            //        maxPos = new Vector2(20, 120);
+            //        break;
+            //    case 4:
+            //        minPos = new Vector2(80, -20);
+            //        maxPos = new Vector2(120, 20);
+            //        break;
+            //    default:
+            //        minPos = new Vector2(-20, -20);
+            //        maxPos = new Vector2(120, 120);
+            //        break;
+            //}
             panLimit = new PanningLimit { enabled = true, minPosition = minPos, maxPosition = maxPos };
             LookAt(MapSelectorScript.Instance.CamPostionSet(factionId), smooth: false);
             
