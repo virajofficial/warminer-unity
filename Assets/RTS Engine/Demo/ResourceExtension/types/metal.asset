@@ -17,7 +17,8 @@ MonoBehaviour:
   description: Required to create armed units and vehicles. Can be mined from mineral
     resources.
   hasCapacity: 0
+  capacityType: 1
   startingAmount:
-    amount: 400
+    amount: 4000
     capacity: 0
   icon: {fileID: 21300000, guid: 623a714700e9f1446aa73bb2fb8a6fae, type: 3}

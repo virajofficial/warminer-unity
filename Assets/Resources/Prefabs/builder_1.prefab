@@ -652,7 +652,7 @@ MonoBehaviour:
     requiredResources:
     - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
       value:
-        amount: 50
+        amount: 20
         capacity: 0
       nonConsumable: 0
     factionEntityRequirements: []
