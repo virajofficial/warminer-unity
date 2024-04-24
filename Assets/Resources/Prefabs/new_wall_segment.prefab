@@ -1042,7 +1042,7 @@ MonoBehaviour:
   debug: 0
   tabID:
     x: 0
-    y: 2
+    y: 1
   segmentData:
     enabled: 1
     segmentLength: 2
@@ -1116,8 +1116,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.50194824, y: 1.9132359, z: 1.8424513}
-  m_Center: {x: 0.0023380816, y: 0.95661795, z: -0.00027370453}
+  m_Size: {x: 0.50194824, y: 1.9132359, z: 0.48158407}
+  m_Center: {x: 0.0023380816, y: 0.95661795, z: -0.0054967925}
 --- !u!54 &4989857135568040881
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1371,8 +1371,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.9, y: 1.8, z: 1.8821015}
-  m_Center: {x: 0, y: 0.9, z: 0.019309372}
+  m_Size: {x: 0.587116, y: 1.8, z: 0.50886214}
+  m_Center: {x: 0.009246767, y: 0.9, z: 0.00059591234}
 --- !u!114 &3372163165697284653
 MonoBehaviour:
   m_ObjectHideFlags: 0
