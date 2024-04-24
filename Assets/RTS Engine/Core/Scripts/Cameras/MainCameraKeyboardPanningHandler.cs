@@ -69,7 +69,7 @@ namespace RTSEngine.Cameras
             currPanDirection = Vector3.zero;
 
             // If the pan on screen edge is enabled and we either are ignoring UI elements on the edge of the screen or the player's mouse is not over one
-            if (screenEdgePanning.enabled && (screenEdgePanning.ignoreUI || !EventSystem.current.IsPointerOverGameObject()))
+            if (screenEdgePanning.enabled && (screenEdgePanning.ignoreUI || !EventSystem.current.IsPointerOverGameObject()) && !MapSelectorScript.Instance.isInEnemyMap)
             {
                 // If the mouse is in either one of the 4 edges of the screen then move it accordinly  
                 if (Input.mousePosition.x <= screenEdgePanning.size && Input.mousePosition.x >= 0.0f)
@@ -98,7 +98,7 @@ namespace RTSEngine.Cameras
             }
 
             // Camera pan on axis input (overwrites the screen edge pan/key input axis if it has been enabled and had effect on this frame)
-            if (inputAxisPanning.enabled)
+            if (inputAxisPanning.enabled && !MapSelectorScript.Instance.isInEnemyMap)
             {
                 if (Mathf.Abs(Input.GetAxis(inputAxisPanning.horizontal)) > 0.25f)
                     currPanDirection.x = Mathf.Sign(Input.GetAxis(inputAxisPanning.horizontal)) * 1.0f;

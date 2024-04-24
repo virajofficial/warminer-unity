@@ -15,6 +15,7 @@ public class MapSelectorScript : MonoBehaviour
     public Transform factionUIParent;
     public GameObject miniMapUI;
     public int SelectedFaction;
+    public bool isInEnemyMap = false;
 
     private void Awake()
     {
@@ -59,6 +60,7 @@ public class MapSelectorScript : MonoBehaviour
     private void OnButtonClick(int id)
     {
         GetComponent<MainCameraKeyboardPanningHandler>().ChangeCamPosition(id);
+        isInEnemyMap = true;
         factionUIParent.parent.parent.parent.gameObject.SetActive(false);
         factionUIParent.parent.parent.parent.parent.GetChild(1).gameObject.SetActive(true);
         miniMapUI.SetActive(false);
@@ -67,6 +69,7 @@ public class MapSelectorScript : MonoBehaviour
     {
         GetComponent<MainCameraKeyboardPanningHandler>().ChangeCamPosition(gm.LocalFactionSlotID);
         factionUIParent.parent.parent.parent.gameObject.SetActive(false);
+        isInEnemyMap = false;
         miniMapUI.SetActive(true);
     }
 
