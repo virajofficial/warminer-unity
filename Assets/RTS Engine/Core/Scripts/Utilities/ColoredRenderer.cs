@@ -71,8 +71,9 @@ namespace RTSEngine.Utilities
                     RTSHelper.LoggingService.LogError($"[ColoredRenderer] Material ID {materialID} is invalid! Please follow error trace to fix the input of the material ID!", source: entity);
                     return;
                 }
-
+                Debug.Log("Color Property name = " + colorPropertyName + "Color name = " + color +", MId = " + materialID);
                 renderer.materials[materialID].SetColor(string.IsNullOrEmpty(colorPropertyName) ? "_Color" : colorPropertyName, color);
+                renderer.materials[materialID].color = color;
             }
             else
                 RTSHelper.LoggingService.LogError($"[ColoredRenderer - {entity.Code}] An element is either unassigned or assigned to an invalid child transform object! Please go through colored renderers and re-assign again.", source: entity);
