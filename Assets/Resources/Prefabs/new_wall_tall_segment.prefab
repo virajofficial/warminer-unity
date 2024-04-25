@@ -304,12 +304,12 @@ MonoBehaviour:
   debug: 0
   tabID:
     x: 0
-    y: 2
+    y: 1
   segmentData:
     enabled: 1
-    segmentLength: 1
+    segmentLength: 2
     minAmount: 2
-  minSegmentCountForReplacement: 1
+  minSegmentCountForReplacement: 3
   firstSegmentReplacement:
     prefabObject: {fileID: 0}
     requiredResources:
@@ -347,7 +347,7 @@ MonoBehaviour:
     factionEntityRequirements: []
   segmentSnapping:
     enabled: 1
-    range: 0.5
+    range: 0.2
     targetOptions:
       codes:
       - new_wall_tall_segment
@@ -355,7 +355,7 @@ MonoBehaviour:
   gridOptions:
     area:
       x: 1
-      y: 1
+      y: 2
     pivotPoint: 2
   displayGridArea: 0
   gridAreaColor: {r: 0, g: 0, b: 1, a: 1}
@@ -374,12 +374,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2.0926397, z: 0.9695823}
-  m_Center: {x: 0, y: 0.98194015, z: 0.01520884}
+  m_Size: {x: 0.9, y: 2, z: 1.9}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!54 &4455786177743542819
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1164,7 +1164,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.2, y: 1, z: 0.07}
+  m_Extents: {x: 0.675, y: 1, z: 0.675}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
@@ -1294,7 +1294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 623917297268707397, guid: 4c51bc57b461b214cbf9580859327898, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 623917297268707397, guid: 4c51bc57b461b214cbf9580859327898, type: 3}
       propertyPath: m_LocalScale.y
@@ -1302,7 +1302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 623917297268707397, guid: 4c51bc57b461b214cbf9580859327898, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 623917297268707397, guid: 4c51bc57b461b214cbf9580859327898, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1318,7 +1318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 623917297268707397, guid: 4c51bc57b461b214cbf9580859327898, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 623917297268707397, guid: 4c51bc57b461b214cbf9580859327898, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1326,7 +1326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 623917297268707397, guid: 4c51bc57b461b214cbf9580859327898, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 623917297268707397, guid: 4c51bc57b461b214cbf9580859327898, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1338,7 +1338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 623917297268707397, guid: 4c51bc57b461b214cbf9580859327898, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 623917297268707397, guid: 4c51bc57b461b214cbf9580859327898, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z

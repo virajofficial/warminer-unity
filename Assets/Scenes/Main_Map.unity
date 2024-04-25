@@ -155563,7 +155563,7 @@ MonoBehaviour:
     y: 0
   reservePlacementResources: 1
   segmentationEnabled: 1
-  disablePlacementOnAnyInvalidSegment: 1
+  disablePlacementOnAnyInvalidSegment: 0
   segmentSnapAlignAlways: 1
   segmentSnapKey: {fileID: 0}
   segmentUnsnapRange: 0.2
