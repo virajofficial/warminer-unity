@@ -304,7 +304,7 @@ MonoBehaviour:
   debug: 0
   tabID:
     x: 0
-    y: 1
+    y: 2
   segmentData:
     enabled: 1
     segmentLength: 1
@@ -374,12 +374,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.79680586, y: 2.22, z: 0.79303324}
-  m_Center: {x: 0.004994273, y: 1.11, z: 0.004622087}
+  m_Size: {x: 1, y: 2.0926397, z: 0.9695823}
+  m_Center: {x: 0, y: 0.98194015, z: 0.01520884}
 --- !u!54 &4455786177743542819
 Rigidbody:
   m_ObjectHideFlags: 0
