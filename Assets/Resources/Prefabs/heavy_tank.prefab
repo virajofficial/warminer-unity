@@ -359,7 +359,7 @@ MonoBehaviour:
           codes: []
           categories: []
         targetUnits: 0
-        targetBuildings: 0
+        targetBuildings: 1
       effect:
         input: {fileID: 7146410324957126668, guid: 84a0f3432553b824f9c5f0e5a9ffd4bc, type: 3}
       faceSource: 0
