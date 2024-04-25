@@ -17,9 +17,9 @@ MonoBehaviour:
     enabled: 1
     displayType: 1
     icon: {fileID: 21300000, guid: 3f129cabb35ab4d45bd2fa4880196b4b, type: 3}
-    panelCategory: 0
+    panelCategory: 1
     forceSlot: 1
-    slotIndex: 2
+    slotIndex: 0
     tooltipEnabled: 1
     description: Create Spacecraft
     hideTooltipOnClick: 0
