@@ -616,7 +616,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.14, y: 1, z: 0.236992}
+  m_LocalScale: {x: 0.14, y: 1, z: 0.28}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 657853405391517605}
@@ -1045,7 +1045,7 @@ MonoBehaviour:
     y: 1
   segmentData:
     enabled: 1
-    segmentLength: 2
+    segmentLength: 1
     minAmount: 2
   minSegmentCountForReplacement: 2
   firstSegmentReplacement:
@@ -1093,7 +1093,7 @@ MonoBehaviour:
   gridOptions:
     area:
       x: 1
-      y: 2
+      y: 1
     pivotPoint: 2
   displayGridArea: 0
   gridAreaColor: {r: 0, g: 0, b: 1, a: 1}
@@ -1116,8 +1116,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.50194824, y: 1.9132359, z: 0.48158407}
-  m_Center: {x: 0.0023380816, y: 0.95661795, z: -0.0054967925}
+  m_Size: {x: 0.50194824, y: 1.9132359, z: 0.5209775}
+  m_Center: {x: 0.0023380816, y: 0.95661795, z: 0.03168962}
 --- !u!54 &4989857135568040881
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1449,6 +1449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall-Segment (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2285351954901534554, guid: e2749f33a9a3e834e8f6ba513d8b02ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1469,7 +1473,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1512334066913304032, guid: e2749f33a9a3e834e8f6ba513d8b02ff, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1512334066913304032, guid: e2749f33a9a3e834e8f6ba513d8b02ff, type: 3}
       propertyPath: m_LocalScale.y
@@ -1489,7 +1493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1512334066913304032, guid: e2749f33a9a3e834e8f6ba513d8b02ff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1512334066913304032, guid: e2749f33a9a3e834e8f6ba513d8b02ff, type: 3}
       propertyPath: m_LocalRotation.w
