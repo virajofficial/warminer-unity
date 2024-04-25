@@ -106,7 +106,7 @@ namespace RTSEngine.Cameras
                     currPanDirection.z = Mathf.Sign(Input.GetAxis(inputAxisPanning.vertical)) * 1.0f;
             }
 
-            if(controls.GetMouseButton(mouseButtonPanning.buttonType))
+            if(controls.GetMouseButton(mouseButtonPanning.buttonType) && !MapSelectorScript.Instance.isInEnemyMap)
             {
                 currPanDirection.x = cameraController.MousePositionDelta.x * mouseButtonPanning.InversionAwareSmoothFactor;
                 currPanDirection.z = cameraController.MousePositionDelta.y * mouseButtonPanning.InversionAwareSmoothFactor;

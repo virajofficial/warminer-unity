@@ -5013,36 +5013,18 @@ MonoBehaviour:
         _min: 1
         _max: 2
   triggerEffectsPostDelay: 1
-  hitEffects:
-  - picker:
-      type: 0
-      options:
-        codes: []
-        categories: []
-      targetUnits: 0
-      targetBuildings: 0
-    effect:
-      input: {fileID: 7146410324957126668, guid: 84a0f3432553b824f9c5f0e5a9ffd4bc, type: 3}
-    faceSource: 0
-    audio:
-      fetchType: 0
-      items: []
-      cooldown:
-        enabled: 0
-        defaultValueRange:
-          _min: 0
-          _max: 0
+  hitEffects: []
   obstacleHitEffect:
     picker:
       type: 0
       options:
         codes: []
         categories: []
-      targetUnits: 1
+      targetUnits: 0
       targetBuildings: 1
     effect:
       input: {fileID: 7146410324957126668, guid: 84a0f3432553b824f9c5f0e5a9ffd4bc, type: 3}
-    faceSource: 1
+    faceSource: 0
     audio:
       fetchType: 0
       items: []
