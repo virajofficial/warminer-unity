@@ -188,7 +188,6 @@ GameObject:
   - component: {fileID: 4001271245919320079}
   - component: {fileID: 4592269990495688739}
   - component: {fileID: 3646750835728680891}
-  - component: {fileID: 971569302849910044}
   - component: {fileID: 3105518539332045684}
   m_Layer: 0
   m_Name: building_components
@@ -295,74 +294,6 @@ MonoBehaviour:
   showWorkerPositionsGizmos: 1
   showWorkersGizmos: 1
   showWorkersFoldout: 0
---- !u!114 &971569302849910044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753500264732295352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 024b174d8e0f7ee4790a0f68429f56ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  code: command_center_UnitCreator
-  isActive: 1
-  tabID:
-    x: 0
-    y: 1
-  creationTasks:
-  - taskTitle: 'Create Unit: Engineer'
-    taskUI: {fileID: 11400000, guid: d9b25ef76f9281146bccef9c3167513b, type: 2}
-    allowedFactionTypes:
-      type: 0
-      options: []
-    requiredResources:
-    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
-      value:
-        amount: 1
-        capacity: 0
-      nonConsumable: 0
-    factionEntityRequirements: []
-    missingRequirementData:
-      icon: {fileID: 0}
-      color: {r: 0, g: 0, b: 0, a: 0}
-    onComplete:
-      m_PersistentCalls:
-        m_Calls: []
-    prefabObject: {fileID: 938134673395143859, guid: b91a76132a8acb34a80616963ae15836, type: 3}
-    squadData:
-      enabled: 0
-      count: 0
-    limit: 0
-    maxAmount: 10
-  - taskTitle: 'Create Unit: Marine (Alien)'
-    taskUI: {fileID: 11400000, guid: 727fe98e4e25bda40bff1a59170ff0b6, type: 2}
-    allowedFactionTypes:
-      type: 0
-      options: []
-    requiredResources:
-    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
-      value:
-        amount: 1
-        capacity: 0
-      nonConsumable: 0
-    factionEntityRequirements: []
-    missingRequirementData:
-      icon: {fileID: 0}
-      color: {r: 0, g: 0, b: 0, a: 0}
-    onComplete:
-      m_PersistentCalls:
-        m_Calls: []
-    prefabObject: {fileID: 1241045417843294, guid: ffae21e5d48f8284b96e2b341bcc78df, type: 3}
-    squadData:
-      enabled: 0
-      count: 0
-    limit: 0
-    maxAmount: 10
-  upgradeTargetCreationTasks: []
-  spawnTransform: {fileID: 8125852317970283425}
 --- !u!114 &3105518539332045684
 MonoBehaviour:
   m_ObjectHideFlags: 0

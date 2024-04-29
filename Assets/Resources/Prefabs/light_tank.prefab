@@ -752,7 +752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tabID:
     x: 0
-    y: 0
+    y: 1
   _name: Light Tank
   code: light_tank
   category: military_vehicle,vehicle_unit
@@ -766,7 +766,7 @@ MonoBehaviour:
   initResources:
   - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
     value:
-      amount: 3
+      amount: 1
       capacity: 0
     nonConsumable: 0
   - type: {fileID: 11400000, guid: 529981de806b0754da40426ffd9ebabb, type: 2}
@@ -1051,7 +1051,7 @@ MonoBehaviour:
   selectedUnit: {fileID: 2296368662948018745}
   renderer: {fileID: 5221663823888843616}
   vehicleAnimator: {fileID: 3565560107233143663}
-  vehicle_sfx: {fileID: 7182063460716855932}
+  vehicle_sfx: {fileID: 9076393072970667458}
   speedFactor: 100
   idlePitchSFX: 1
   drivePitchSFX: -1
@@ -1472,10 +1472,5 @@ GameObject:
 --- !u!137 &5221663823888843616 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 440176247590318998, guid: 30ca45b913f55584ab0a61ca7cb811c1, type: 3}
-  m_PrefabInstance: {fileID: 5651105358660792566}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &7182063460716855932 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 3298625903635935882, guid: 30ca45b913f55584ab0a61ca7cb811c1, type: 3}
   m_PrefabInstance: {fileID: 5651105358660792566}
   m_PrefabAsset: {fileID: 0}

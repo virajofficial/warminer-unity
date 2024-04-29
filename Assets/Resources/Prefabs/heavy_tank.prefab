@@ -1598,7 +1598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tabID:
     x: 0
-    y: 0
+    y: 1
   _name: Heavy Tank
   code: heavy_tank
   category: military_vehicle,vehicle_unit,rtse_demo_entity,rtse_demo_entity
@@ -1610,11 +1610,6 @@ MonoBehaviour:
   isMainEntity: 0
   isFactionLocked: 0
   initResources:
-  - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
-    value:
-      amount: 3
-      capacity: 0
-    nonConsumable: 0
   - type: {fileID: 11400000, guid: 529981de806b0754da40426ffd9ebabb, type: 2}
     value:
       amount: 22
@@ -1623,7 +1618,7 @@ MonoBehaviour:
   disableResources:
   - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
     value:
-      amount: -3
+      amount: 3
       capacity: 0
     nonConsumable: 0
   - type: {fileID: 11400000, guid: 529981de806b0754da40426ffd9ebabb, type: 2}

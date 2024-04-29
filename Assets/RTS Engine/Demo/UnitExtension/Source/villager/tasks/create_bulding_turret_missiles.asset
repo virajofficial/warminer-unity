@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abf428716af4f8f438cb34c5c761450b, type: 3}
-  m_Name: create_building_command_center
+  m_Name: create_bulding_turret_missiles
   m_EditorClassIdentifier: 
   data:
-    code: create_building_mech_factory
+    code: create_building_turret_missiles
     enabled: 1
     displayType: 2
-    icon: {fileID: 21300000, guid: 0368d83c4d51e7c4c96862c216d17a28, type: 3}
+    icon: {fileID: 21300000, guid: 9e34d3eabdf58bc498232bc6a12cf1ce, type: 3}
     panelCategory: 0
     forceSlot: 1
-    slotIndex: 3
+    slotIndex: 15
     tooltipEnabled: 1
-    description: Create Mech Factory
+    description: Create Turret Missiles
     hideTooltipOnClick: 1
-    reloadTime: 0
+    reloadTime: 0.1
     cursor:
       icon: {fileID: 0}
       texture: {fileID: 0}
