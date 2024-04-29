@@ -356,7 +356,7 @@ MonoBehaviour:
     targetBuildings: 1
   canPlaceBuildings: 1
   creationTasks:
-  - taskTitle: 'Place Building: Command Center'
+  - taskTitle: 'Place Building: Mesh Factory'
     taskUI: {fileID: 11400000, guid: 504319dc3c54343449430dfa633abce6, type: 2}
     allowedFactionTypes:
       type: 0
@@ -369,7 +369,7 @@ MonoBehaviour:
       nonConsumable: 0
     - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
       value:
-        amount: 70
+        amount: 40
         capacity: 0
       nonConsumable: 0
     factionEntityRequirements: []
@@ -379,7 +379,7 @@ MonoBehaviour:
     onComplete:
       m_PersistentCalls:
         m_Calls: []
-    prefabObject: {fileID: 4331118452787961487, guid: 4998291b11f43f947838aa277cf89a05, type: 3}
+    prefabObject: {fileID: 3846795529807470317, guid: 6f6d5a133cc1e9f4ba3993a1907c0475, type: 3}
   - taskTitle: 'Place Building: Orbium Miner'
     taskUI: {fileID: 11400000, guid: 6a5cdf1d6e414264db9bf272b6dc7b30, type: 2}
     allowedFactionTypes:
@@ -434,11 +434,6 @@ MonoBehaviour:
       type: 0
       options: []
     requiredResources:
-    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
-      value:
-        amount: 1
-        capacity: 0
-      nonConsumable: 0
     - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
       value:
         amount: 30
@@ -458,11 +453,6 @@ MonoBehaviour:
       type: 0
       options: []
     requiredResources:
-    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
-      value:
-        amount: 1
-        capacity: 0
-      nonConsumable: 0
     - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
       value:
         amount: 30
@@ -482,11 +472,6 @@ MonoBehaviour:
       type: 0
       options: []
     requiredResources:
-    - type: {fileID: 11400000, guid: b16294d219bf6db449279be57eae3702, type: 2}
-      value:
-        amount: 1
-        capacity: 0
-      nonConsumable: 0
     - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
       value:
         amount: 30
@@ -663,6 +648,82 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     prefabObject: {fileID: 123817841670975504, guid: 31e2170cb61ff21459011c64fc4e629d, type: 3}
+  - taskTitle: 'Place Building: Alien Turret'
+    taskUI: {fileID: 11400000, guid: e8e130d3d57b6974ba5b96c1e5b1d838, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 15
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 9022547986827669574, guid: d5140e309e28f964a9b3a035f3de1751, type: 3}
+  - taskTitle: 'Place Building: Turret FlakCannon'
+    taskUI: {fileID: 11400000, guid: 0f4f0b6478e98a54c8d53ef2214f2ef0, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 15
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 9022547986827669574, guid: 4d07305ccfe6ee145bdbb8408cdacd93, type: 3}
+  - taskTitle: 'Place Building: Turret Missiles'
+    taskUI: {fileID: 11400000, guid: e9af4486d6596d0428c4759dead39f24, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 15
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 9022547986827669574, guid: 716a51416acd67e469718f051fd3a251, type: 3}
+  - taskTitle: 'Place Building: Turret RailGun'
+    taskUI: {fileID: 11400000, guid: 3fa67c7da1d9db5428fb8dd53a5a3694, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 15
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 9022547986827669574, guid: 876c695b34f5feb48abb3860d35fda95, type: 3}
   upgradeTargetCreationTasks: []
   fetchConstructionAudioOnce: 0
   constructionAudio:

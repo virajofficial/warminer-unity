@@ -16,7 +16,7 @@ MonoBehaviour:
     code: create_unit_marine_alien
     enabled: 1
     displayType: 1
-    icon: {fileID: 21300000, guid: a1979a94f3418ea44ae50388f4e42e95, type: 3}
+    icon: {fileID: 21300000, guid: 8ef3d274f4647be4e9939309a081228f, type: 3}
     panelCategory: 0
     forceSlot: 1
     slotIndex: 1

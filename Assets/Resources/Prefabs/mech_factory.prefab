@@ -491,7 +491,7 @@ MonoBehaviour:
   gridOptions:
     area:
       x: 4
-      y: 4
+      y: 6
     pivotPoint: 2
   displayGridArea: 1
   gridAreaColor: {r: 0, g: 0, b: 1, a: 1}

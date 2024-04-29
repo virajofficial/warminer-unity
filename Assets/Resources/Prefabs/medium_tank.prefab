@@ -815,7 +815,7 @@ MonoBehaviour:
   selectedUnit: {fileID: 9121764228796314777}
   renderer: {fileID: 4780147585119791204}
   vehicleAnimator: {fileID: 8500385091655765863}
-  vehicle_sfx: {fileID: 8521071459462578496}
+  vehicle_sfx: {fileID: 5237460056142188384}
   speedFactor: 100
   idlePitchSFX: 1
   drivePitchSFX: -1
@@ -1322,11 +1322,6 @@ GameObject:
 --- !u!95 &8500385091655765863 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8349469014951534242, guid: 4e92d30fefc79494da9227b7c51742da, type: 3}
-  m_PrefabInstance: {fileID: 443651708505690565}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &8521071459462578496 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8099943524516401285, guid: 4e92d30fefc79494da9227b7c51742da, type: 3}
   m_PrefabInstance: {fileID: 443651708505690565}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2904015105062957393
