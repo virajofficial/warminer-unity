@@ -150,6 +150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 318475528308942541}
   - component: {fileID: 5328580314972186283}
+  - component: {fileID: 5275773663159038422}
   m_Layer: 0
   m_Name: building_components
   m_TagString: Untagged
@@ -199,6 +200,74 @@ MonoBehaviour:
   showWorkerPositionsGizmos: 1
   showWorkersGizmos: 1
   showWorkersFoldout: 0
+--- !u!114 &5275773663159038422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824032292106671691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 024b174d8e0f7ee4790a0f68429f56ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  code: bipedal_mech_UnitCreator
+  isActive: 1
+  tabID:
+    x: 0
+    y: 1
+  creationTasks:
+  - taskTitle: 'Create Unit: Bipedal Mech'
+    taskUI: {fileID: 11400000, guid: d4b3ef717eff9a6478ad62f5084b7f6d, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 20
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 1241045417843294, guid: 8d3801a1f24eb544f8b35df1ad764ffe, type: 3}
+    squadData:
+      enabled: 0
+      count: 0
+    limit: 0
+    maxAmount: 3
+  - taskTitle: 'Create Unit: Quadrupedal Mech'
+    taskUI: {fileID: 11400000, guid: b2eb520268878234b97763efb95e894c, type: 2}
+    allowedFactionTypes:
+      type: 0
+      options: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 20
+        capacity: 0
+      nonConsumable: 0
+    factionEntityRequirements: []
+    missingRequirementData:
+      icon: {fileID: 0}
+      color: {r: 0, g: 0, b: 0, a: 0}
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    prefabObject: {fileID: 1241045417843294, guid: 094a7f0ab94db024eb6585d371b5c825, type: 3}
+    squadData:
+      enabled: 0
+      count: 0
+    limit: 0
+    maxAmount: 10
+  upgradeTargetCreationTasks: []
+  spawnTransform: {fileID: 8084451954085997228}
 --- !u!1 &829126268125086677
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,6 +413,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1927198891083520140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8084451954085997228}
+  m_Layer: 0
+  m_Name: mech_spawn_position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8084451954085997228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927198891083520140}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -4.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1988946248946828686}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2176626955206685523
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,6 +792,7 @@ GameObject:
   - component: {fileID: 7718687282607661032}
   - component: {fileID: 6405934011197521042}
   - component: {fileID: 561350935375560561}
+  - component: {fileID: 3092984157367378232}
   m_Layer: 0
   m_Name: mech_factory
   m_TagString: Untagged
@@ -722,6 +823,7 @@ Transform:
   - {fileID: 6572257081399119252}
   - {fileID: 1379294240637586872}
   - {fileID: 8625453518946366309}
+  - {fileID: 8084451954085997228}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8363189711942858658
@@ -989,6 +1091,19 @@ MonoBehaviour:
     colorPropertyName: _Color
     transparency: 0
     darkness: 0
+--- !u!114 &3092984157367378232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3846795529807470317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6873ac66dad55e8468bdf59e2a9eaeeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxCount: 4
 --- !u!1 &4276897857720934128
 GameObject:
   m_ObjectHideFlags: 0
