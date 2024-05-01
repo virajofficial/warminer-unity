@@ -237,7 +237,7 @@ MonoBehaviour:
   isActive: 1
   tabID:
     x: 0
-    y: 2
+    y: 0
   priority: 0
   requireIdleEntity: 1
   targetFinderData:
@@ -428,15 +428,15 @@ MonoBehaviour:
     unitStoppingDistance:
       _min: 3
       _max: 10
-    unitEnableDistance: 20
+    unitEnableDistance: 10
     buildingStoppingDistance:
       _min: 10
       _max: 15
     noTargetStoppingDistance:
       _min: 3
       _max: 10
-    enforceMinStoppingDistance: 1
-    minStoppingDistance: 10
+    enforceMinStoppingDistance: 0
+    minStoppingDistance: 2
     stopMovementOnTargetInRange: 1
     updateMvtDistance: 2
     movementFormation:

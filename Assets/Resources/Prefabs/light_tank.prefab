@@ -426,7 +426,7 @@ MonoBehaviour:
     noTargetStoppingDistance:
       _min: 3
       _max: 10
-    enforceMinStoppingDistance: 1
+    enforceMinStoppingDistance: 0
     minStoppingDistance: 1
     stopMovementOnTargetInRange: 1
     updateMvtDistance: 2
