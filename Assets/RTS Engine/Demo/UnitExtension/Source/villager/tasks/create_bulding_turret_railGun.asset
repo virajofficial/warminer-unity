@@ -19,7 +19,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 9e34d3eabdf58bc498232bc6a12cf1ce, type: 3}
     panelCategory: 0
     forceSlot: 1
-    slotIndex: 16
+    slotIndex: 15
     tooltipEnabled: 1
     description: Create Turret RailGun
     hideTooltipOnClick: 1

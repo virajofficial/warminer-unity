@@ -19,7 +19,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 9e34d3eabdf58bc498232bc6a12cf1ce, type: 3}
     panelCategory: 0
     forceSlot: 1
-    slotIndex: 14
+    slotIndex: 13
     tooltipEnabled: 1
     description: Create Turret FlakCannon
     hideTooltipOnClick: 1

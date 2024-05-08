@@ -648,25 +648,6 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     prefabObject: {fileID: 123817841670975504, guid: 31e2170cb61ff21459011c64fc4e629d, type: 3}
-  - taskTitle: 'Place Building: Alien Turret'
-    taskUI: {fileID: 11400000, guid: e8e130d3d57b6974ba5b96c1e5b1d838, type: 2}
-    allowedFactionTypes:
-      type: 0
-      options: []
-    requiredResources:
-    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
-      value:
-        amount: 15
-        capacity: 0
-      nonConsumable: 0
-    factionEntityRequirements: []
-    missingRequirementData:
-      icon: {fileID: 0}
-      color: {r: 0, g: 0, b: 0, a: 0}
-    onComplete:
-      m_PersistentCalls:
-        m_Calls: []
-    prefabObject: {fileID: 9022547986827669574, guid: d5140e309e28f964a9b3a035f3de1751, type: 3}
   - taskTitle: 'Place Building: Turret FlakCannon'
     taskUI: {fileID: 11400000, guid: 0f4f0b6478e98a54c8d53ef2214f2ef0, type: 2}
     allowedFactionTypes:

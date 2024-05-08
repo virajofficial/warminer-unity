@@ -304,7 +304,7 @@ MonoBehaviour:
   debug: 0
   tabID:
     x: 0
-    y: 2
+    y: 1
   segmentData:
     enabled: 1
     segmentLength: 2
@@ -340,7 +340,7 @@ MonoBehaviour:
           capacity: 0
         nonConsumable: 0
       factionEntityRequirements: []
-    disableNextToEdges: 1
+    disableNextToEdges: 0
   defaultSegmentReplacement:
     prefabObject: {fileID: 123817841670975504, guid: 31e2170cb61ff21459011c64fc4e629d, type: 3}
     requiredResources: []
@@ -354,9 +354,9 @@ MonoBehaviour:
       categories: []
   gridOptions:
     area:
-      x: 1
+      x: 2
       y: 2
-    pivotPoint: 2
+    pivotPoint: 0
   displayGridArea: 0
   gridAreaColor: {r: 0, g: 0, b: 1, a: 1}
 --- !u!65 &345688715383747803
@@ -378,7 +378,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.9, y: 2, z: 1.9}
+  m_Size: {x: 1.9, y: 2, z: 1.9}
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!54 &4455786177743542819
 Rigidbody:

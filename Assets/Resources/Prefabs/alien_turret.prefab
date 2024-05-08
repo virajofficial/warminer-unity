@@ -605,7 +605,7 @@ MonoBehaviour:
   targetFinderData:
     enabled: 1
     reloadTime: 0.01
-    range: 25
+    range: 15
     idleOnly: 0
     typePicker:
       type: 0
@@ -761,13 +761,13 @@ MonoBehaviour:
   attackDistance:
     unitStoppingDistance:
       _min: 2
-      _max: 25
+      _max: 15
     buildingStoppingDistance:
       _min: 5
-      _max: 25
+      _max: 15
     noTargetStoppingDistance:
       _min: 5
-      _max: 25
+      _max: 15
 --- !u!1 &5806958001195942575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,7 +1131,6 @@ GameObject:
   - component: {fileID: 6267674161256279828}
   - component: {fileID: 483724692841840616}
   - component: {fileID: 3657688967735767418}
-  - component: {fileID: 4538032385022477043}
   m_Layer: 0
   m_Name: alien_turret
   m_TagString: Untagged
@@ -1443,19 +1442,6 @@ MonoBehaviour:
     colorPropertyName: _Color
     transparency: 0
     darkness: 0
---- !u!114 &4538032385022477043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9022547986827669574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6873ac66dad55e8468bdf59e2a9eaeeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxCount: 4
 --- !u!1 &9047732660304264156
 GameObject:
   m_ObjectHideFlags: 0
