@@ -1082,7 +1082,12 @@ MonoBehaviour:
     disableNextToEdges: 1
   defaultSegmentReplacement:
     prefabObject: {fileID: 123817841670975504}
-    requiredResources: []
+    requiredResources:
+    - type: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+      value:
+        amount: 10
+        capacity: 0
+      nonConsumable: 0
     factionEntityRequirements: []
   segmentSnapping:
     enabled: 1
@@ -1095,8 +1100,8 @@ MonoBehaviour:
     area:
       x: 2
       y: 2
-    pivotPoint: 0
-  displayGridArea: 0
+    pivotPoint: 2
+  displayGridArea: 1
   gridAreaColor: {r: 0, g: 0, b: 1, a: 1}
 --- !u!65 &8945709364271635785
 BoxCollider:
@@ -1560,7 +1565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1512334066913304032, guid: e2749f33a9a3e834e8f6ba513d8b02ff, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1512334066913304032, guid: e2749f33a9a3e834e8f6ba513d8b02ff, type: 3}
       propertyPath: m_LocalPosition.x

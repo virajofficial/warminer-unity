@@ -4080,7 +4080,7 @@ GameObject:
   - component: {fileID: 25203902}
   - component: {fileID: 25203901}
   - component: {fileID: 25203900}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269692,6 +269692,10 @@ PrefabInstance:
     - target: {fileID: 6435274446933060292, guid: b90ba82cdc537dc499cf7d24558805e4, type: 3}
       propertyPath: m_Name
       value: walkable_tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435274446933060292, guid: b90ba82cdc537dc499cf7d24558805e4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6435274446933060293, guid: b90ba82cdc537dc499cf7d24558805e4, type: 3}
       propertyPath: m_RootOrder

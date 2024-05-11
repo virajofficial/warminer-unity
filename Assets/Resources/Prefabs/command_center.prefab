@@ -836,7 +836,7 @@ MonoBehaviour:
     y: 2
   segmentData:
     enabled: 0
-    segmentLength: 1.32
+    segmentLength: 1
     minAmount: 2
   minSegmentCountForReplacement: 3
   firstSegmentReplacement:
@@ -867,8 +867,8 @@ MonoBehaviour:
       categories: []
   gridOptions:
     area:
-      x: 16
-      y: 16
+      x: 8
+      y: 8
     pivotPoint: 2
   displayGridArea: 1
   gridAreaColor: {r: 0, g: 0, b: 1, a: 1}

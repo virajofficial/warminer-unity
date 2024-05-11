@@ -304,7 +304,7 @@ MonoBehaviour:
   debug: 0
   tabID:
     x: 0
-    y: 1
+    y: 2
   segmentData:
     enabled: 1
     segmentLength: 2
@@ -356,8 +356,8 @@ MonoBehaviour:
     area:
       x: 2
       y: 2
-    pivotPoint: 0
-  displayGridArea: 0
+    pivotPoint: 2
+  displayGridArea: 1
   gridAreaColor: {r: 0, g: 0, b: 1, a: 1}
 --- !u!65 &345688715383747803
 BoxCollider:
