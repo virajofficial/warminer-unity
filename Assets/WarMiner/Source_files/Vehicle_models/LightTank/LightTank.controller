@@ -7,7 +7,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ' [LightTank]|6_Fire'
+  m_Name: idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -20,7 +20,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 8155837918093004418, guid: 83e8e0804a31db949b25da12b1838431, type: 3}
+  m_Motion: {fileID: -1934564784688986127, guid: 83e8e0804a31db949b25da12b1838431, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
