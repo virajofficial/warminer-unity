@@ -1224,6 +1224,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1494368423855566, guid: abc9fa721099a9649940bca153bf6e13, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842670181860904, guid: abc9fa721099a9649940bca153bf6e13, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4237595341688568, guid: abc9fa721099a9649940bca153bf6e13, type: 3}
@@ -1265,6 +1269,18 @@ PrefabInstance:
     - target: {fileID: 4237595341688568, guid: abc9fa721099a9649940bca153bf6e13, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198287121429388360, guid: abc9fa721099a9649940bca153bf6e13, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198287121429388360, guid: abc9fa721099a9649940bca153bf6e13, type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198287121429388360, guid: abc9fa721099a9649940bca153bf6e13, type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 513
       objectReference: {fileID: 0}
     - target: {fileID: 199013874932417194, guid: abc9fa721099a9649940bca153bf6e13, type: 3}
       propertyPath: m_Materials.Array.size
