@@ -548,6 +548,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 3833507450428284657}
   - {fileID: 431314652836431971}
   m_Father: {fileID: 8553344941365516740}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -598,7 +599,7 @@ MonoBehaviour:
   code: alien_turret_BuildingAttack
   isActive: 1
   tabID:
-    x: 0
+    x: 1
     y: 0
   priority: 10
   requireIdleEntity: 1
@@ -717,14 +718,14 @@ MonoBehaviour:
     freezeRotationX: 0
     freezeRotationY: 0
     freezeRotationZ: 0
-    smoothRotation: 1
+    smoothRotation: 0
     rotationDamping: 2
     forceIdleRotation: 1
     idleAngles: {x: 0, y: 0, z: 0}
   lineOfSight:
     enabled: 1
     useWeaponObject: 1
-    angle: 40
+    angle: 130
     obstacleLayerMask:
       serializedVersion: 2
       m_Bits: 0
@@ -1485,6 +1486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FX_Gunshot_Heavy_Single_Tracers_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1769621416249240, guid: ab32929843ea40d48ae16ecaa85f794a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4502224692450050, guid: ab32929843ea40d48ae16ecaa85f794a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1767,6 +1772,96 @@ GameObject:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6739162771414617662, guid: 155d56a5377a1234caa88e283d5f7b43, type: 3}
   m_PrefabInstance: {fileID: 3113611586784024570}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4331239342802054762
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1864869846637633352}
+    m_Modifications:
+    - target: {fileID: 660056119430803611, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 660056119430803611, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 660056119430803611, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 660056119430803611, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 660056119430803611, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 660056119430803611, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 660056119430803611, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 660056119430803611, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 660056119430803611, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 660056119430803611, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 831499524513960781, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 831499524513960781, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286316341389145235, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286316341389145235, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286316341389145235, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286316341389145235, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286316341389145235, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: InitialModule.startSpeed.minScalar
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633215866204850628, guid: d28462b4528b679428f035203748d7c7, type: 3}
+      propertyPath: m_Name
+      value: Small_automatic_gun_v1_one_shot
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d28462b4528b679428f035203748d7c7, type: 3}
+--- !u!4 &3833507450428284657 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 660056119430803611, guid: d28462b4528b679428f035203748d7c7, type: 3}
+  m_PrefabInstance: {fileID: 4331239342802054762}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4914605354681519006
 PrefabInstance:

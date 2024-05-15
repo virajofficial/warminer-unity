@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1033395597}
-  m_IndirectSpecularColor: {r: 0.18383625, g: 0.22854853, b: 0.30061638, a: 1}
+  m_IndirectSpecularColor: {r: 0.18383567, g: 0.22854798, b: 0.30061546, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4080,7 +4080,7 @@ GameObject:
   - component: {fileID: 25203902}
   - component: {fileID: 25203901}
   - component: {fileID: 25203900}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269720,6 +269720,10 @@ PrefabInstance:
     - target: {fileID: 6435274446933060292, guid: b90ba82cdc537dc499cf7d24558805e4, type: 3}
       propertyPath: m_Name
       value: walkable_tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435274446933060292, guid: b90ba82cdc537dc499cf7d24558805e4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6435274446933060293, guid: b90ba82cdc537dc499cf7d24558805e4, type: 3}
       propertyPath: m_RootOrder

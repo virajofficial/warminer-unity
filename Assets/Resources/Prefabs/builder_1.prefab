@@ -647,7 +647,7 @@ MonoBehaviour:
     onComplete:
       m_PersistentCalls:
         m_Calls: []
-    prefabObject: {fileID: 123817841670975504, guid: 31e2170cb61ff21459011c64fc4e629d, type: 3}
+    prefabObject: {fileID: 123817841670975504, guid: cd6e0d4430e4e4a498f502e13eb34040, type: 3}
   - taskTitle: 'Place Building: Turret FlakCannon'
     taskUI: {fileID: 11400000, guid: 0f4f0b6478e98a54c8d53ef2214f2ef0, type: 2}
     allowedFactionTypes:
