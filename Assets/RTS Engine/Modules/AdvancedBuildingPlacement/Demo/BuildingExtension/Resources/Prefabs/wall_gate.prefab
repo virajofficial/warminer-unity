@@ -197,7 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tabID:
     x: 0
-    y: 2
+    y: 0
   maxHealth: 100
   initialHealth: 100
   canIncrease: 1
@@ -242,7 +242,7 @@ MonoBehaviour:
     triggerEvent:
       m_PersistentCalls:
         m_Calls: []
-  canBeAttacked: 1
+  canBeAttacked: 0
   attackTargetPosition: {fileID: 0}
   constructionStates:
   - usePercentage: 0

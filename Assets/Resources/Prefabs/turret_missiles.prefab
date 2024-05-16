@@ -599,7 +599,7 @@ MonoBehaviour:
   code: turret_missiles_BuildingAttack
   isActive: 1
   tabID:
-    x: 0
+    x: 1
     y: 3
   priority: 10
   requireIdleEntity: 1
@@ -700,7 +700,31 @@ MonoBehaviour:
       index: 0
     attackIterationLaunchEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 2153837510177036140}
+          m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 8163697050145749097}
+          m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   damage:
     enabled: 1
     data:
@@ -767,7 +791,31 @@ MonoBehaviour:
       m_Calls: []
   completeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2153837510177036140}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8163697050145749097}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   showAttackIterationGizmos: 1
   attackDistance:
     unitStoppingDistance:
@@ -1617,6 +1665,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6078159458176284361, guid: a467b3dc637dee94d96280dc1a3ebb86, type: 3}
   m_PrefabInstance: {fileID: 1083049357310856383}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &8163697050145749097 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9100794702083257558, guid: a467b3dc637dee94d96280dc1a3ebb86, type: 3}
+  m_PrefabInstance: {fileID: 1083049357310856383}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1215712043875541057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2310,6 +2363,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a467b3dc637dee94d96280dc1a3ebb86, type: 3}
+--- !u!198 &2153837510177036140 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9100794702083257558, guid: a467b3dc637dee94d96280dc1a3ebb86, type: 3}
+  m_PrefabInstance: {fileID: 7183086777931817914}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4032558465324504435 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6078159458176284361, guid: a467b3dc637dee94d96280dc1a3ebb86, type: 3}
