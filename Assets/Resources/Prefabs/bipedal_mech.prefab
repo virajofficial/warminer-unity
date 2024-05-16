@@ -519,7 +519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tabID:
     x: 0
-    y: 3
+    y: 0
   maxHealth: 400
   initialHealth: 400
   canIncrease: 1
@@ -531,7 +531,7 @@ MonoBehaviour:
     parent: {fileID: 0}
   hoverHealthBarY: 1.5
   hitEffect:
-    input: {fileID: 0}
+    input: {fileID: 7146410324957126668, guid: 84a0f3432553b824f9c5f0e5a9ffd4bc, type: 3}
   hitAudio:
     fetchType: 0
     items: []
