@@ -4651,7 +4651,7 @@ GameObject:
   - component: {fileID: 4351269148221966140}
   - component: {fileID: 5954803030290427674}
   m_Layer: 0
-  m_Name: Heavy_tank_missile_damage
+  m_Name: Heavy_tank_missile_damage 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -24,7 +24,7 @@ public class ProjectileMover : MonoBehaviour
             
             //Destroy flash effect depending on particle Duration time
             var flashPs = flashInstance.GetComponent<ParticleSystem>();
-            if (flashPs != null)
+            /*if (flashPs != null)
             {
                 Destroy(flashInstance, flashPs.main.duration);
             }
@@ -32,9 +32,9 @@ public class ProjectileMover : MonoBehaviour
             {
                 var flashPsParts = flashInstance.transform.GetChild(0).GetComponent<ParticleSystem>();
                 Destroy(flashInstance, flashPsParts.main.duration);
-            }
+            }*/
         }
-        Destroy(gameObject,5);
+        //Destroy(gameObject,5);
 	}
 
     void FixedUpdate ()
@@ -66,7 +66,7 @@ public class ProjectileMover : MonoBehaviour
             else { hitInstance.transform.LookAt(contact.point + contact.normal); }
 
             //Destroy hit effects depending on particle Duration time
-            var hitPs = hitInstance.GetComponent<ParticleSystem>();
+            /*var hitPs = hitInstance.GetComponent<ParticleSystem>();
             if (hitPs != null)
             {
                 Destroy(hitInstance, hitPs.main.duration);
@@ -75,18 +75,18 @@ public class ProjectileMover : MonoBehaviour
             {
                 var hitPsParts = hitInstance.transform.GetChild(0).GetComponent<ParticleSystem>();
                 Destroy(hitInstance, hitPsParts.main.duration);
-            }
+            }*/
         }
 
         //Removing trail from the projectile on cillision enter or smooth removing. Detached elements must have "AutoDestroying script"
-        foreach (var detachedPrefab in Detached)
+        /*foreach (var detachedPrefab in Detached)
         {
             if (detachedPrefab != null)
             {
                 detachedPrefab.transform.parent = null;
             }
-        }
+        }*/
         //Destroy projectile on collision
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 }
