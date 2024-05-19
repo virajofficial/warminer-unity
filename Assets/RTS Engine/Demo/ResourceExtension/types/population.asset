@@ -17,7 +17,8 @@ MonoBehaviour:
   description: Tracks the amount of units for the faction. Capacity can be expended
     by building House or Town Center buildings.
   hasCapacity: 1
+  capacityType: 1
   startingAmount:
     amount: 0
     capacity: 0
-  icon: {fileID: 21300000, guid: 2d9f93e1c80a5fa4aaaa6a3e0dfeb5d3, type: 3}
+  icon: {fileID: 21300000, guid: 3045fc17dcb4220409dd4d325d94def4, type: 3}

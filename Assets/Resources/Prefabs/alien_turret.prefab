@@ -1188,7 +1188,7 @@ MonoBehaviour:
   code: alien_turret
   category: military_building
   description: Alien turret
-  icon: {fileID: 21300000, guid: 9e34d3eabdf58bc498232bc6a12cf1ce, type: 3}
+  icon: {fileID: 21300000, guid: a27a9522077f11343b629f8aea4d84f1, type: 3}
   radius: 0.9
   model: {fileID: 4625609610674407914}
   isIdle: 0
