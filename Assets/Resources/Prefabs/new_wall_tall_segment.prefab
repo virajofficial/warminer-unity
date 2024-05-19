@@ -942,7 +942,7 @@ MonoBehaviour:
   code: new_wall_tall_segment
   category: civilian_building,rtse_demo_entity
   description: A tower segment of wall.
-  icon: {fileID: 21300000, guid: 328b6de2b92f45d49809594e89af8d23, type: 3}
+  icon: {fileID: 21300000, guid: 9dfb5e582d1b5c341a99e3b6e57e3af9, type: 3}
   radius: 1.5
   model: {fileID: 7365157001081655866}
   isIdle: 0

@@ -16,7 +16,7 @@ MonoBehaviour:
     code: create_building_turret_flak_cannon
     enabled: 1
     displayType: 2
-    icon: {fileID: 21300000, guid: 9e34d3eabdf58bc498232bc6a12cf1ce, type: 3}
+    icon: {fileID: 21300000, guid: 1e58e6de937f56a4fa8050cfff297f23, type: 3}
     panelCategory: 0
     forceSlot: 1
     slotIndex: 13

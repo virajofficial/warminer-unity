@@ -338,7 +338,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.002, z: 0}
-  m_LocalScale: {x: 0.1, y: 1, z: 0.1}
+  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4972337864068538}
@@ -519,7 +519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tabID:
     x: 0
-    y: 0
+    y: 1
   maxHealth: 400
   initialHealth: 400
   canIncrease: 1
@@ -552,7 +552,7 @@ MonoBehaviour:
         _min: 1
         _max: 2
   destructionEffect:
-    input: {fileID: 3108631485874978096, guid: 96481e0c8da96a54ea2ca46e13acbd32, type: 3}
+    input: {fileID: 7146410324957126668, guid: 881b24724a54e5545815dba0edd879e8, type: 3}
   states: []
   destroyState:
     usePercentage: 0
@@ -846,8 +846,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.81, y: 1.83, z: 0.54}
-  m_Center: {x: 0, y: 0.12, z: 0}
+  m_Size: {x: 2.5150082, y: 4.5423, z: 1.4854538}
+  m_Center: {x: -0.075895965, y: 1.4761508, z: -0.22396371}
 --- !u!54 &54052690143607876
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1924,15 +1924,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7487399215925698090, guid: bfadfb23accb5b749b5156cee8872fea, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7487399215925698090, guid: bfadfb23accb5b749b5156cee8872fea, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7487399215925698090, guid: bfadfb23accb5b749b5156cee8872fea, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7487399215925698090, guid: bfadfb23accb5b749b5156cee8872fea, type: 3}
       propertyPath: m_LocalPosition.x

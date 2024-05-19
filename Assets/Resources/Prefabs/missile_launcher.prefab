@@ -52,8 +52,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.7692375, y: 1.7692378, z: 4.056717}
-  m_Center: {x: 0.0000019073486, y: 0.8846189, z: -0.03036499}
+  m_Size: {x: 1.7692375, y: 1.7692378, z: 6.785385}
+  m_Center: {x: 0.0000019073486, y: 0.8846189, z: -1.3946991}
 --- !u!114 &5363288612885295928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,8 +152,8 @@ Transform:
   m_GameObject: {fileID: 1402935950766523423}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.05, z: 0}
-  m_LocalScale: {x: 0.22776, y: 1, z: 0.48738235}
+  m_LocalPosition: {x: 0, y: 0.05, z: -1}
+  m_LocalScale: {x: 0.22776, y: 1, z: 0.7006121}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1180077217449621002}
@@ -1547,6 +1547,10 @@ PrefabInstance:
     - target: {fileID: 7775863536353868937, guid: 908563baad819b64c81a3532ce30a2a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -89.98021
+      objectReference: {fileID: 0}
+    - target: {fileID: 8731875416145834281, guid: 908563baad819b64c81a3532ce30a2a6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

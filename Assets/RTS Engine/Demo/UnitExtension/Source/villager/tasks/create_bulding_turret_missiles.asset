@@ -16,7 +16,7 @@ MonoBehaviour:
     code: create_building_turret_missiles
     enabled: 1
     displayType: 2
-    icon: {fileID: 21300000, guid: 9e34d3eabdf58bc498232bc6a12cf1ce, type: 3}
+    icon: {fileID: 21300000, guid: 95b2391223764e24a8e53850c1e561d1, type: 3}
     panelCategory: 0
     forceSlot: 1
     slotIndex: 14
