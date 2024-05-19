@@ -7322,6 +7322,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 373288827841969183, guid: 558259ade526d7c41b0205bb02f72527, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 578579127485451241, guid: 558259ade526d7c41b0205bb02f72527, type: 3}
       propertyPath: m_fontSize
       value: 20
@@ -7698,6 +7702,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4812787468499489525, guid: 558259ade526d7c41b0205bb02f72527, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5100534096106045347, guid: 558259ade526d7c41b0205bb02f72527, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -7928,11 +7936,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6544435117422553137, guid: 558259ade526d7c41b0205bb02f72527, type: 3}
       propertyPath: maps.Array.data[0].description
-      value: War Minner
+      value: Battle to End of Factions
       objectReference: {fileID: 0}
     - target: {fileID: 6544435117422553137, guid: 558259ade526d7c41b0205bb02f72527, type: 3}
       propertyPath: maps.Array.data[1].description
       value: demo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6544435117422553137, guid: 558259ade526d7c41b0205bb02f72527, type: 3}
+      propertyPath: maps.Array.data[0].factionsAmount._max
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6544435117422553137, guid: 558259ade526d7c41b0205bb02f72527, type: 3}
       propertyPath: maps.Array.data[1].factionsAmount._max
@@ -7994,6 +8006,10 @@ PrefabInstance:
       propertyPath: sceneLoader.onSceneLoadStart.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
       objectReference: {fileID: 1253825737}
+    - target: {fileID: 6658710897450948046, guid: 558259ade526d7c41b0205bb02f72527, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6729455161826254325, guid: 558259ade526d7c41b0205bb02f72527, type: 3}
       propertyPath: m_fontSize
       value: 30
