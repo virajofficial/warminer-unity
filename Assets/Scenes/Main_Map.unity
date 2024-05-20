@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1033395597}
-  m_IndirectSpecularColor: {r: 0.18383625, g: 0.22854853, b: 0.30061638, a: 1}
+  m_IndirectSpecularColor: {r: 0.18383567, g: 0.22854798, b: 0.30061546, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -38727,6 +38727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: alien_turret_2
       objectReference: {fileID: 0}
+    - target: {fileID: 9022547986827669574, guid: d5140e309e28f964a9b3a035f3de1751, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38735,11 +38739,6 @@ PrefabInstance:
 --- !u!4 &239622018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6279533728924501596, guid: d5140e309e28f964a9b3a035f3de1751, type: 3}
-  m_PrefabInstance: {fileID: 239622017}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &239622019 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9022547986827669574, guid: d5140e309e28f964a9b3a035f3de1751, type: 3}
   m_PrefabInstance: {fileID: 239622017}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &240005893 stripped
@@ -105628,7 +105627,7 @@ PrefabInstance:
     - target: {fileID: 6006679109416819074, guid: 2d506f4f4d7735046be00ba93a682ec0, type: 3}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: c38398060dce1994490e2cdd2c5b07c5, type: 3}
+      objectReference: {fileID: 21300000, guid: 3bf3cb559b9035049b679d8d081c7ffd, type: 3}
     - target: {fileID: 7375525136053843564, guid: 2d506f4f4d7735046be00ba93a682ec0, type: 3}
       propertyPath: m_Name
       value: habitat_pod_green_house_0
@@ -130175,6 +130174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: alien_turret_1
       objectReference: {fileID: 0}
+    - target: {fileID: 9022547986827669574, guid: d5140e309e28f964a9b3a035f3de1751, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -130183,11 +130186,6 @@ PrefabInstance:
 --- !u!4 &721099832 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6279533728924501596, guid: d5140e309e28f964a9b3a035f3de1751, type: 3}
-  m_PrefabInstance: {fileID: 721099831}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &721099833 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9022547986827669574, guid: d5140e309e28f964a9b3a035f3de1751, type: 3}
   m_PrefabInstance: {fileID: 721099831}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &721314227
@@ -188576,6 +188574,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: alien_turret_3
       objectReference: {fileID: 0}
+    - target: {fileID: 9022547986827669574, guid: d5140e309e28f964a9b3a035f3de1751, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -188584,11 +188586,6 @@ PrefabInstance:
 --- !u!4 &1071568954 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6279533728924501596, guid: d5140e309e28f964a9b3a035f3de1751, type: 3}
-  m_PrefabInstance: {fileID: 1071568953}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1071568955 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9022547986827669574, guid: d5140e309e28f964a9b3a035f3de1751, type: 3}
   m_PrefabInstance: {fileID: 1071568953}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1071795906
@@ -256503,7 +256500,7 @@ PrefabInstance:
     - target: {fileID: 6670001523738773329, guid: 782af85dec6035846b1b68df6585e1f3, type: 3}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: c38398060dce1994490e2cdd2c5b07c5, type: 3}
+      objectReference: {fileID: 21300000, guid: fafaa29055758124797db7d7b344f6b4, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -344899,7 +344896,7 @@ PrefabInstance:
     - target: {fileID: 4243003829579628506, guid: 03d0ee8c9c75eb2458c2c466ce19112c, type: 3}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: c38398060dce1994490e2cdd2c5b07c5, type: 3}
+      objectReference: {fileID: 21300000, guid: 586727cc07742ff4986805ececde8287, type: 3}
     - target: {fileID: 6267674161256279828, guid: 03d0ee8c9c75eb2458c2c466ce19112c, type: 3}
       propertyPath: tabID.y
       value: 0
@@ -350078,6 +350075,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: BasicUI (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6215564818256938262, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: data.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6215564818256938262, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: data.Array.data[1].type
+      value: 
+      objectReference: {fileID: 11400000, guid: 119a6a64d4d2f574bb77e87ad11efd72, type: 2}
+    - target: {fileID: 6215564818256938262, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: data.Array.data[2].type
+      value: 
+      objectReference: {fileID: 11400000, guid: bc712db0d42339240b16b338029bd113, type: 2}
+    - target: {fileID: 6215564818256938262, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
+      propertyPath: data.Array.data[3].type
+      value: 
+      objectReference: {fileID: 11400000, guid: c879ec68b88807749a9923a6135ed15f, type: 2}
     - target: {fileID: 6215564818524519463, guid: ff130dbf738539d4d8c26eaf306cbb51, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -413617,7 +413630,6 @@ MonoBehaviour:
       - {fileID: 41371185}
       - {fileID: 686769625}
       - {fileID: 883965750}
-      - {fileID: 721099833}
       - {fileID: 1455210359}
       - {fileID: 449984049}
       typeSpecific: []
@@ -413648,7 +413660,6 @@ MonoBehaviour:
       - {fileID: 527959066}
       - {fileID: 1104320924}
       - {fileID: 723119509}
-      - {fileID: 239622019}
       - {fileID: 656871679}
       - {fileID: 1476313287}
       typeSpecific: []
@@ -413679,7 +413690,6 @@ MonoBehaviour:
       - {fileID: 1207688133}
       - {fileID: 1713662478}
       - {fileID: 1876544395}
-      - {fileID: 1071568955}
       - {fileID: 1661994004}
       - {fileID: 1292501453}
       typeSpecific: []
