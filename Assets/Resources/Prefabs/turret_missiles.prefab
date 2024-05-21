@@ -600,7 +600,7 @@ MonoBehaviour:
   isActive: 1
   tabID:
     x: 1
-    y: 3
+    y: 0
   priority: 10
   requireIdleEntity: 1
   targetFinderData:
@@ -759,7 +759,7 @@ MonoBehaviour:
   lineOfSight:
     enabled: 1
     useWeaponObject: 1
-    angle: 40
+    angle: 90
     obstacleLayerMask:
       serializedVersion: 2
       m_Bits: 0
