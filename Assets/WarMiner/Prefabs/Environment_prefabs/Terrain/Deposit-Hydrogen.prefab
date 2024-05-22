@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4222066258379783603}
   - component: {fileID: 2172388957948715739}
   - component: {fileID: 6685457057168536523}
+  - component: {fileID: 8827735247155627345}
   m_Layer: 0
   m_Name: Deposit-Hydrogen
   m_TagString: Untagged
@@ -85,6 +86,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8827735247155627345
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8976737174022826369}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4159927584668849584, guid: ffce3c1e01873d048be9fe831db66e2a, type: 3}
 --- !u!1001 &7812969007209305095
 PrefabInstance:
   m_ObjectHideFlags: 0

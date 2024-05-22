@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5283899522170854590}
+  - component: {fileID: 7149570753815112331}
+  - component: {fileID: 3531169800623900479}
   m_Layer: 0
   m_Name: Patch-01
   m_TagString: Untagged
@@ -294,6 +296,43 @@ Transform:
   - {fileID: 4169546112923160428}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7149570753815112331
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5693411300942068150}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 114.33182, y: 11.2502575, z: 31.861301}
+  m_Center: {x: -32.963615, y: 5.556422, z: -14.266548}
+--- !u!208 &3531169800623900479
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5693411300942068150}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 57, y: 5.5, z: 15.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -32.96362, y: 5.556422, z: -14}
+  m_TimeToStationary: 0.5
 --- !u!1001 &6790967379475021
 PrefabInstance:
   m_ObjectHideFlags: 0

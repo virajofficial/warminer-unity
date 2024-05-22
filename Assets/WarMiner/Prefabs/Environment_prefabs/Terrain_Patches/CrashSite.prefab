@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5749196015015127181}
+  - component: {fileID: 4580267315049642379}
   m_Layer: 0
   m_Name: CrashSite
   m_TagString: Untagged
@@ -35,6 +36,22 @@ Transform:
   - {fileID: 7078467638834557517}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &4580267315049642379
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6917127543007566223}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 12, y: 4, z: 12}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 12.42, y: 0, z: -2.72}
+  m_TimeToStationary: 0.5
 --- !u!1001 &176949009712707303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -156,8 +173,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 07f958efbf71dd343a639819fc8f070a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8452881072030839793}
   m_SourcePrefab: {fileID: 100100000, guid: 07f958efbf71dd343a639819fc8f070a, type: 3}
+--- !u!1 &440788296227173194 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 07f958efbf71dd343a639819fc8f070a, type: 3}
+  m_PrefabInstance: {fileID: 782666802387226139}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &8452881072030839793
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440788296227173194}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5510529745901623925, guid: 07f958efbf71dd343a639819fc8f070a, type: 3}
 --- !u!4 &961006363368319472 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 07f958efbf71dd343a639819fc8f070a, type: 3}
