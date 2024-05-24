@@ -600,7 +600,7 @@ MonoBehaviour:
   isActive: 1
   tabID:
     x: 0
-    y: 1
+    y: 3
   priority: 10
   requireIdleEntity: 1
   targetFinderData:
@@ -640,7 +640,7 @@ MonoBehaviour:
     items: []
   progressDuration: 0.01
   progressMaxDistance: 1
-  inProgressObject: {fileID: 7934744636191672064}
+  inProgressObject: {fileID: 5132079243193312095}
   sourceEffect:
     input: {fileID: 0}
   targetEffect:
@@ -690,7 +690,19 @@ MonoBehaviour:
       index: 0
     attackIterationLaunchEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 4683207174775883075}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: isFire
+            m_BoolArgument: 0
+          m_CallState: 2
   damage:
     enabled: 1
     data:
@@ -711,7 +723,7 @@ MonoBehaviour:
         m_Calls: []
   weapon:
     toggableObjects:
-    - {fileID: 7934744636191672064}
+    - {fileID: 5132079243193312095}
     toggleType: 0
     updateRotation: 1
     rotateInRangeOnly: 1
@@ -757,7 +769,19 @@ MonoBehaviour:
       m_Calls: []
   completeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4683207174775883075}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: ResetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: isFire
+          m_BoolArgument: 0
+        m_CallState: 2
   showAttackIterationGizmos: 1
   attackDistance:
     unitStoppingDistance:
@@ -1161,12 +1185,12 @@ Transform:
   - {fileID: 7956488039663144147}
   - {fileID: 540649036003919763}
   - {fileID: 3286371701980295953}
-  - {fileID: 5438843953469313872}
   - {fileID: 9181319119183482208}
   - {fileID: 4700518595481717424}
   - {fileID: 355481835966738438}
   - {fileID: 75675637208102959}
   - {fileID: 4024508479145691891}
+  - {fileID: 5438843953469313872}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4243003829579628506
@@ -1229,7 +1253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tabID:
     x: 0
-    y: 2
+    y: 0
   maxHealth: 500
   initialHealth: 1
   canIncrease: 1
@@ -1806,15 +1830,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6939874401338557610, guid: 155d56a5377a1234caa88e283d5f7b43, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6939874401338557610, guid: 155d56a5377a1234caa88e283d5f7b43, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6939874401338557610, guid: 155d56a5377a1234caa88e283d5f7b43, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6939874401338557610, guid: 155d56a5377a1234caa88e283d5f7b43, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1856,13 +1880,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7624129979960467123, guid: 155d56a5377a1234caa88e283d5f7b43, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.98668754
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624129979960467123, guid: 155d56a5377a1234caa88e283d5f7b43, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624129979960467123, guid: 155d56a5377a1234caa88e283d5f7b43, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.16262758
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624129979960467123, guid: 155d56a5377a1234caa88e283d5f7b43, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624129979960467123, guid: 155d56a5377a1234caa88e283d5f7b43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -18.719
+      objectReference: {fileID: 0}
     - target: {fileID: 7711484532174413328, guid: 155d56a5377a1234caa88e283d5f7b43, type: 3}
       propertyPath: m_Name
       value: AlienTurret
       objectReference: {fileID: 0}
     - target: {fileID: 7767545116283015865, guid: 155d56a5377a1234caa88e283d5f7b43, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1877,14 +1921,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7711484532174413328, guid: 155d56a5377a1234caa88e283d5f7b43, type: 3}
   m_PrefabInstance: {fileID: 3113611586784024570}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &4683207174775883075 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7767545116283015865, guid: 155d56a5377a1234caa88e283d5f7b43, type: 3}
+  m_PrefabInstance: {fileID: 3113611586784024570}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5132079243193312095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7785892373258319013, guid: 155d56a5377a1234caa88e283d5f7b43, type: 3}
+  m_PrefabInstance: {fileID: 3113611586784024570}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5438843953469313872 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6939874401338557610, guid: 155d56a5377a1234caa88e283d5f7b43, type: 3}
-  m_PrefabInstance: {fileID: 3113611586784024570}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7934744636191672064 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4983273708428284154, guid: 155d56a5377a1234caa88e283d5f7b43, type: 3}
   m_PrefabInstance: {fileID: 3113611586784024570}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &8553344941365516740 stripped
